@@ -1,0 +1,14 @@
+.label {
+    -fx-font-family: 'Poppins';
+}
+
+.button {
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+#backgroundpane {
+    -fx-background-color: #3dcffd;
+}
