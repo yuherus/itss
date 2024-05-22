@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="userView" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../../css/user.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.HeaderScreen">
+   <top>
+      <HBox id="history-btn" alignment="CENTER" prefHeight="56.0" prefWidth="833.0" spacing="20" style="-fx-background-color: #de6951; -fx-padding: 10;">
+         <Button fx:id="homeBtn" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="Home">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+         <Button fx:id="tourBtn" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="Tour">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+         <Button fx:id="trackingBtn" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="Tracking">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+         <Button id="history-btn" fx:id="historyBtn" mnemonicParsing="false" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="History" />
+         <Button fx:id="logoutBtn" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="Log out">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+      </HBox>
+   </top>
+   <center>
+      <fx:include source="home.fxml" />
+   </center>
+</BorderPane>
