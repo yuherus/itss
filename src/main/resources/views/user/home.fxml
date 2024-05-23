@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane BorderPane.alignment="CENTER">
+    <content>
+        <VBox>
+            <children>
+                <AnchorPane prefWidth="1023.0">
+                    <children>
+                        <ImageView fitHeight="591.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Home1.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="151.0" layoutY="185.0" style="-fx-font-size: 32px; -fx-font-weight: bold;" text="No matter where you’re going to, we’ll take you there" wrappingWidth="364.1094055175781">
+                            <font>
+                                <Font name="System Bold" size="40.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="62.0" layoutY="77.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-fill: white;" text="Touristech" wrappingWidth="125.80988681316376" />
+                        <Pane layoutX="151.0" layoutY="300.0" prefHeight="74.0" prefWidth="512.0" style="-fx-background-color: rgba(243, 243, 243, 0.6);">
+                            <children>
+                                <ComboBox layoutX="319.0" layoutY="24.0" promptText="Duration" style="-fx-background-color: #fff;" />
+                                <TextField layoutX="21.0" layoutY="25.0" promptText="Where to?" style="-fx-background-color: #fff;" />
+                                <Button layoutX="428.0" layoutY="22.0" prefHeight="31.0" prefWidth="65.0" style="-fx-background-color: #FF5722; -fx-text-fill: white;" text="Search" />
+                                <ComboBox layoutX="193.0" layoutY="25.0" promptText="Travel Style" style="-fx-background-color: #fff;" />
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+                <VBox alignment="CENTER" prefHeight="371.0" prefWidth="1024.0" spacing="20" style="-fx-background-color: #f9f9f9;">
+                    <Label text="Category" textFill="#df6951">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                    <Text style="-fx-font-size: 24px; -fx-font-weight: bold;" text="We Offer Best Services">
+                        <font>
+                            <Font size="36.0" />
+                        </font>
+                    </Text>
+                    <HBox alignment="CENTER" prefHeight="500.0" prefWidth="1023.0" spacing="20.0">
+                        <VBox alignment="TOP_CENTER" prefHeight="500.0" spacing="20.0" style="-fx-background-color: #fff;">
+                            <ImageView fitHeight="80.0" fitWidth="83.0">
+                                <image>
+                                    <Image url="@../../images/cate1.png" />
+                                </image></ImageView>
+                            <Text style="-fx-font-size: 18px;" text="Hướng dẫn viên chuyên nghiệp" wrappingWidth="127.283203125" />
+                            <Text text="Đặt tour theo phong cách và lịch trình đặc biệt những hướng dẫn viên của chúng tôi." textAlignment="CENTER" wrappingWidth="200" />
+                            <padding>
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="40.0" />
+                            </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: #fff;">
+                            <ImageView fitHeight="80.0" fitWidth="87.0">
+                                <image>
+                                    <Image url="@../../images/cate2.png" />
+                                </image></ImageView>
+                            <Text style="-fx-font-size: 18px;" text="Chuyến bay tốt nhất" wrappingWidth="161.4462890625" />
+                            <Text text="Khám phá các lựa chọn chuyến bay hàng đầu với giá cả hợp lý và dịch vụ xuất sắc." textAlignment="CENTER" wrappingWidth="200" />
+                            <padding>
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="40.0" />
+                            </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: #fff;">
+                            <ImageView fitHeight="80.0" fitWidth="87.0">
+                                <image>
+                                    <Image url="@../../images/cate3.png" />
+                                </image></ImageView>
+                            <Text style="-fx-font-size: 18px;" text="Du lịch văn hóa" />
+                            <Text text="Trải nghiệm các chuyến du lịch khám phá những văn hóa mới đầy ý nghĩa và đặt chân đến những địa điểm thiêng liêng." textAlignment="CENTER" wrappingWidth="200" />
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="40.0" />
+                            </padding>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" spacing="20.0" style="-fx-background-color: #fff;">
+                            <ImageView fitHeight="80.0" fitWidth="87.0">
+                                <image>
+                                    <Image url="@../../images/cate4.png" />
+                                </image></ImageView>
+                            <Text style="-fx-font-size: 18px;" text="Dịch vụ chu đáo" />
+                            <Text text="Chúng tôi sẽ đem lại cho bạn sự chăm sóc tuyệt vời nhất khi khách hàng tham gia sử dụng dịch vụ." textAlignment="CENTER" wrappingWidth="200" />
+                            <padding>
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="40.0" />
+                            </padding>
+                        </VBox>
+                    </HBox>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="24.0" top="24.0" />
+                    </padding>
+                </VBox>
+                <HBox>
+                    <children>
+                        <AnchorPane prefWidth="512.0">
+                            <children>
+                                <ImageView fitHeight="247.0" fitWidth="512.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/Home2.png" />
+                                    </image>
+                                </ImageView>
+                                <Button layoutX="204.0" layoutY="161.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-radius: 8px;" text="View more" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></Button>
+                                <Label layoutX="182.0" layoutY="59.0" text="Promotion" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="130.0" layoutY="97.0" text="Explore Nature" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="32.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefWidth="512.0">
+                            <children>
+                                <ImageView fitHeight="215.0" fitWidth="512.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/Home3.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="144.0" layoutY="97.0" text="Explore Cities" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="32.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="195.0" layoutY="59.0" text="Promotion" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Button layoutX="217.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-radius: 8px;" text="View more" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="371.0" prefWidth="1024.0" spacing="20" style="-fx-background-color: #f9f9f9;">
+                    <children>
+                        <Label text="Trendy" textFill="#ff3b3b">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Text style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Our Trending Tour Packages">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Text>
+                        <HBox alignment="CENTER" prefHeight="167.0" prefWidth="1024.0" spacing="50">
+                            <children>
+                                <VBox spacing="10" style="-fx-background-color: #fff;">
+                                    <children>
+                                        <ImageView fitHeight="135.0" fitWidth="200.0">
+                                            <image>
+                                                <Image url="@../../images/TrendingTour1.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Thảo nguyên xanh">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+                                                <Label text="Đà Lạt">
+                                                    <font>
+                                                        <Font name="System Bold" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-user" />
+                                                        <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-calendar-alt" />
+                                                        <Label text="8 Days" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <Text text="Khám phá những địa điểm với những không gian xanh bất tận, du khách sẽ được trải nghiệm cảm giác như hòa mình vào thiên nhiên." wrappingWidth="200" />
+                                        <Label prefHeight="38.0" prefWidth="94.0" text="1200 $" textFill="#df6951">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="195.0" style="-fx-background-color: #df6951;" text="Explore" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                </VBox>
+                                <VBox spacing="10" style="-fx-background-color: #fff;">
+                                    <children>
+                                        <ImageView fitHeight="135.0" fitWidth="200.0">
+                                            <image>
+                                                <Image url="@../../images/TrendingTour2.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Thảo nguyên xanh">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+                                                <Label text="Đà Lạt">
+                                                    <font>
+                                                        <Font name="System Bold" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-user" />
+                                                        <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-calendar-alt" />
+                                                        <Label text="8 Days" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <Text text="Khám phá những địa điểm với những không gian xanh bất tận, du khách sẽ được trải nghiệm cảm giác như hòa mình vào thiên nhiên." wrappingWidth="200" />
+                                        <Label prefHeight="38.0" prefWidth="94.0" text="1200 $" textFill="#df6951">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="195.0" style="-fx-background-color: #df6951;" text="Explore" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                </VBox>
+                                <VBox spacing="10" style="-fx-background-color: #fff;">
+                                    <children>
+                                        <ImageView fitHeight="135.0" fitWidth="200.0">
+                                            <image>
+                                                <Image url="@../../images/TrendingTour3.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Thảo nguyên xanh">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+                                                <Label text="Đà Lạt">
+                                                    <font>
+                                                        <Font name="System Bold" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-user" />
+                                                        <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
+                                                    <children>
+                                                        <FontIcon iconLiteral="far-calendar-alt" />
+                                                        <Label text="8 Days" textFill="#6e6e6e">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <Text text="Khám phá những địa điểm với những không gian xanh bất tận, du khách sẽ được trải nghiệm cảm giác như hòa mình vào thiên nhiên." wrappingWidth="200" />
+                                        <Label prefHeight="38.0" prefWidth="94.0" text="1200 $" textFill="#df6951">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="195.0" style="-fx-background-color: #df6951;" text="Explore" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="24.0" top="24.0" />
+                    </padding>
+                </VBox>
+                <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                            <children>
+                                <Text style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-fill: #df6951;" text="Touristech" wrappingWidth="142.4765738248825">
+                                    <font>
+                                        <Font name="System Bold" size="32.0" />
+                                    </font>
+                                </Text>
+                                <Text fill="#6e6e6e" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel helps companies manage payments easily." wrappingWidth="149.08403778076172">
+                                    <font>
+                                        <Font name="System Bold Italic" size="12.0" />
+                                    </font>
+                                </Text>
+                                <HBox prefHeight="34.0" prefWidth="155.0" spacing="12.0">
+                                    <children>
+                                        <FontIcon fill="#df6951" iconLiteral="fab-facebook" iconSize="20" text="" />
+                                        <FontIcon fill="#df6951" iconLiteral="fab-instagram-square" iconSize="20" />
+                                        <FontIcon fill="#df6951" iconLiteral="fab-tiktok" iconSize="20" />
+                                    </children>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets left="30.0" top="40.0" />
+                            </padding></VBox>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="8.0">
+                            <children>
+                                <Label text="Company">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font></Label>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About us" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blog" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pricing" />
+                            </children>
+                            <padding>
+                                <Insets left="30.0" top="50.0" />
+                            </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                            <children>
+                                <Label text="Destination">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font></Label>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vienam" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hanoi" />
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ho Chi Minh" />
+                            </children>
+                            <padding>
+                                <Insets left="30.0" top="50.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </HBox>
+                <AnchorPane prefHeight="60.0">
+                    <children>
+                        <Pane layoutX="192.0" prefHeight="60.0" prefWidth="640.0" style="-fx-border-style: solid none none none; -fx-border-color: #aaa;">
+                            <children>
+                                <Text layoutX="215.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright  @ Group24. All Right Served" />
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

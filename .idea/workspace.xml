@@ -38,29 +38,19 @@
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Invoice Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Payment Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Result Screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Tour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/WelcomeScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/touristech/TouristechApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/image-login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/user.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhat1/src/main/java/org/example/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhay2/src/main/java/org/example/Validate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/TestI.java" afterDir="false" />
@@ -71,6 +61,13 @@
       <change beforePath="$PROJECT_DIR$/../TestMaven2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc04/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" afterDir="false" />
@@ -164,14 +161,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="2gi0NIJ8uT2gv7dxq6U8I038Se4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -185,19 +183,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources",
+    "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources/images",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="screen" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\Java\itss\src\main\resources" />
       <recent name="E:\Workspace\Java\itss\src\main\resources\images" />
+      <recent name="E:\Workspace\Java\itss\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\Java\itss\src\main\resources\views\admin" />
+      <recent name="E:\Workspace\Java\itss\src\main\resources\views\tourguide" />
+      <recent name="E:\Workspace\Java\itss\src\main\resources\views\user" />
       <recent name="E:\Workspace\Java\itss\src\main\resources\images" />
       <recent name="E:\Workspace\Java\itss\src\main\resources\views" />
-      <recent name="E:\Workspace\Java\itss\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
