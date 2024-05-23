@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<ScrollPane fitToWidth="true" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox>
+         <children>
+            <VBox accessibleRole="TEXT" disable="true" prefWidth="1024.0" spacing="30.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="History booked">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Sajek%20Valley.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sajek Valley">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="14" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="2.0" />
+                                             </HBox.margin>
+                                          </FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Bandarban, Bangladesh">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="14" selectionEnd="0" text="" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.5">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Pane prefHeight="100.0" prefWidth="340.0" />
+                              <Text fill="#484848" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="22/5/2024  4:00 PM" wrappingWidth="72.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <FontIcon fill="GREY" iconLiteral="fas-trash-alt" iconSize="24" selectionFill="BLACK" text="" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                           <children>
+                              <Text style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-fill: #df6951;" text="Touristech" wrappingWidth="142.4765738248825">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#6e6e6e" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel helps companies manage payments easily." wrappingWidth="149.08403778076172">
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                              </Text>
+                              <HBox prefHeight="34.0" prefWidth="155.0" spacing="12.0">
+                                 <children>
+                                    <FontIcon fill="#df6951" iconLiteral="fab-facebook" iconSize="20" text="" />
+                                    <FontIcon fill="#df6951" iconLiteral="fab-instagram-square" iconSize="20" />
+                                    <FontIcon fill="#df6951" iconLiteral="fab-tiktok" iconSize="20" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" top="40.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="8.0">
+                           <children>
+                              <Label text="Company">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About us" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blog" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pricing" />
+                           </children>
+                           <padding>
+                              <Insets left="30.0" top="50.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                           <children>
+                              <Label text="Destination">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vienam" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hanoi" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ho Chi Minh" />
+                           </children>
+                           <padding>
+                              <Insets left="30.0" top="50.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="60.0">
+                     <children>
+                        <Pane layoutX="192.0" prefHeight="60.0" prefWidth="640.0" style="-fx-border-style: solid none none none; -fx-border-color: #aaa;">
+                           <children>
+                              <Text layoutX="215.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright  @ Group24. All Right Served" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" right="50.0" top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

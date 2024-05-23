@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46449162-2c03-4d53-808c-2321fd3c76ae" name="Changes" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatistic.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatisticsTestDrive.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyAbstractList.java" afterDir="false" />
@@ -166,6 +167,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/tracking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tracking.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../titv_git/README.md" beforeDir="false" />
 >>>>>>> Stashed changes
+=======
+      <change beforePath="$PROJECT_DIR$/../../titv_git/README.md" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +198,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -209,8 +214,21 @@
     "last_opened_file_path": "D:/work_space/BTL_OOP_143678_Nhom26",
 >>>>>>> Stashed changes
     "settings.editor.selected.configurable": "preferences.pluginManager"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Workspace/Java/itss/src/main/resources/images&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+>>>>>>> Stashed changes
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="screen" />
