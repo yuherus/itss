@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46449162-2c03-4d53-808c-2321fd3c76ae" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatistic.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatisticsTestDrive.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyAbstractList.java" afterDir="false" />
@@ -152,6 +153,19 @@
       <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/platform_check.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../untitled/vendor/ramsey/collection" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../untitled/vendor/ramsey/uuid" beforeDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/BookedHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/BookedHistory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TrackingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TrackingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/sampletourdetail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/sampletourdetail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tracking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tracking.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../titv_git/README.md" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +185,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2gi0NIJ8uT2gv7dxq6U8I038Se4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -183,10 +200,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+<<<<<<< Updated upstream
     "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources/images",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+=======
+    "last_opened_file_path": "D:/work_space/BTL_OOP_143678_Nhom26",
+>>>>>>> Stashed changes
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>

@@ -1,2 +1,4 @@
-package controller;public class TrackingController {
+package controller;
+
+public class TrackingController {
 }

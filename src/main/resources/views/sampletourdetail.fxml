@@ -1,14 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane maxHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SampleTourDetail">
+   <children>
+      <ScrollPane prefWidth="1024.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="1987.0" prefWidth="1024.0">
+                     <children>
+                        <ImageView fitHeight="520.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/slider.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <HBox spacing="40.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox alignment="CENTER" spacing="2.0">
+                                             <children>
+                                                <Text fill="#df6951" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000 $">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Per Couple">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon fill="#818181" iconLiteral="fas-map-marker-alt" iconSize="18" selectionEnd="0" text="">
+                                             <HBox.margin>
+                                                <Insets left="3.0" />
+                                             </HBox.margin></FontIcon>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="Cox’s Bazar, Bangladesh">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="8.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                       <children>
+                                          <FontIcon iconColor="#f75d37" iconLiteral="fas-star" iconSize="18" selectionEnd="0" text="" />
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="4.8">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#818181" strokeType="OUTSIDE" strokeWidth="0.0" text="(150 Reviews)">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" top="40.0" />
+                                 </padding>
+                              </VBox>
+                              <Pane prefHeight="120.0" prefWidth="382.0" />
+                              <Button lineSpacing="10.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="146.0" style="-fx-background-color: black; -fx-font-weight: bold; -fx-background-radius: 15px; -fx-font-size: 24px;" text="Book now" textFill="WHITE">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <VBox spacing="10.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="About">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextArea disable="true" focusTraversable="false" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: white; -fx-border-color: white; -fx-opacity: 1;" styleClass="tour-detail-textarea" text="Featuring an outdoor pool where guests can relax after a long day of sightseeing, Wyndham Legend Halong is located in Bai Chay in the Quang Ninh Region, just 6.5 km from Halong City. The hotel also boasts 2 on-site restaurants, 2 bars, a club lounge and fitness centre.  Most of the sleek-designed rooms offer views of either the sea or the Ha Long Bay. It comes with a flat-screen satellite TV. En suite bathroom is fitted with a shower or bath, and provides bath robes and slippers.  Some rooms also feature a seating area.  Blue Bay Restaurant, an all-day dining restaurant with open cooking counters, features an extensive range of authentic Vietnamese and delightful international dishes. Sakara Restaurant, specialised in Japanese cuisine, has a sushi and private dining rooms.  Cat Ba is 32 km from Wyndham Legend Halong, while Hai Phong is 70 km from the property. The nearest airport is Cat Bi International Airport, 65 km from Wyndham Legend Halong.  Staff can assist you round-the-clock with a range of services, including car rental, airport transfer, laundry and ironing.Couples particularly like the location — they rated it 9.0 for a two-person trip.Distance in property description is calculated using © OpenStreetMap" wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextArea>
+                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="942.0" style="-fx-background-color: #E0EEFF;" text="Show me more">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </VBox>
+                        <VBox accessibleRole="TEXT" disable="true" spacing="10.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Itinerary">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#5498ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Morning">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextArea accessibleRole="TEXT" cache="true" disable="true" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: white; -fx-border-color: white; -fx-opacity: 1;" styleClass="tour-detail-textarea" text="8:00 AM: The driver will pick you up at your hotel in Hue and depart to Hoi An.&#10;9:45 AM: You’ll visit Lang Co Beach and Oyster Farming Village. Lang Co Beach is a gorgeous place in between two bodies of water, Lang Co and Lap An Lagoon. You possibly can stop at Lang Co Beach place you’ll able to relax and go for a swimming or you can try Oyster Farming while you are in this space.&#10;11:00 AM: Stop at Hai Van Pass the border between two provinces, Da Nang city and Hue. Since it is still part of Bach Ma Mountain you possibly can see ruins of French villas in the past. But that’s not the primary attraction here, it’s the panoramic view of Lang Co Beach and the city of Da Nang and its beautiful seashore.&#10;11:45 AM: The driver can bring you to a restaurant that serves local Vietnamese meal or you can choose a particular restaurant you wish to try out." wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextArea>
+                              <Text fill="#5498ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Afternoon">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <TextArea disable="true" prefHeight="171.0" prefWidth="943.0" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: white; -fx-border-color: white; -fx-opacity: 1;" styleClass="tour-detail-textarea" text="13:00 PM: Sightseeing Champa Museum, we will study more about Cham Pa’s culture and historical past through its artworks. Sculptures still remain at this Museum, though most important relics were moved to the bigger cities for safe keeping, you will still be able to appreciate the beauty of the Cham’s expertise in sculpting.&#10;14:30 PM: Discover My Son Sanctuary, be amazed by the architectural construction of this Holy Land. It was severely damaged in the battle however some tower-temple still remains. One of UNESCO’s world cultural heritages because of its historic, cultural, architectural and artistic importance.&#10;16:00 – 16:30 PM: Drop off at your hotel in Da Nang/Hoi An." wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextArea>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </VBox>
+                        <HBox spacing="300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="204.0" spacing="10.0">
+                                 <children>
+                                    <Text fill="#0041a3" strokeType="OUTSIDE" strokeWidth="0.0" text="Include">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <VBox spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #46A6FF; -fx-border-radius: 10px;" text="Private Car with driver can speak basic English" wrapText="true">
+                                             <graphic>
+                                                <FontIcon iconColor="#2e8231" iconLiteral="fas-check" iconSize="14" wrappingWidth="15.19997787475586" />
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #46A6FF; -fx-border-radius: 10px;" text="Petrol">
+                                             <graphic>
+                                                <FontIcon iconColor="#2e8231" iconLiteral="fas-check" iconSize="14" wrappingWidth="15.19997787475586" />
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #46A6FF; -fx-border-radius: 10px;" text="Road tolls">
+                                             <graphic>
+                                                <FontIcon iconColor="#2e8231" iconLiteral="fas-check" iconSize="14" wrappingWidth="15.19997787475586" />
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #46A6FF; -fx-border-radius: 10px;" text="Parking fee">
+                                             <graphic>
+                                                <FontIcon iconColor="#2e8231" iconLiteral="fas-check" iconSize="14" wrappingWidth="15.19997787475586" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <Text fill="#cf6161" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluded">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <VBox spacing="10.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #CF6161; -fx-border-radius: 10px;" text="Meals">
+                                             <graphic>
+                                                <FontIcon iconColor="#cf6161" iconLiteral="fas-times" iconSize="14" />
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #CF6161; -fx-border-radius: 10px;" text="Guide">
+                                             <graphic>
+                                                <FontIcon iconColor="#cf6161" iconLiteral="fas-times" iconSize="14" />
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #CF6161; -fx-border-radius: 10px;" text="Entrance fee  ">
+                                             <graphic>
+                                                <FontIcon iconColor="#cf6161" iconLiteral="fas-times" iconSize="14" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" right="30.0" top="30.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
 </AnchorPane>
