@@ -1,2 +1,4 @@
-package controller;public class SampleTourDetail {
+package controller;
+
+public class SampleTourDetail {
 }
