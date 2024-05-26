@@ -38,14 +38,13 @@
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Invoice Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Payment Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Result Screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/StyleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/search-result.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tourlist.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/BookedHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/TrackingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Sajek Valley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/SajekValley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/slider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/sampletourdetail.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhat1/src/main/java/org/example/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhay2/src/main/java/org/example/Validate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/TestI.java" afterDir="false" />
@@ -57,13 +56,8 @@
       <change beforePath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc04/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" afterDir="false" />
@@ -178,7 +172,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources/images",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",

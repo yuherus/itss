@@ -1,16 +1,15 @@
 package screen;
 import controller.SampleTourController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import model.SampleTour;
 
@@ -101,6 +100,17 @@ public class TourScreen implements Initializable {
         descriptionText.setWrappingWidth(195);
 
         Button bookButton = new Button("Booking now");
+        bookButton.setOnAction(event -> {
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
+                view = loader.load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            BorderPane userView = (BorderPane) popular1.getScene().lookup("#userView");
+            userView.setCenter(view);
+        });
 
         vBox.getChildren().addAll(imageView, hBox, descriptionText, bookButton);
 
