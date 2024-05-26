@@ -14,7 +14,7 @@
     <content>
         <VBox>
             <children>
-                <AnchorPane prefWidth="1023.0">
+                <AnchorPane prefWidth="1024.0">
                     <children>
                         <ImageView fitHeight="591.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
                             <image>
