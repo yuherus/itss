@@ -7,6 +7,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static model.User.UserType.TOURIST;
+
 public class UserController implements CRUDController<User> {
     @Override
     public List<User> getAll() throws SQLException {
@@ -32,7 +34,7 @@ public class UserController implements CRUDController<User> {
                         user.setUserType(User.UserType.TOUR_GUIDE);
                         break;
                     case "tourist":
-                        user.setUserType(User.UserType.TOURIST);
+                        user.setUserType(TOURIST);
                         break;
                 }
                 user.setCreatedAt(rs.getTimestamp("created_at"));
@@ -66,7 +68,7 @@ public class UserController implements CRUDController<User> {
                             user.setUserType(User.UserType.TOUR_GUIDE);
                             break;
                         case "tourist":
-                            user.setUserType(User.UserType.TOURIST);
+                            user.setUserType(TOURIST);
                             break;
                     }
                     user.setCreatedAt(rs.getTimestamp("created_at"));
@@ -147,7 +149,7 @@ public class UserController implements CRUDController<User> {
                             user.setUserType(User.UserType.TOUR_GUIDE);
                             break;
                         case "tourist":
-                            user.setUserType(User.UserType.TOURIST);
+                            user.setUserType(TOURIST);
                             break;
                     }
                     user.setCreatedAt(rs.getTimestamp("created_at"));
@@ -157,6 +159,33 @@ public class UserController implements CRUDController<User> {
         }
 
         return null;
+    }
+
+    public static User signup(String username, String password, String name, String email) throws SQLException {
+        String checkUserQuery = "SELECT COUNT(*) FROM Users WHERE username = ?";
+        String insertUserQuery = "INSERT INTO Users (username, password, name, email, user_type) VALUES (?, ?, ?, ?, 'TOURIST')";
+
+        try (Connection conn = JDBCUtil.getConnection()) {
+            // Check if username already exists
+            try (PreparedStatement checkStmt = conn.prepareStatement(checkUserQuery)) {
+                checkStmt.setString(1, username);
+                ResultSet rs = checkStmt.executeQuery();
+                if (rs.next() && rs.getInt(1) > 0) {
+                    throw new SQLException("Username already exists");
+                }
+            }
+
+            // Insert new user
+            try (PreparedStatement insertStmt = conn.prepareStatement(insertUserQuery)) {
+                insertStmt.setString(1, username);
+                insertStmt.setString(2, password);
+                insertStmt.setString(3, name);
+                insertStmt.setString(4, email);
+                insertStmt.executeUpdate();
+            }
+        }
+
+        return new User(username, password, name, email, TOURIST);
     }
 
 }
