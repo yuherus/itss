@@ -1,0 +1,29 @@
+Index: src/main/java/controller/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/controller/Controller.java b/src/main/java/controller/Controller.java
+new file mode 100644
+--- /dev/null	(date 1716719228417)
++++ b/src/main/java/controller/Controller.java	(date 1716719228417)
+@@ -0,0 +1,19 @@
++package controller;
++
++import javafx.scene.image.ImageView;
++
++public class Controller {
++    public ImageView mainImageView;
++    public ImageView parisImageView;
++    public ImageView swissImageView;
++    public ImageView thailandImageView;
++    public ImageView taiwanImageView;
++    public ImageView indonesiaImageView;
++    public ImageView singaporeImageView;
++    public ImageView historyParisImageView;
++    public ImageView historySwissImageView;
++    public ImageView historyThailandImageView;
++    public ImageView historyTaiwanImageView;
++    public ImageView historyIndonesiaImageView;
++    public ImageView historySingaporeImageView;
++}
