@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <VBox>
+            <HBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #3498db; -fx-padding: 15;">
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" text="Touristech" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Home" />
+                <MenuButton style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Tour">
+                    <MenuItem text="Tour on track" />
+                    <MenuItem text="History" />
+                </MenuButton>
+                <Button style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Support" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px;" text="Log out" />
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="20.0" style="-fx-padding: 40;">
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+                <Label style="-fx-font-size: 32px; -fx-font-weight: bold;" text="Hue to Hoi An" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+                <Label style="-fx-font-size: 20px;" text="Vietnam" />
+                <Label style="-fx-font-size: 20px; -fx-text-fill: red;" text="★ Not given yet" />
+            </HBox>
+            <Button alignment="CENTER_RIGHT" style="-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 30px; -fx-padding: 10 20; -fx-background-radius: 30;" text="Receive now">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="700.0" />
+            </VBox.margin></Button>
+            <Label style="-fx-font-size: 20px; -fx-text-fill: red;" text="Up To 150.00 $">
+            <VBox.margin>
+               <Insets left="730.0" />
+            </VBox.margin></Label>
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="About" />
+            <Label prefHeight="40.0" prefWidth="941.0" style="-fx-font-size: 16px;" text="A full-day journey from Hue to Hoi An, visiting stunning coastal beaches, historical sites, and cultural landmarks. Experience the best of Central Vietnam's heritage and natural beauty." />
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Destinations" />
+            <Label style="-fx-font-size: 16px;" text="• Hue: Starting point." />
+            <Label style="-fx-font-size: 16px;" text="• Lang Co Beach and Oyster Farming Village" />
+            <Label style="-fx-font-size: 16px;" text="• Hai Van Pass" />
+            <Label style="-fx-font-size: 16px;" text="• Da Nang" />
+            <Label style="-fx-font-size: 16px;" text="• Champa Museum" />
+            <Label style="-fx-font-size: 16px;" text="• My Son Sanctuary" />
+            <Label style="-fx-font-size: 16px;" text="• Hoi An/Da Nang: Drop-off point." />
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Travel Style:" />
+            <Label style="-fx-font-size: 16px;" text="Cultural and Historical, Adventure" />
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Additional Information:" />
+            <Label style="-fx-font-size: 16px;" text="• Accommodation Preferences: Not applicable for a day tour." />
+            <Label style="-fx-font-size: 16px;" text="• Dietary Restrictions: Vegetarian meals required." />
+            <Label style="-fx-font-size: 16px;" text="• Special Requests: Private guided tour." />
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Customer Information:" />
+            <Label style="-fx-font-size: 16px;" text="• Name: John Doe" />
+            <Label style="-fx-font-size: 16px;" text="• Contact Number: +1234567890" />
+            <Label style="-fx-font-size: 16px;" text="• Email: john.doe@example.com" />
+        </VBox>
+    </center>
+    <bottom>
+        <VBox spacing="20.0" style="-fx-padding: 40; -fx-background-color: #f4f4f4;">
+            <HBox alignment="CENTER" spacing="50.0">
+                <VBox spacing="10.0">
+                    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Travel" />
+                    <Label style="-fx-font-size: 14px;" text="Travel helps companies manage payments easily." />
+                    <HBox spacing="10.0">
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                            </image>
+                        </ImageView>
+                    </HBox>
+                </VBox>
+                <VBox prefHeight="130.0" prefWidth="96.0" spacing="10.0">
+                    <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Company" />
+                    <Label style="-fx-font-size: 14px;" text="About Us" />
+                    <Label prefHeight="18.0" prefWidth="47.0" style="-fx-font-size: 14px;" text="Careers" />
+                    <Label prefHeight="18.0" prefWidth="55.0" style="-fx-font-size: 14px;" text="Blog" />
+                    <Label style="-fx-font-size: 14px;" text="Pricing" />
+                </VBox>
+                <VBox spacing="10.0">
+                    <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Destinations" />
+                    <Label style="-fx-font-size: 14px;" text="Maldives" />
+                    <Label style="-fx-font-size: 14px;" text="Los Angeles" />
+                    <Label style="-fx-font-size: 14px;" text="Las Vegas" />
+                    <Label style="-fx-font-size: 14px;" text="Toronto" />
+                </VBox>
+                <VBox spacing="10.0">
+                    <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Join Our Newsletter" />
+                    <TextField promptText="Your email address" />
+                    <Button style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Subscribe" />
+                    <Label style="-fx-font-size: 12px;" text="* Will send you weekly updates for your better tour packages." />
+                </VBox>
+            </HBox>
+            <Label style="-fx-font-size: 12px; -fx-text-alignment: center;" text="Copyright © Xpro 2022. All Rights Reserved." />
+        </VBox>
+    </bottom>
+</BorderPane>
