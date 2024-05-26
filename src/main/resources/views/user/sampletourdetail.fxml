@@ -16,11 +16,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<<<<<<< HEAD
 <ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-=======
-<ScrollPane fitToWidth="true" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
@@ -104,11 +100,7 @@
                         <Insets left="20.0" top="40.0" />
                      </padding>
                   </VBox>
-<<<<<<< HEAD
                   <Pane minHeight="120.0" minWidth="382.0" />
-=======
-                  <Pane prefHeight="120.0" prefWidth="382.0" />
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
                   <Button lineSpacing="10.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="146.0" style="-fx-background-color: black; -fx-font-weight: bold; -fx-background-radius: 15px; -fx-font-size: 24px;" text="Book now" textFill="WHITE">
                      <font>
                         <Font size="24.0" />
@@ -178,11 +170,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Text>
-<<<<<<< HEAD
                   <TextArea disable="true" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: white; -fx-border-color: white; -fx-opacity: 1;" styleClass="tour-detail-textarea" text="13:00 PM: Sightseeing Champa Museum, we will study more about Cham Pa’s culture and historical past through its artworks. Sculptures still remain at this Museum, though most important relics were moved to the bigger cities for safe keeping, you will still be able to appreciate the beauty of the Cham’s expertise in sculpting.&#10;14:30 PM: Discover My Son Sanctuary, be amazed by the architectural construction of this Holy Land. It was severely damaged in the battle however some tower-temple still remains. One of UNESCO’s world cultural heritages because of its historic, cultural, architectural and artistic importance.&#10;16:00 – 16:30 PM: Drop off at your hotel in Da Nang/Hoi An." wrapText="true">
-=======
-                  <TextArea disable="true" prefHeight="171.0" prefWidth="943.0" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background-color: white; -fx-border-color: white; -fx-opacity: 1;" styleClass="tour-detail-textarea" text="13:00 PM: Sightseeing Champa Museum, we will study more about Cham Pa’s culture and historical past through its artworks. Sculptures still remain at this Museum, though most important relics were moved to the bigger cities for safe keeping, you will still be able to appreciate the beauty of the Cham’s expertise in sculpting.&#10;14:30 PM: Discover My Son Sanctuary, be amazed by the architectural construction of this Holy Land. It was severely damaged in the battle however some tower-temple still remains. One of UNESCO’s world cultural heritages because of its historic, cultural, architectural and artistic importance.&#10;16:00 – 16:30 PM: Drop off at your hotel in Da Nang/Hoi An." wrapText="true">
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -203,11 +191,7 @@
             </VBox>
             <HBox spacing="300.0">
                <children>
-<<<<<<< HEAD
                   <VBox spacing="10.0">
-=======
-                  <VBox prefHeight="200.0" prefWidth="204.0" spacing="10.0">
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
                      <children>
                         <Text fill="#0041a3" strokeType="OUTSIDE" strokeWidth="0.0" text="Include">
                            <font>
@@ -276,11 +260,7 @@
                   </VBox>
                </children>
                <padding>
-<<<<<<< HEAD
                   <Insets left="30.0" right="30.0" top="30.0" />
-=======
-                  <Insets left="30.0" right="30.0" top="10.0" />
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
                </padding>
             </HBox>
             <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
@@ -340,12 +320,9 @@
                      </padding>
                   </VBox>
                </children>
-<<<<<<< HEAD
                <VBox.margin>
                   <Insets top="40.0" />
                </VBox.margin>
-=======
->>>>>>> 8278cad281606b8b885fc8b1d134d3e37a9accab
             </HBox>
             <AnchorPane prefHeight="60.0">
                <children>
