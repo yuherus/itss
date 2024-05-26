@@ -38,19 +38,14 @@
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Invoice Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Payment Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Result Screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/user.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/StyleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/search-result.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tourlist.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhat1/src/main/java/org/example/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhay2/src/main/java/org/example/Validate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/TestI.java" afterDir="false" />
@@ -62,12 +57,13 @@
       <change beforePath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Style.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc04/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" afterDir="false" />
@@ -184,7 +180,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources/images",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -206,7 +202,14 @@
       <recent name="E:\Workspace\Java\itss\src\main\resources\views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Touristech">
+    <configuration name="Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="itss" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Touristech" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="touristech.TouristechApplication" />
       <module name="itss" />
@@ -214,6 +217,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Touristech" />
+      <item itemvalue="Application.Test" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

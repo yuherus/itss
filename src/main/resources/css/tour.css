@@ -1,0 +1,46 @@
+.header {
+    -fx-background-color: #F27457;
+}
+
+.logo {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: Arial;
+}
+
+.header-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+}
+
+.section-title {
+    -fx-font-size: 32px;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 5 0;
+}
+
+.destination-box {
+    -fx-spacing: 16;
+    -fx-padding: 10;
+    -fx-border-width: 1;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 10px;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+}
+
+.destination-box Label {
+    -fx-font-size: 16px;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+}
+
+.destination-box Button {
+    -fx-background-color: #fd6951;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+    -fx-font-weight: bold;
+}
