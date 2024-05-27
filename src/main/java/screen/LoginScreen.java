@@ -48,7 +48,7 @@ public class LoginScreen {
             User user = UserController.login(username, password);
             if (user != null) {
                 if (user.getUserType() == User.UserType.ADMIN) {
-                     setScene("/views/admin.fxml");
+                     setScene("/views/admin-tour-list.fxml");
                 } else if (user.getUserType() == User.UserType.TOUR_GUIDE) {
                      setScene("/views/tourguide.fxml");
                 } else if (user.getUserType() == User.UserType.TOURIST) {
