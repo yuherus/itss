@@ -149,7 +149,7 @@ public class UserController implements CRUDController<User> {
                             user.setUserType(User.UserType.TOUR_GUIDE);
                             break;
                         case "tourist":
-                            user.setUserType(User.UserType.TOURIST);
+                            user.setUserType(TOURIST);
                             break;
                     }
                     user.setCreatedAt(rs.getTimestamp("created_at"));
@@ -183,7 +183,6 @@ public class UserController implements CRUDController<User> {
                 insertStmt.executeUpdate();
             }
         }
-
         return new User(username, password, name, email, User.UserType.TOURIST);
     }
 
