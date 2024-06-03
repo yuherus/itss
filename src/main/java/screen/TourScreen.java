@@ -104,7 +104,6 @@ public class TourScreen implements Initializable {
             ScrollPane view = null;
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
-                setDetailView(tour);
                 view = loader.load();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -117,12 +116,4 @@ public class TourScreen implements Initializable {
 
         return vBox;
     }
-
-<<<<<<< HEAD
-    private void setDetailView(SampleTour tour){
-
-    }
-
-=======
->>>>>>> f90ebe7ec6ee89c33bf3bbe2da2e3456d57f8bba
 }
