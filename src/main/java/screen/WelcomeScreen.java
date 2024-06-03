@@ -28,4 +28,17 @@ public class WelcomeScreen{
         window.show();
 
     }
+
+    @FXML
+    void handleSignup(ActionEvent event) throws IOException {
+        Parent signupParent = FXMLLoader.load(getClass().getResource("/views/signup.fxml"));
+        Scene signupScene = new Scene(signupParent);
+
+        // Get stage thông qua event source (nút "Login")
+        Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        window.setTitle("Signup");
+        window.setScene(signupScene);
+        window.show();
+    }
+
 }

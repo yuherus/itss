@@ -26,7 +26,7 @@
         </VBox>
 
         <HBox layoutX="20" layoutY="300" spacing="20" />
-         <Button fx:id="signup" layoutX="188.0" layoutY="475.0" prefHeight="40" prefWidth="100" style="-fx-background-color: white; -fx-text-fill: #00C4FF;" text="Sign Up" />
+         <Button fx:id="signup" layoutX="188.0" layoutY="475.0" onAction="#handleSignup" prefHeight="40" prefWidth="100" style="-fx-background-color: white; -fx-text-fill: #00C4FF;" text="Sign Up" />
          <Button fx:id="login" layoutX="60.0" layoutY="475.0" onAction="#handleLogin" prefHeight="40" prefWidth="100" style="-fx-background-color: white; -fx-text-fill: #00C4FF;" text="Login" />
       <ImageView fitHeight="383.0" fitWidth="559.0" layoutX="465.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
          <image>
