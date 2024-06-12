@@ -1,0 +1,76 @@
+.header {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 15;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.header-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.content {
+    -fx-padding: 20;
+}
+
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.tile-pane {
+    -fx-padding: 20;
+}
+
+.tour-card {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10;
+    -fx-border-color: #DDDDDD;
+    -fx-border-width: 1;
+}
+
+.tour-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.detail-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.view-more-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.sidebar {
+    -fx-padding: 10;
+    -fx-background-color: #F9F9F9;
+    -fx-border-color: #DDDDDD;
+    -fx-border-width: 0 0 0 1;
+}
+
+.sidebar-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0;
+}
+
+.sidebar-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+}
