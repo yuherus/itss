@@ -61,3 +61,35 @@ public class SampleTour {
         this.locations = locations;
     }
 }
+
+//import javafx.beans.property.SimpleStringProperty;
+//
+//public class SampleTour {
+//    private final SimpleStringProperty sampletourId;
+//    private final SimpleStringProperty tourName;
+//    private final SimpleStringProperty description;
+//    private final SimpleStringProperty totalCost;
+//
+//    public SampleTour(String sampletourId, String tourName, String description, String totalCost) {
+//        this.sampletourId = new SimpleStringProperty(sampletourId);
+//        this.tourName = new SimpleStringProperty(tourName);
+//        this.description = new SimpleStringProperty(description);
+//        this.totalCost = new SimpleStringProperty(totalCost);
+//    }
+//
+//    public String getSampletourId() {
+//        return sampletourId.get();
+//    }
+//
+//    public String getTourName() {
+//        return tourName.get();
+//    }
+//
+//    public String getDescription() {
+//        return description.get();
+//    }
+//
+//    public String getTotalCost() {
+//        return totalCost.get();
+//    }
+//}

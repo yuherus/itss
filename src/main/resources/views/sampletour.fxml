@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane stylesheets="@../css/tourguide-information.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admintourlist">
+<AnchorPane stylesheets="@../css/tourguide-information.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.sampletour">
     <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
         <children>
             <Text fx:id="title" layoutX="482.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" SAMPLE TOUR">
@@ -26,9 +26,10 @@
             </Text>
             <TableView fx:id="tableview" layoutX="180.0" layoutY="172.0" prefHeight="405.0" prefWidth="844.0">
                 <columns>
-                    <TableColumn id="t1" fx:id="t1" prefWidth="281.33" text="SAMPLE_ID" />
-                    <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="281.33" text="TOUR_NAME" />
-                    <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="281.33" text="TOTAL COST" />
+                    <TableColumn id="t1" fx:id="t1" prefWidth="94.00001525878906" text="SAMPLE_ID" />
+                    <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="238.0" text="TOUR_NAME" />
+                    <TableColumn fx:id="t3" minWidth="0.0" prefWidth="380.66668701171875" text="DESCRIPTION" />
+               <TableColumn id="t1" fx:id="t11" prefWidth="130.0" text="TOTAL COST" />
                 </columns>
             </TableView>
             <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />
