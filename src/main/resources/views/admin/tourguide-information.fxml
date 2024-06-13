@@ -16,17 +16,17 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane stylesheets="@../css/travel-style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admintourlist">
+<AnchorPane stylesheets="@../../css/tourguide-information.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminTourListScreen">
     <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
         <children>
-            <Text fx:id="title" layoutX="493.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAVEL STYLE">
+            <Text fx:id="title" layoutX="371.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOURGUIDE INFORMATION">
                 <font>
                     <Font size="28.0" />
                 </font>
             </Text>
-            <TableView fx:id="tableview" layoutX="180.0" layoutY="178.0" prefHeight="399.0" prefWidth="844.0">
+            <TableView fx:id="tableview" layoutX="180.0" layoutY="176.0" prefHeight="401.0" prefWidth="844.0">
                 <columns>
-                    <TableColumn id="t1" fx:id="t1" prefWidth="168.8" text="CUSTOMER_ID" />
+                    <TableColumn id="t1" fx:id="t1" prefWidth="168.8" text="TOURGUIDE_ID" />
                     <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="168.8" text="USERNAME" />
                     <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="168.8" text="NAME" />
                     <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="168.8" text="PASSWORD" />
@@ -68,6 +68,7 @@
                         <items>
                             <MenuItem mnemonicParsing="false" text="SAMPLE TOUR" />
                             <MenuItem mnemonicParsing="false" text="LOCATION" />
+                            <MenuItem mnemonicParsing="false" text="STYLE TRAVEL" />
                         </items>
                         <VBox.margin>
                             <Insets bottom="20.0" />
@@ -75,7 +76,7 @@
                     </MenuButton>
                     <MenuButton fx:id="menu2" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="INFORMATION">
                         <items>
-                            <MenuItem mnemonicParsing="false" text="TOURGUIDE INFORMATION" />
+                            <MenuItem mnemonicParsing="false" text="CUSTOMER INFORMATION" />
                         </items>
                         <VBox.margin>
                             <Insets bottom="20.0" />
@@ -92,16 +93,16 @@
                     <Button fx:id="button2" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="REQUEST" />
                 </children>
             </VBox>
-            <Button fx:id="delete" layoutX="920.0" layoutY="126.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="DELETE" />
-            <Button fx:id="add" layoutX="737.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="INSERT" />
-            <Button fx:id="update" layoutX="828.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="UPDATE" />
-            <AnchorPane fx:id="search" layoutX="195.0" layoutY="121.0" prefWidth="341.0" style="-fx-background-color: #e0e0e0;">
-                <children>
-                    <TextField layoutX="67.0" layoutY="6.0" prefHeight="30.0" prefWidth="283.0" promptText="Search for travel style" style="-fx-background-color: transparent;" />
-                    <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
-                    <FontIcon iconLiteral="fas-search" layoutX="22.0" layoutY="25.0" text="" />
-                </children>
-            </AnchorPane>
+            <Button fx:id="delete" layoutX="912.0" layoutY="118.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="DELETE" />
+            <Button fx:id="add" layoutX="736.0" layoutY="117.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="INSERT" />
+            <Button fx:id="update" layoutX="828.0" layoutY="117.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="75.0" text="UPDATE" />
+         <AnchorPane fx:id="search" layoutX="180.0" layoutY="113.0" prefWidth="341.0" style="-fx-background-color: #e0e0e0;">
+            <children>
+               <TextField layoutX="67.0" layoutY="6.0" prefHeight="30.0" prefWidth="283.0" promptText="Search for travel style" style="-fx-background-color: transparent;" />
+               <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+               <FontIcon iconLiteral="fas-search" layoutX="22.0" layoutY="25.0" text="" />
+            </children>
+         </AnchorPane>
         </children>
     </AnchorPane>
 </AnchorPane>

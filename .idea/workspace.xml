@@ -5,78 +5,194 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/StyleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/TrackingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HistoryScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/SignupScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/tour.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/SajekValley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/sampletourdetail.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/search-result.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tourlist.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracknotontour.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/user.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatistic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/BasicStatisticsTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyAbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyIterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyLinkedListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk/src/main/java/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/AbstractIntegrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/IntegrationCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/IntegrationCalculatorTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/Integrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/MidpointMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/MyAbstractPolynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/MyArrayPolynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/MyListPolynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/MyPolynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/SimpsonMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HungNguCk2/src/main/java/TrapezoidMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestApiKey/src/main/java/org/example/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestApiKey/src/main/java/org/example/GetCollectionDataFromRarible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai1/src/main/java/tuanhuy/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bttrenlop/src/main/java/org/example/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bttrenlop/src/main/java/org/example/NhanVienCoHuu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bttrenlop/src/main/java/org/example/NhanVienHopDong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bttrenlop/src/main/java/org/example/PhongBan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bttrenlop/src/main/java/org/example/TruongPhong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Delivery form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/FirstScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Invoice Screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Payment Screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Result Screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminCustomerInfoScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminLocationScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminRequestScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminSampleTourScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminStyleTravelScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTourguideInfoScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nhat1/src/main/java/org/example/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nhay2/src/main/java/org/example/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/TestI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/p1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/p2/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewProject/NewProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestMaven2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/WelcomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/WelcomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/admintourlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTourListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/sampletour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTransactionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/top Nav Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ (1).png" beforePathEscaped="$PROJECT_DIR$/src/main/resources/images/👋 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/welcomeicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin-request.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/request.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin-tour-list-2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/tourlist.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/signup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/customer-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/customer-information.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/location.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/location.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/sampletour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/sampletour.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/tourguide-information.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/transaction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/travel-style.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/travel-style.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc04/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc05/jdbc03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/jdbc03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc05/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc05/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp25/src/main/java/com/example/demojsp/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp25/src/main/java/com/example/demojsp/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp25/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp25/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp25/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp25/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jsp25/src/main/webapp/trangDatHang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../jsp25/src/main/webapp/trangDatHang.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NewProject/src/testPackage/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PHP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PHP/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PHP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../contribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/AddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/ProductDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/controller/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/AdressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/AdressDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/CartItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/CartItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ColorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ColorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/DAOInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/DAOInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ParentCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ParentCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/ReviewDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Adress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Adress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/ParentCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/ParentCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/com/example/demo/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/asset/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/asset/css/detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/asset/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../new_contribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/app/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/app/product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/run.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/brick/math" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/ClassLoader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/InstalledVersions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_classmap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_namespaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_psr4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_real.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/installed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/installed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/composer/platform_check.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/ramsey/collection" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled/vendor/ramsey/uuid" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging master"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\Java\itss\src\main\java" />
+      <recent name="E:\Workspace\Java\itss\src\main\resources\views\admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="touristech.TouristechApplication" />
+      <module name="itss" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>

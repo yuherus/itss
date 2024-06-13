@@ -38,7 +38,7 @@ public class HeaderScreen implements Initializable{
         trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
         logoutBtn.setOnAction(event -> {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/views/hello-view.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/views/login.fxml"));
                 Stage stage = (Stage) logoutBtn.getScene().getWindow();
                 stage.setScene(new Scene(root));
                 stage.show();
