@@ -32,13 +32,13 @@ public class HeaderScreen implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        homeBtn.setOnAction(event -> changeScene("/main/resources/views/user/home.fxml"));
-        historyBtn.setOnAction(event -> changeScene("/main/resources/views/user/history.fxml"));
-        tourBtn.setOnAction(event -> changeScene("/main/resources/views/user/tour.fxml"));
-        trackingBtn.setOnAction(event -> changeScene("main/resources/views/user/tracking.fxml"));
+        homeBtn.setOnAction(event -> changeScene("/views/user/home.fxml"));
+        historyBtn.setOnAction(event -> changeScene("/views/user/history.fxml"));
+        tourBtn.setOnAction(event -> changeScene("/views/user/tour.fxml"));
+        trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
         logoutBtn.setOnAction(event -> {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("main/resources/views/hello-view.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/views/hello-view.fxml"));
                 Stage stage = (Stage) logoutBtn.getScene().getWindow();
                 stage.setScene(new Scene(root));
                 stage.show();

@@ -1,0 +1,59 @@
+/* styles.css */
+.hbox-tour {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0);
+    -fx-background-color: #FFFFFF;
+    -fx-spacing: 40px;
+    -fx-padding: 10px;
+}
+
+.image-tour {
+    fx-padding: 0px 0px 0px 10px;
+    -fx-preserve-ratio: true;
+}
+
+.vbox-text {
+    -fx-spacing: 2px;
+}
+
+.text-tour-name {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.hbox-location, .hbox-rating {
+    -fx-spacing: 5px;
+}
+
+.location-icon, .rating-icon, .trash-icon {
+    -fx-font-family: FontAwesome;
+    -fx-font-size: 14px;
+}
+
+.location-icon {
+    -fx-fill: #818181;
+}
+
+.rating-icon {
+    -fx-fill: #f75d37;
+}
+
+.text-location, .text-reviews {
+    -fx-font-size: 14px;
+    -fx-fill: #818181;
+}
+
+.text-rating {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.text-datetime {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #484848;
+}
+
+.trash-icon {
+    -fx-font-size: 24px;
+    -fx-fill: GREY;
+}
