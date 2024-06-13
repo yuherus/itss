@@ -38,13 +38,6 @@
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Invoice Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Payment Screen.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo1/src/main/resources/com/example/demo1/Result Screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminCustomerInfoScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminLocationScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminRequestScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminSampleTourScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminStyleTravelScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTourguideInfoScreen.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhat1/src/main/java/org/example/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../nhay2/src/main/java/org/example/Validate.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testcodeck/src/main/java/TestI.java" afterDir="false" />
@@ -56,25 +49,7 @@
       <change beforePath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TestMaven2/src/main/webapp/index2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate1/src/main/java/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/admintourlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTourListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/sampletour.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTransactionScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/top Nav Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ (1).png" beforePathEscaped="$PROJECT_DIR$/src/main/resources/images/👋 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/welcomeicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin-request.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/request.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin-tour-list-2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/tourlist.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/customer-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/customer-information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/location.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/location.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/sampletour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/sampletour.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/tourguide-information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/transaction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/travel-style.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/travel-style.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc04/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc05/.idea/misc.xml" afterDir="false" />
