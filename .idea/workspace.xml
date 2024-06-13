@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SampleTourDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/StyleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/TrackingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HeaderScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/HistoryScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/SignupScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/tour.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Home3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/SajekValley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/TrendingTour3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/cate4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/location/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/sampletourdetail.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/search-result.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tourlist.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracknotontour.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/user.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Style.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/WelcomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/WelcomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user.fxml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "Merging master"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

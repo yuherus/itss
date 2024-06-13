@@ -48,11 +48,11 @@ public class LoginScreen {
             User user = UserController.login(username, password);
             if (user != null) {
                 if (user.getUserType() == User.UserType.ADMIN) {
-                     setScene("/views/admin-tour-list.fxml");
+                     setScene("/views/admin/admin.fxml");
                 } else if (user.getUserType() == User.UserType.TOUR_GUIDE) {
-                     setScene("/views/tourguide.fxml");
+                     setScene("/views/tourguide/tourguide.fxml");
                 } else if (user.getUserType() == User.UserType.TOURIST) {
-                     setScene("/views/user.fxml");
+                     setScene("/views/user/user.fxml");
                 }
             } else {
                 showAlert(AlertType.ERROR, "Login Failed", "Invalid username or password");
