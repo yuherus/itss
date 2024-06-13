@@ -16,13 +16,13 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.TourScreen">
+<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
             <ImageView fitHeight="520.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/slider.png" />
+                  <Image url="@../../images/Home1.png" />
                </image>
             </ImageView>
             <HBox alignment="BOTTOM_LEFT">
