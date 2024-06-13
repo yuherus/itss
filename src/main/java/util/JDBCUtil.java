@@ -9,7 +9,7 @@ import com.mysql.cj.jdbc.Driver;
 public class JDBCUtil {
     public static final String URL = "jdbc:mysql://localhost:3306/itss";
     public static final String USERNAME = "root";
-    public static final String PASSWORD = "26102003";
+    public static final String PASSWORD = "tathutrang";
     public static Connection getConnection() {
         Connection connection = null;
         try {
@@ -31,3 +31,4 @@ public class JDBCUtil {
         }
     }
 }
+

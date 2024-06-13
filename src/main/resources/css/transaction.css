@@ -1,0 +1,84 @@
+#sidebar {
+    -fx-background-color: #6AD9FD;
+}
+
+#button2{
+ -fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+     -fx-alignment: right; /* Center align text */
+         -fx-font-family: "Popins";
+
+
+}
+#menu1{
+ -fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+        -fx-alignment: center; /* Center align text */
+            -fx-font-family: "Popins";
+                -fx-text-fill: #000000; /* Specify the text color (black in this case) */
+
+}
+#menu2{
+-fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+        -fx-alignment: center; /* Center align text */
+            -fx-font-family: "Popins";
+                -fx-text-fill: #000000; /* Specify the text color (black in this case) */
+
+
+}
+#title{
+            -fx-font-family: "Popins";
+    -fx-font-size: 36px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+
+}
+#text1{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text2{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text3{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text4{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#tableview{
+-fx-border-width: 1px;
+    -fx-background-color: #CCCCCC; /* Light gray background color */
+        -fx-border-radius: 10px; /* Rounded corners */
+                    -fx-font-family: "Popins";
+                        -fx-text-fill: black; /* Text color */
+
+    }
+    #textbar{
+                            -fx-text-fill: black; /* Text color */
+                                                -fx-font-family: "Popins";
+        -fx-border-radius: 20px; /* Rounded corners */
+                -fx-font-weight: bold; /* Make the text bold */
+
+
+
+    }
+    #search {
+             -fx-background-radius: 20;
+             -fx-background-color: #000000; /* Light gray background color */
+         }

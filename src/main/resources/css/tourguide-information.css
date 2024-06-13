@@ -1,0 +1,116 @@
+#sidebar {
+    -fx-background-color: #6AD9FD;
+}
+#button1{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+                -fx-font-family: "Popins";
+
+
+}
+#button2{
+ -fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+         -fx-font-family: "Popins";
+
+
+}
+#menu1{
+ -fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+        -fx-alignment: center; /* Center align text */
+            -fx-font-family: "Popins";
+                -fx-text-fill: #000000; /* Specify the text color (black in this case) */
+
+
+
+}
+#menu2{
+-fx-background-color: #ffffff;
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Border radius */
+        -fx-alignment: center; /* Center align text */
+            -fx-font-family: "Popins";
+                -fx-text-fill: #000000; /* Specify the text color (black in this case) */
+
+
+}
+#title{
+            -fx-font-family: "Popins";
+    -fx-font-size: 36px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+
+}
+#text1{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text2{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text3{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#text4{
+            -fx-font-family: "Popins";
+    -fx-font-size: 12px; /* Specify the font size */
+        -fx-font-weight: bold; /* Make the text bold */
+
+}
+#tableview{
+-fx-border-width: 1px;
+    -fx-background-color: #CCCCCC; /* Light gray background color */
+        -fx-border-radius: 30px; /* Rounded corners */
+                    -fx-font-family: "Popins";
+                        -fx-text-fill: black; /* Text color */
+
+    }
+    #textbar{
+                            -fx-text-fill: black; /* Text color */
+                                                -fx-font-family: "Popins";
+        -fx-border-radius: 20; /* Rounded corners */
+                -fx-font-weight: bold; /* Make the text bold */
+
+
+
+    }
+    #add{
+        -fx-background-color: #000000; /* Light gray background color */
+         -fx-font-family: "Popins";
+          -fx-text-fill: #ffffff;
+           -fx-font-weight: bold;
+         -fx-font-size:13px;
+           -fx-background-radius: 10;
+    }
+    #delete{
+      -fx-background-color: #000000; /* Light gray background color */
+             -fx-font-family: "Popins";
+              -fx-text-fill: #ffffff;
+               -fx-font-weight: bold;
+             -fx-font-size:13px;
+               -fx-background-radius: 10;
+    }
+     #update{
+          -fx-background-color: #000000; /* Light gray background color */
+                 -fx-font-family: "Popins";
+                  -fx-text-fill: #ffffff;
+                   -fx-font-weight: bold;
+                 -fx-font-size:13px;
+                   -fx-background-radius: 10;
+        }
+     #search {
+         -fx-background-radius: 20;
+         -fx-background-color: #000000; /* Light gray background color */
+     }

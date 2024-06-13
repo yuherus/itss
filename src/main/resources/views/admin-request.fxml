@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane stylesheets="@../css/admin-tour-list.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admintourlist">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Text fx:id="title" layoutX="470.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REQUEST">
+                <font>
+                    <Font size="28.0" />
+                </font>
+            </Text>
+            <TableView fx:id="tableview" layoutX="180.0" layoutY="159.0" prefHeight="418.0" prefWidth="844.0">
+                <columns>
+                    <TableColumn id="t1" fx:id="t1" prefWidth="211.0" text="REQUEST_ID" />
+                    <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="211.0" text="TOURIST_ID" />
+                    <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="211.0" text="STYLE_ID" />
+                    <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="211.0" text="LOCATION_ID" />
+                </columns>
+            </TableView>
+            <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />
+            <VBox fx:id="sidebar" prefHeight="576.0" prefWidth="165.0">
+                <children>
+                    <ImageView fitHeight="30.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                        <VBox.margin>
+                            <Insets bottom="20.0" left="40.0" right="20.0" top="30.0" />
+                        </VBox.margin>
+                        <image>
+                            <Image url="@../images/top%20Nav%20Bar.png" />
+                        </image>
+                    </ImageView>
+                    <VBox prefHeight="94.0" prefWidth="165.0">
+                        <children>
+                            <Text fx:id="textbar" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME ADMIN!!!">
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin></Text>
+                            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets left="40.0" top="15.0" />
+                                </VBox.margin>
+                                <image>
+                                    <Image url="@../images/👋%20(1).png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                        <padding>
+                            <Insets left="20.0" right="10.0" />
+                        </padding>
+                    </VBox>
+                    <MenuButton fx:id="menu1" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="TOUR">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="SAMPLE TOUR" />
+                            <MenuItem mnemonicParsing="false" text="LOCATION" />
+                            <MenuItem mnemonicParsing="false" text="STYLE TRAVEL" />
+                        </items>
+                        <VBox.margin>
+                            <Insets bottom="20.0" />
+                        </VBox.margin>
+                    </MenuButton>
+                    <MenuButton fx:id="menu2" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="INFORMATION">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="CUSTOMER INFORMATION" />
+                            <MenuItem mnemonicParsing="false" text="TOURGUIDE INFORMATION" />
+                        </items>
+                        <VBox.margin>
+                            <Insets bottom="20.0" />
+                        </VBox.margin>
+                    </MenuButton>
+                    <Button fx:id="button1" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="TRANSACTION">
+                        <padding>
+                            <Insets bottom="10.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets bottom="20.0" />
+                        </VBox.margin>
+                    </Button>
+                    <Button fx:id="button2" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="REQUEST" />
+                </children>
+            </VBox>
+            <AnchorPane fx:id="search" layoutX="624.0" layoutY="102.0" prefHeight="39.0" prefWidth="371.0" style="-fx-background-color: #e0e0e0;">
+                <children>
+                    <TextField layoutX="67.0" layoutY="6.0" prefHeight="30.0" prefWidth="283.0" promptText="Search for sample tour" style="-fx-background-color: transparent;" />
+                    <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
+                    <FontIcon iconLiteral="fas-search" layoutX="22.0" layoutY="25.0" text="" />
+                </children>
+            </AnchorPane>
+        </children>
+    </AnchorPane>
+</AnchorPane>
