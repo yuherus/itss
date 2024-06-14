@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46449162-2c03-4d53-808c-2321fd3c76ae" name="Changes" comment="">
+    <list default="true" id="46449162-2c03-4d53-808c-2321fd3c76ae" name="Changes" comment="Update tourguide">
+      <change afterPath="$PROJECT_DIR$/../hi/hi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Application Support/Code/User/History/-3b22f703/cfGK.iml" afterDir="false" />
+      <change afterPath="$APPLICATION_CONFIG_DIR$/consoles/db/74f1643a-0102-4cbf-b59a-fab21663eefc/console.sql" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/319a1bc3fad8ed76_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/56026556517ca789_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/5ed9d709a525b841_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/9b9d9c2a99d33b55_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/a2626555c68d6fe8_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/b14e83afaf55fe9d_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/b22c4900c1fc5dda_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/b3e2888628be9228_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/b566030f7ca36feb_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/c9bb4924e004ca3d_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/d6b16f7d1dc31bdb_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/db64d8465fb78ee1_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Cache/Cache_Data/fb4c81edc197791a_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Code Cache/js/545b5d7c0d411d94_0" afterDir="false" />
+      <change afterPath="$USER_HOME$/Library/Caches/Google/Chrome/Profile 5/Code Cache/js/ac339a7d1a404b20_0" afterDir="false" />
       <change afterPath="$USER_HOME$/uiux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/tourguide/tourguide.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,26 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;LinhBP&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Workspace/Java/itss/src/main/resources/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Touristech.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "LinhBP",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Workspace/Java/itss/src/main/resources/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="screen" />
@@ -112,7 +135,19 @@
       <updated>1716165051767</updated>
       <workItem from="1718290225466" duration="1754000" />
       <workItem from="1718294482118" duration="310000" />
+      <workItem from="1718295330918" duration="664000" />
+      <workItem from="1718297124562" duration="6449000" />
+      <workItem from="1718330648566" duration="4627000" />
     </task>
+    <task id="LOCAL-00001" summary="Update tourguide">
+      <option name="closed" value="true" />
+      <created>1718378625641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718378625641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +163,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update tour" />
+    <MESSAGE value="Update tourguide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update tourguide" />
   </component>
 </project>
