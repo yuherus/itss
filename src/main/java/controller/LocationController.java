@@ -23,7 +23,7 @@ public class LocationController implements CRUDController<Location>{
                 Location location = new Location();
                 location.setLocationId(rs.getInt("location_id"));
                 location.setName(rs.getString("name"));
-                location.setName(rs.getString("description"));
+                location.setDescription(rs.getString("description"));
                 location.setAddress(rs.getString("address"));
                 StyleController styleController = new StyleController();
                 location.setStyle(styleController.getById(rs.getInt("style_id")));
@@ -47,7 +47,7 @@ public class LocationController implements CRUDController<Location>{
                     if (rs.next()) {
                         location.setLocationId(rs.getInt("location_id"));
                         location.setName(rs.getString("name"));
-                        location.setName(rs.getString("description"));
+                        location.setDescription(rs.getString("description"));
                         location.setAddress(rs.getString("address"));
                         StyleController styleController = new StyleController();
                         location.setStyle(styleController.getById(rs.getInt("style_id")));

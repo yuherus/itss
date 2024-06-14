@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="265.0" layoutY="31.0" text="Admin" />
-   </children>
-</AnchorPane>
+<BorderPane fx:id="adminView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminScreen">
+   <left>
+       <VBox alignment="TOP_CENTER" prefWidth="183.0" style="-fx-background-color: #6ad9fd;">
+           <children>
+               <ImageView fitHeight="38.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                   <VBox.margin>
+                       <Insets top="40.0" />
+                   </VBox.margin>
+                   <image>
+                       <Image url="@../../images/logo.png" />
+                   </image>
+               </ImageView>
+               <VBox alignment="TOP_CENTER" prefHeight="85.0" prefWidth="183.0">
+                   <children>
+                       <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME ADMIN!!!">
+                           <VBox.margin>
+                               <Insets top="20.0" />
+                           </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Text>
+                       <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                               <Insets top="15.0" />
+                           </VBox.margin>
+                           <image>
+                               <Image url="@../../images/welcomeicon.png" />
+                           </image>
+                       </ImageView>
+                   </children>
+                   <padding>
+                       <Insets left="20.0" right="10.0" />
+                   </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               </VBox>
+               <MenuButton fx:id="tourmenu" alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="TOUR">
+                   <items>
+                  <MenuItem fx:id="tour" mnemonicParsing="false" text="TOUR LIST" />
+                       <MenuItem fx:id="sampletour" mnemonicParsing="false" text="SAMPLE TOUR" />
+                       <MenuItem fx:id="place" mnemonicParsing="false" text="LOCATION" />
+                       <MenuItem fx:id="style" mnemonicParsing="false" text="STYLE TRAVEL" />
+                   </items>
+                   <VBox.margin>
+                       <Insets bottom="20.0" />
+                   </VBox.margin>
+               </MenuButton>
+               <MenuButton fx:id="infomenu" alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="INFORMATION">
+                   <items>
+                       <MenuItem fx:id="customer" mnemonicParsing="false" text="CUSTOMER INFORMATION" />
+                       <MenuItem fx:id="tourguide" mnemonicParsing="false" text="TOURGUIDE INFORMATION" />
+                   </items>
+                   <VBox.margin>
+                       <Insets bottom="20.0" />
+                   </VBox.margin>
+               </MenuButton>
+               <Button fx:id="transaction" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="TRANSACTION">
+                   <VBox.margin>
+                       <Insets bottom="20.0" />
+                   </VBox.margin>
+               </Button>
+               <Button fx:id="request" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="REQUEST">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button fx:id="logout" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="LOG OUT">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+           </children>
+       </VBox>
+   </left>
+</BorderPane>
