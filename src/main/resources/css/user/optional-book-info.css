@@ -1,0 +1,61 @@
+
+.plan-trip-wrap,.info-wrap{
+    -fx-background-color: #ededed;
+}
+.planTripTitle, .info-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+}
+.plan-subTitle{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+
+}
+.time-label,.price-note, .input-info {
+    -fx-font-size: 10px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #7d7d7d;
+}
+.departure-label{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill:#DF6951;
+}
+.filter-by-price{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+    -fx-fill:#DF6951;
+}
+.slider-price .thumb {
+    -fx-background-color: #FF5722; /* Màu của nút trượt */
+}
+.button-request{
+    -fx-background-color: #DF6951; /* Màu nền của Button */
+    -fx-text-fill: #ffffff;        /* Màu chữ của Button */
+    -fx-font-size: 14px;           /* Cỡ chữ */
+    -fx-font-weight: bold;         /* Kiểu chữ đậm */
+     -fx-font-family: 'Poppins';      /* Font chữ */
+            /* Padding bên trong Button */
+}
+.button-request:hover {
+    -fx-background-color: #B5422B;
+}
+.note-for-design{
+    -fx-font-size: 12px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #7d7d7d;
+}
+
+.button-quickbook{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #000000;
+}
+
+
