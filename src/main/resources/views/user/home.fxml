@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
-<?import org.kordamp.ikonli.javafx.FontIcon?>
+<!--<?import org.kordamp.ikonli.javafx.FontIcon?>-->
 <?import javafx.geometry.Insets?>
 
 <ScrollPane BorderPane.alignment="CENTER">
@@ -182,7 +182,7 @@
                                         </Label>
                                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                             <children>
-                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+<!--                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />-->
                                                 <Label text="Đà Lạt">
                                                     <font>
                                                         <Font name="System Bold" size="16.0" />
@@ -194,7 +194,7 @@
                                             <children>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-user" />
+<!--                                                        <FontIcon iconLiteral="far-user" />-->
                                                         <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -204,7 +204,7 @@
                                                 </HBox>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-calendar-alt" />
+<!--                                                        <FontIcon iconLiteral="far-calendar-alt" />-->
                                                         <Label text="8 Days" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -244,7 +244,7 @@
                                         </Label>
                                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                             <children>
-                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+<!--                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />-->
                                                 <Label text="Đà Lạt">
                                                     <font>
                                                         <Font name="System Bold" size="16.0" />
@@ -256,7 +256,7 @@
                                             <children>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-user" />
+<!--                                                        <FontIcon iconLiteral="far-user" />-->
                                                         <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -266,7 +266,7 @@
                                                 </HBox>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-calendar-alt" />
+<!--                                                        <FontIcon iconLiteral="far-calendar-alt" />-->
                                                         <Label text="8 Days" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -306,7 +306,7 @@
                                         </Label>
                                         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                             <children>
-                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />
+<!--                                                <FontIcon iconLiteral="fas-map-marker-alt" iconSize="16" text="" />-->
                                                 <Label text="Đà Lạt">
                                                     <font>
                                                         <Font name="System Bold" size="16.0" />
@@ -318,7 +318,7 @@
                                             <children>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="115.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-user" />
+<!--                                                        <FontIcon iconLiteral="far-user" />-->
                                                         <Label prefHeight="17.0" prefWidth="103.0" text="20 People Going" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -328,7 +328,7 @@
                                                 </HBox>
                                                 <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="65.0" spacing="10.0">
                                                     <children>
-                                                        <FontIcon iconLiteral="far-calendar-alt" />
+<!--                                                        <FontIcon iconLiteral="far-calendar-alt" />-->
                                                         <Label text="8 Days" textFill="#6e6e6e">
                                                             <font>
                                                                 <Font name="System Bold Italic" size="12.0" />
@@ -376,11 +376,11 @@
                                     </font>
                                 </Text>
                                 <HBox prefHeight="34.0" prefWidth="155.0" spacing="12.0">
-                                    <children>
-                                        <FontIcon fill="#df6951" iconLiteral="fab-facebook" iconSize="20" text="" />
-                                        <FontIcon fill="#df6951" iconLiteral="fab-instagram-square" iconSize="20" />
-                                        <FontIcon fill="#df6951" iconLiteral="fab-tiktok" iconSize="20" />
-                                    </children>
+<!--                                    <children>-->
+<!--                                        <FontIcon fill="#df6951" iconLiteral="fab-facebook" iconSize="20" text="" />-->
+<!--                                        <FontIcon fill="#df6951" iconLiteral="fab-instagram-square" iconSize="20" />-->
+<!--                                        <FontIcon fill="#df6951" iconLiteral="fab-tiktok" iconSize="20" />-->
+<!--                                    </children>-->
                                 </HBox>
                             </children>
                             <padding>

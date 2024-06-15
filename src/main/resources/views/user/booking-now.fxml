@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.user.BookingNow">
+   <children>
+      <Pane layoutX="13.0" layoutY="192.0" prefHeight="575.0" prefWidth="674.0" styleClass="info-wrap">
+         <children>
+            <Text layoutX="264.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info-title" text="Information" wrappingWidth="169.33670043945312" />
+            <Pane layoutX="36.0" layoutY="59.0" prefHeight="326.0" prefWidth="597.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="First name" />
+                  <Text layoutX="307.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Last name" />
+                  <Text layoutX="32.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Email Address" />
+                  <Text layoutX="32.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Phone Number" />
+                  <Text layoutX="32.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Passport Number (Optional)" />
+                  <Text layoutX="32.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Address" />
+                  <TextField layoutX="32.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your First Name in Here" />
+                  <TextField layoutX="310.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your Last Name in Here" />
+                  <TextField layoutX="32.0" layoutY="104.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Email Address in Here" />
+                  <ComboBox layoutX="33.0" layoutY="162.0" prefHeight="25.0" prefWidth="45.0" />
+                  <TextField layoutX="82.0" layoutY="162.0" prefHeight="25.0" prefWidth="485.0" styleClass="input-info" text="Input your Phone Number in Here" />
+                  <TextField layoutX="31.0" layoutY="218.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Passport Number in Here" />
+                  <TextField layoutX="31.0" layoutY="273.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Address in Here" />
+               </children>
+            </Pane>
+            <Pane layoutX="36.0" layoutY="400.0" prefHeight="117.0" prefWidth="597.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Text layoutX="34.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="note-for-design" text="Additional notes on itinerary design requirements" />
+               </children>
+            </Pane>
+            <Button layoutX="264.0" layoutY="530.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-next" text="Request Itinerary Design" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
