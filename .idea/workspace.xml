@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46449162-2c03-4d53-808c-2321fd3c76ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/OptionalBookInfoScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/OptionalBookScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user/booked-tour-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/user/optional-book-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/booked-tour-detail.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/booking-now.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/optional-book-info.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/touristech/TouristechApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/touristech/TouristechApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/user/optional-book.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/user/optional-book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/optional-book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/optional-book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
