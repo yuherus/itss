@@ -22,7 +22,7 @@
          <children>
             <ImageView fitHeight="520.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/slider.png" />
+                  <Image url="@../../images/Home1.png" />
                </image>
             </ImageView>
             <HBox alignment="BOTTOM_LEFT">
@@ -31,14 +31,14 @@
                      <children>
                         <HBox spacing="40.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
+                              <Text fx:id="titleTxtDetail" strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
                                  </font>
                               </Text>
                               <HBox alignment="CENTER" spacing="2.0">
                                  <children>
-                                    <Text fill="#df6951" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000 $">
+                                    <Text fx:id="priceTxtDetail" fill="#df6951" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000 $">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
