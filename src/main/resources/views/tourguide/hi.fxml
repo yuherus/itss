@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="4724.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <StackPane layoutX="106.0" layoutY="1069.0" prefHeight="1262.0" prefWidth="1420.0" style="-fx-background-color: white;">
+            <children>
+                <AnchorPane layoutX="106.0" layoutY="1069.0" prefHeight="1262.0" prefWidth="1420.0">
+                    <children>
+                        <StackPane layoutX="106.0" layoutY="1069.0" prefHeight="1262.0" prefWidth="1420.0">
+                            <children>
+                                <AnchorPane layoutX="106.0" layoutY="1069.0" prefHeight="1262.0" prefWidth="1420.0">
+                                    <children>
+                                        <ImageView fitHeight="267.92" fitWidth="458.86" layoutX="2.07" layoutY="195.37" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="https://via.placeholder.com/459x268" />
+                                            </image>
+                                        </ImageView>
+                                        <AnchorPane layoutX="221.09" layoutY="446.81" prefHeight="50.39" prefWidth="205.45" style="-fx-background-color: black; -fx-border-radius: 30;">
+                                            <children>
+                                                <StackPane prefHeight="50.0" prefWidth="205.0">
+                                                    <children>
+                                                        <Label layoutX="28.16" layoutY="11.76" prefHeight="27.72" prefWidth="150.17" text="View detail" textAlignment="CENTER" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Poppins" size="22.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </StackPane>
+                                            </children>
+                                        </AnchorPane>
+                                        <Label layoutX="23.93" layoutY="300.63" text="Paris">
+                                            <font>
+                                                <Font name="Poppins" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="219.1" layoutY="300.63" text="Optional Book">
+                                            <font>
+                                                <Font name="Poppins" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="0.0" layoutY="330.0" prefHeight="68.03" prefWidth="400.99" text="Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore incididunt ut labore et dolore" wrapText="true">
+                                            <font>
+                                                <Font name="Poppins" size="14.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>
