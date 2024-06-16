@@ -39,6 +39,8 @@ public class TourController implements CRUDController<Tour> {
                         break;
                     case "cancelled":
                         tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
                         break;
                 }
                 tour.setStartDate(rs.getDate("start_date"));
@@ -88,6 +90,8 @@ public class TourController implements CRUDController<Tour> {
                         break;
                     case "cancelled":
                         tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
                         break;
                 }
                 tour.setStartDate(rs.getDate("start_date"));
@@ -185,5 +189,55 @@ public class TourController implements CRUDController<Tour> {
             pstmt.setInt(1, id);
             pstmt.executeUpdate();
         }
+    }
+
+    public List<Tour> getByUserId() throws SQLException{
+        List<Tour> tours = new ArrayList<>();
+        String query = "SELECT * FROM Tours INNER JOIN Users ON Tours.tourist_id = Users.user_id WHERE Users.user_id = ?";
+
+        try (Connection conn = JDBCUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(query)) {
+            pstmt.setInt(1, Integer.parseInt(System.getProperty("userId")));
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                Tour tour = new Tour();
+                tour.setTourId(rs.getInt("tour_id"));
+                tour.setTouristId(rs.getInt("tourist_id"));
+                tour.setTourGuideId(rs.getInt("tour_guide_id"));
+                tour.setTourName(rs.getString("tour_name"));
+                switch (rs.getString("status")) {
+                    case "pending":
+                        tour.setStatus(Tour.Status.PENDING);
+                        break;
+                    case "confirmed":
+                        tour.setStatus(Tour.Status.CONFIRMED);
+                        break;
+                    case "completed":
+                        tour.setStatus(Tour.Status.COMPLETED);
+                        break;
+                    case "cancelled":
+                        tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
+                        break;
+                }
+                tour.setStartDate(rs.getDate("start_date"));
+                tour.setEndDate(rs.getDate("end_date"));
+                tour.setTotalCost(rs.getDouble("total_cost"));
+                String getLocationsQuery = "SELECT * FROM Tour_Points WHERE tour_id = " + rs.getInt("tour_id");
+                try (Statement stmt2 = conn.createStatement();
+                     ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
+                    List<Pair<Location, Timestamp>> locations = new ArrayList<>();
+                    while (rs2.next()) {
+                        LocationController locationController = new LocationController();
+                        Location location = locationController.getById(rs2.getInt("location_id"));
+                        locations.add(new Pair<>(location, rs2.getTimestamp("visit_time")));
+                    }
+                    tour.setLocations(locations);
+                }
+                tours.add(tour);
+            }
+        }
+        return tours;
     }
 }

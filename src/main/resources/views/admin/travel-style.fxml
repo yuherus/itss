@@ -23,7 +23,6 @@
                     <TableColumn id="t1" fx:id="t1" prefWidth="127.33333778381348" text="STYLE_ID" />
                     <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="220.00003051757812" text="NAME" />
                     <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="464.0" text="DESCRIPTION" />
-               <TableColumn fx:id="t31" minWidth="2.666656494140625" prefWidth="464.0" text="DESCRIPTION" />
                 </columns>
             </TableView>
             <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />

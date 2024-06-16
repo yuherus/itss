@@ -4,96 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="" />
+    <list default="true" id="55b3242a-ab56-4f2d-88c9-3e9515fd6866" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/OptionalBookInfoScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/OptionalBookScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/SampleTourDetailScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TourDetailScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screen/TrackingScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/booked-tour-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/booking-now.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/optional-book-info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/optional-book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/booked-tour-detail.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/booking-now.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/optional-book-info.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/optional-book.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/user/tourdetail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HistoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Style.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminTransactionScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminTransactionScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/HistoryScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/HistoryScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/TourScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/TourguideDesignScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/TourguideDesignScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screen/TourguideHomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/TourguideHomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/touristech/TouristechApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/touristech/TouristechApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/sampletourdetail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/sampletourdetail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tour.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/user/tracking.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Interface" />
-        <option value="Interface" />
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2hsEGvHUBYvM2obb0bPqbmFq2QW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Date.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/itss2/itss",
-    "settings.editor.selected.configurable": "preferences.customizations"
-  },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "CSS"
-    ]
+    "Application.TouristechApplication.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging master"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\Java\itss\src\main\java" />
-      <recent name="E:\Workspace\Java\itss\src\main\resources\views\admin" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="screen" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Date" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Date" />
-      <module name="itss" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="touristech.TouristechApplication" />
-      <module name="itss" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Date" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="" />
-      <created>1718374293453</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1718374293453</updated>
-    </task>
     <servers />
   </component>
 </project>

@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -13,6 +14,10 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import model.SampleTour;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.*;
@@ -31,6 +36,8 @@ public class TourScreen implements Initializable {
     @FXML
     private HBox sale2;
 
+    @FXML
+    private Button customBook;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -65,18 +72,33 @@ public class TourScreen implements Initializable {
                 sale2.getChildren().add(createDestinationBox(cheapestTour.get(i)));
             }
 
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+
+        customBook.setOnAction(event -> {
+            BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/optional-book.fxml"));
+                view = loader.load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            userView.setCenter(view);
+        });
     }
 
-    private VBox createDestinationBox(SampleTour tour) {
+    private VBox createDestinationBox(SampleTour tour) throws FileNotFoundException {
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(10);
         vBox.getStyleClass().add("destination-box");
 
-        ImageView imageView = new ImageView(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
+//        kiểm tra có là đường dẫn file
+        InputStream inputStream = new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl());
+        Image image = new Image(inputStream);
+        ImageView imageView = new ImageView(image);
         imageView.setFitHeight(150);
         imageView.setFitWidth(200);
         imageView.setPreserveRatio(false);
@@ -103,6 +125,8 @@ public class TourScreen implements Initializable {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
                 view = loader.load();
+                SampleTourDetailScreen sampleTourDetaiScreen = loader.getController();
+                sampleTourDetaiScreen.setTour(tour);
             } catch (Exception e) {
                 e.printStackTrace();
             }

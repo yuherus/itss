@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -14,7 +13,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.SampleTourDetailScreen">
+<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.TourDetailScreen">
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
@@ -23,15 +22,20 @@
                   <Image url="@../../images/Home1.png" />
                </image>
             </ImageView>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox fx:id="titleHbox" alignment="BOTTOM_LEFT">
                <children>
                   <VBox>
                      <children>
-                        <HBox spacing="40.0">
+                        <HBox alignment="CENTER_LEFT" spacing="40.0">
                            <children>
                               <Text fx:id="titleTxtDetail" strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
                                  <font>
                                     <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="statusTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="confirmed">
+                                 <font>
+                                    <Font size="18.0" />
                                  </font>
                               </Text>
                               <HBox alignment="CENTER" spacing="2.0">
@@ -80,13 +84,10 @@
                         <Insets left="20.0" top="40.0" />
                      </padding>
                   </VBox>
-                  <Pane minHeight="120.0" minWidth="382.0" />
-                  <Button fx:id="btnBook" lineSpacing="10.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="146.0" style="-fx-background-color: black; -fx-font-weight: bold; -fx-background-radius: 15px; -fx-font-size: 24px;" text="Book now" textFill="WHITE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
                </children>
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
             </HBox>
             <VBox spacing="10.0">
                <children>
@@ -127,14 +128,6 @@
                   <Insets left="30.0" right="50.0" top="30.0" />
                </padding>
             </VBox>
-            <HBox spacing="300.0">
-               <children>
-                  <VBox spacing="20.0" />
-               </children>
-               <padding>
-                  <Insets left="30.0" right="30.0" top="30.0" />
-               </padding>
-            </HBox>
             <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
                <children>
                   <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">

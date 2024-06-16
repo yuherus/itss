@@ -16,7 +16,6 @@ public class User {
     private String email;
     private UserType userType;
     private Timestamp createdAt;
-
     // Getters and setters
 
     public User(String username, String password, String name, String email, UserType userType) {

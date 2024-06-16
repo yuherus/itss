@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TouristechApplication extends Application {
+public class  TouristechApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(TouristechApplication.class.getResource("/views/hello-view.fxml"));

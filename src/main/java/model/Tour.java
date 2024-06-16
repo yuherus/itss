@@ -12,6 +12,7 @@ public class Tour {
         CONFIRMED,
         COMPLETED,
         CANCELLED,
+        CREATED,
     };
 
     private int tourId;

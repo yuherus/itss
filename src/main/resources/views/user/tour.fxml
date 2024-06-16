@@ -90,7 +90,7 @@
                </VBox.margin>
             </HBox>
       </VBox>
-         <Button alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: #fd6951; -fx-background-radius: 16;" text="Book a Custom Tour" textFill="WHITE">
+         <Button fx:id="customBook"  alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: #fd6951; -fx-background-radius: 16;" text="Book a Custom Tour" textFill="WHITE">
             <font>
                <Font name="System Bold" size="18.0" />
             </font>

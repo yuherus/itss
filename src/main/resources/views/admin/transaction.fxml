@@ -25,13 +25,13 @@
                     <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="120.57" text="USER_ID" />
                     <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="120.57" text="AMOUNT" />
                     <TableColumn fx:id="t5" minWidth="2.666656494140625" prefWidth="204.0" text="PAYMENT_DATE" />
-               <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="124.0" text="MENTHOD" />
+               <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="124.0" text="METHOD" />
                 </columns>
             </TableView>
             <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />
-         <AnchorPane fx:id="search" layoutX="471.0" layoutY="91.0" prefWidth="341.0" style="-fx-background-color: #e0e0e0;">
+         <AnchorPane fx:id="search" layoutX="15.0" layoutY="88.0" prefWidth="341.0" style="-fx-background-color: #e0e0e0;">
             <children>
-               <TextField layoutX="67.0" layoutY="6.0" prefHeight="25.0" prefWidth="255.0" promptText="Search for transaction" style="-fx-background-color: transparent;" />
+               <TextField fx:id="tfSearch" layoutX="67.0" layoutY="6.0" onAction="#handleSearchBtnPressed" onKeyPressed="#handleKeyPressed" prefHeight="25.0" prefWidth="255.0" promptText="Search for transaction" style="-fx-background-color: transparent;" />
                <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;" />
                <FontIcon iconLiteral="fas-search" layoutX="22.0" layoutY="25.0" text="" />
             </children>

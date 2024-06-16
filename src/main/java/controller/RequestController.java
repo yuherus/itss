@@ -75,11 +75,29 @@ public class RequestController implements CRUDController<Request>{
         String query = "INSERT INTO Requests (tourist_id, style_id) VALUES (?, ?)";
 
         try (Connection conn = JDBCUtil.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement(query)) {
+             PreparedStatement pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             pstmt.setInt(1, request.getTouristId());
             pstmt.setInt(2, request.getStyleId());
             pstmt.executeUpdate();
+
+            try (ResultSet rs = pstmt.getGeneratedKeys()) {
+                if (rs.next()) {
+                    request.setRequestId(rs.getInt(1));
+                }
+            }
+
+            for (Location location : request.getLocations()) {
+                String addLocationQuery = "INSERT INTO Request_Locations (request_id, location_id) VALUES (?, ?)";
+                try (PreparedStatement pstmt2 = conn.prepareStatement(addLocationQuery)) {
+                    pstmt2.setInt(1, request.getRequestId());
+                    pstmt2.setInt(2, location.getLocationId());
+                    pstmt2.executeUpdate();
+                }
+            }
+
         }
+
+
     }
 
     @Override
@@ -91,6 +109,21 @@ public class RequestController implements CRUDController<Request>{
             pstmt.setInt(2, request.getStyleId());
             pstmt.setInt(3, request.getRequestId());
             pstmt.executeUpdate();
+
+            String deleteLocationsQuery = "DELETE FROM Request_Locations WHERE request_id = ?";
+            try (PreparedStatement pstmt2 = conn.prepareStatement(deleteLocationsQuery)) {
+                pstmt2.setInt(1, request.getRequestId());
+                pstmt2.executeUpdate();
+            }
+
+            for (Location location : request.getLocations()) {
+                String addLocationQuery = "INSERT INTO Request_Locations (request_id, location_id) VALUES (?, ?)";
+                try (PreparedStatement pstmt3 = conn.prepareStatement(addLocationQuery)) {
+                    pstmt3.setInt(1, request.getRequestId());
+                    pstmt3.setInt(2, location.getLocationId());
+                    pstmt3.executeUpdate();
+                }
+            }
         }
     }
 
