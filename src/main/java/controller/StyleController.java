@@ -49,7 +49,6 @@ public class StyleController implements CRUDController<Style>{
                 throw new RuntimeException(e);
             }
         }
-
         return style;
     }
 

@@ -30,11 +30,11 @@ public class SampleTourController implements CRUDController<SampleTour>{
                 String getLocationsQuery = "SELECT * FROM Sample_Tour_Points WHERE sampletour_id = " + rs.getInt("sampletour_id");
                 try (Statement stmt2 = conn.createStatement();
                      ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                    List<Pair<Location, Integer>> locations = new ArrayList<>();
+                    List<Pair<Location, Timestamp>> locations = new ArrayList<>();
                     while (rs2.next()) {
                         LocationController locationController = new LocationController();
                         Location location = locationController.getById(rs2.getInt("location_id"));
-                        locations.add(new Pair<>(location, rs2.getInt("visit_order")));
+                        locations.add(new Pair<>(location, rs2.getTimestamp("visit_time")));
                     }
                     sampleTour.setLocations(locations);
                 }
@@ -61,12 +61,13 @@ public class SampleTourController implements CRUDController<SampleTour>{
                 String getLocationsQuery = "SELECT * FROM Sample_Tour_Points WHERE sampletour_id = " + rs.getInt("sampletour_id");
                 try (Statement stmt2 = conn.createStatement();
                      ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                    List<Pair<Location, Integer>> locations = new ArrayList<>();
+                    List<Pair<Location, Timestamp>> locations = new ArrayList<>();
                     while (rs2.next()) {
                         LocationController locationController = new LocationController();
                         Location location = locationController.getById(rs2.getInt("location_id"));
-                        locations.add(new Pair<>(location, rs2.getInt("visit_order")));
+                        locations.add(new Pair<>(location, rs2.getTimestamp("visit_time")));
                     }
+                    sampleTour.setLocations(locations);
                 }
             }
         }
