@@ -67,4 +67,9 @@ public class Location {
     public void setStyle(Style style) {
         this.style = style;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

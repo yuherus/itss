@@ -109,17 +109,18 @@ public class TourController implements CRUDController<Tour> {
 
     @Override
     public void add(Tour tour) throws SQLException {
-        String query = "INSERT INTO Tours (tourist_id, tour_guide_id, tour_name, status, start_date, end_date, total_cost) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String query = "INSERT INTO Tours (tourist_id, tour_guide_id, tour_name, description, status, start_date, end_date, total_cost) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             pstmt.setInt(1, tour.getTouristId());
             pstmt.setInt(2, tour.getTourGuideId());
             pstmt.setString(3, tour.getTourName());
-            pstmt.setString(4, tour.getStatus().toString().toLowerCase());
-            pstmt.setDate(5, tour.getStartDate());
-            pstmt.setDate(6, tour.getEndDate());
-            pstmt.setDouble(7, tour.getTotalCost());
+            pstmt.setString(4, tour.getDescription());
+            pstmt.setString(5, tour.getStatus().toString().toLowerCase());
+            pstmt.setDate(6, tour.getStartDate());
+            pstmt.setDate(7, tour.getEndDate());
+            pstmt.setDouble(8, tour.getTotalCost());
             pstmt.executeUpdate();
 
             try (ResultSet rs = pstmt.getGeneratedKeys()) {
