@@ -22,8 +22,7 @@ public class AdminScreen implements Initializable {
     @FXML
     private BorderPane adminView;
 
-    @FXML
-    private MenuButton infomenu;
+
 
     @FXML
     private MenuItem place;
@@ -50,22 +49,21 @@ public class AdminScreen implements Initializable {
     private Button transaction;
 
     @FXML
-    private MenuItem customer;
+    private Button customer;
 
     @FXML
     private MenuItem tourguide;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        changeScene("/views/admin/sampletour.fxml");
+        changeScene("/views/admin/tourlist.fxml"); // Trang đầu tiên của admin mở lên
         tour.setOnAction(event -> changeScene("/views/admin/tourlist.fxml"));
         sampletour.setOnAction(event -> changeScene("/views/admin/sampletour.fxml"));
         style.setOnAction(event -> changeScene("/views/admin/travel-style.fxml"));
         transaction.setOnAction(event -> changeScene("/views/admin/transaction.fxml"));
 //        request.setOnAction(event -> changeScene("/views/admin/request.fxml"));
         place.setOnAction(event -> changeScene("/views/admin/location.fxml"));
-        customer.setOnAction(event -> changeScene("/views/admin/customer-information.fxml"));
-        tourguide.setOnAction(event -> changeScene("/views/admin/tourguide-information.fxml"));
+        customer.setOnAction(event -> changeScene("/views/admin/information.fxml"));
         logout.setOnAction(event -> {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/views/login.fxml"));

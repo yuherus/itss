@@ -10,13 +10,13 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.Location;
 import model.Style;
-import views.admin.LocationCreatedListener;
+import screen.LocationCreatedListenerJava;
 
 import java.sql.SQLException;
 
 public class AdminNewLocation{
-    private LocationCreatedListener listener;
-    public void setLocationCreatedListener(LocationCreatedListener  listener) {
+    private LocationCreatedListenerJava listener;
+    public void setLocationCreatedListener(LocationCreatedListenerJava listener) {
         this.listener = listener;
     }
     @FXML

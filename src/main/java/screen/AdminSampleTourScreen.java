@@ -39,6 +39,12 @@ public class AdminSampleTourScreen {
     @FXML
     private TableColumn<SampleTour, String> t3;
     @FXML
+    private TableColumn<SampleTour, String> t4;
+    @FXML
+    private TableColumn<SampleTour, String> t5;
+
+
+    @FXML
     private Button btnSearch;
     @FXML
     private Button delete;
@@ -55,6 +61,8 @@ public class AdminSampleTourScreen {
         t11.setCellValueFactory(new PropertyValueFactory<>("totalCost"));
         t2.setCellValueFactory(new PropertyValueFactory<>("tourName"));
         t3.setCellValueFactory(new PropertyValueFactory<>("description"));
+        t4.setCellValueFactory(new PropertyValueFactory<>("startDate"));
+        t5.setCellValueFactory(new PropertyValueFactory<>("endDate"));
         tableview.setItems(FXCollections.observableArrayList(sampleTourObservableList));
     }
 
@@ -136,7 +144,7 @@ public class AdminSampleTourScreen {
                 tableview.getItems().add(newSampleTour);
             });
 
-            Scene popupScene = new Scene(root, 400, 400);
+            Scene popupScene = new Scene(root, 420, 470);
             popupStage.setScene(popupScene);
 
             // Assign an ID to the popup stage for CSS styling
@@ -173,7 +181,7 @@ public class AdminSampleTourScreen {
             AdminUpdateSampleTour controller = loader.getController();
             controller.setSampleTour(sampleTour, tableview);
 
-            Scene popupScene = new Scene(root, 400, 400);
+            Scene popupScene = new Scene(root, 420, 450);
             popupStage.setScene(popupScene);
 
             popupStage.showAndWait();

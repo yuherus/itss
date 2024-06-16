@@ -14,25 +14,28 @@
 <AnchorPane prefHeight="576.0" prefWidth="841.0" stylesheets="@../../css/admin-tour-list.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminTourListScreen">
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="title" layoutX="388.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOUR LIST">
+      <Text fx:id="title" layoutX="330.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOUR LIST">
          <font>
             <Font size="28.0" />
          </font>
       </Text>
-      <TableView fx:id="tableview" layoutX="14.0" layoutY="141.0" prefHeight="418.0" prefWidth="800.0">
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="141.0" prefHeight="418.0" prefWidth="810.0">
         <columns>
-          <TableColumn id="t1" fx:id="t1" prefWidth="63.33331298828125" text="TOUR_ID" />
-          <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="259.3333511352539" text="TOUR_NAME" />
-            <TableColumn fx:id="t3" minWidth="0.0" prefWidth="108.0" text="TOUR_GUIDE_ID" />
-            <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="108.66665649414062" text="STATUS" />
-            <TableColumn fx:id="t5" minWidth="0.0" prefWidth="127.33331298828125" text="START DATE" />
-            <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="133.33331298828125" text="END DATE" />
+          <TableColumn id="t1" fx:id="t1" prefWidth="60.00000286102295" text="TOUR_ID" />
+          <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="71.33333587646484" text="TOURIST_ID" />
+            <TableColumn fx:id="t3" minWidth="0.0" prefWidth="99.33334350585938" text="TOUR_GUIDE_ID" />
+            <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="115.33332824707031" text="TOUR_NAME" />
+            <TableColumn fx:id="t5" minWidth="0.0" prefWidth="155.33328247070312" text="DESCRIPTION" />
+            <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="75.99993896484375" text="STATUS" />
+               <TableColumn fx:id="t7" minWidth="2.666656494140625" prefWidth="79.33331298828125" text="START_DATE" />
+               <TableColumn fx:id="t8" minWidth="2.666656494140625" prefWidth="70.0" text="END_DATE" />
+               <TableColumn fx:id="t9" minWidth="2.666656494140625" prefWidth="78.0" text="TOTAL_COST" />
         </columns>
       </TableView>
       <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />
          <AnchorPane fx:id="search" layoutX="27.0" layoutY="84.0" prefHeight="39.0" prefWidth="371.0" style="-fx-background-color: #e0e0e0;">
             <children>
-               <TextField layoutX="66.0" layoutY="5.0" prefHeight="30.0" prefWidth="283.0" promptText="Search for sample tour" style="-fx-background-color: transparent;" />
+               <TextField fx:id="tfSearch" layoutX="66.0" layoutY="5.0" onAction="#handleSearchBtnPressed" onKeyPressed="#handleKeyPressed" prefHeight="30.0" prefWidth="283.0" promptText="Search for sample tour" style="-fx-background-color: transparent;" />
                <Button layoutX="7.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0" style="-fx-background-color: transparent;">
                   <padding>
                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

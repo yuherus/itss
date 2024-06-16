@@ -78,6 +78,15 @@ public class User {
         this.userType = userType;
     }
 
+    public void setUserType(String userType) {
+        userType = userType.toUpperCase();
+        switch (userType) {
+            case "ADMIN" -> this.userType = UserType.ADMIN;
+            case "TOUR GUIDE" -> this.userType = UserType.TOUR_GUIDE;
+            case "TOURIST" -> this.userType = UserType.TOURIST;
+        }
+    }
+
     public Timestamp getCreatedAt() {
         return createdAt;
     }

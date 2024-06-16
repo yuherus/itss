@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminNewLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminNewSampleTourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminNewStyleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminUpdateLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminUpdateSampleTour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/AdminUpdateStyle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/LocationCreatedListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/SampleTourCreatedListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screen/StyleCreatedListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/AdminNewSampleTour.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/UpdateSampleTour.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/NewLocation.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/NewSampleTour.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/NewTravelStyle.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/UpdateLocation.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/UpdateSampleTour.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/admin/UpdateTravelStyle.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SampleTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminLocationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminLocationScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminRequestScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminSampleTourScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminSampleTourScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screen/AdminStyleTravelScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screen/AdminStyleTravelScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/JDBCUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/location.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/location.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/customer-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/customer-information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/location.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/location.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/request.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/sampletour.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/sampletour.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/tourguide-information.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/tourguide-information.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/transaction.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/admin/travel-style.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/admin/travel-style.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="493d4ec2-698f-43d3-ba93-5c7c8f5e0ea1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -68,22 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/itss2/itss&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Date.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/itss2/itss",
+    "settings.editor.selected.configurable": "preferences.customizations"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;CSS&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\Java\itss\src\main\java" />
@@ -93,7 +58,20 @@
       <recent name="screen" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Date" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Date" />
+      <module name="itss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="touristech.TouristechApplication" />
       <module name="itss" />
@@ -101,6 +79,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Date" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

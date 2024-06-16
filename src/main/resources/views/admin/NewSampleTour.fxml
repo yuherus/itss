@@ -5,16 +5,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="415.0" stylesheets="@../../css/AdminNewSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminNewSampleTourController">
+<AnchorPane prefHeight="468.0" prefWidth="415.0" stylesheets="@../../css/AdminNewSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminNewSampleTourController">
    <children>
       <Text fx:id="crSample" layoutX="109.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW SAMPLE TOUR" wrappingWidth="268.1021728515625" />
       <Text layoutX="34.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour Name *" wrappingWidth="77.74285888671875" />
       <TextField fx:id="textTourName" layoutX="34.0" layoutY="92.0" prefHeight="27.0" prefWidth="336.0" />
-      <Text layoutX="32.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description *" />
-      <TextField fx:id="textDescription" layoutX="34.0" layoutY="180.0" prefHeight="27.0" prefWidth="336.0" />
-      <Text layoutX="35.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost *" />
-      <TextField fx:id="textTotalCost" layoutX="34.0" layoutY="263.0" prefHeight="27.0" prefWidth="336.0" />
-      <Button fx:id="createBtn" layoutX="212.0" layoutY="319.0" mnemonicParsing="false" onAction="#createBtn" prefHeight="27.0" prefWidth="62.0" text="Create" />
-      <Button fx:id="backBtn" layoutX="129.0" layoutY="319.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="27.0" prefWidth="62.0" text="Back" />
+      <Text layoutX="31.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description *" />
+      <TextField fx:id="textDescription" layoutX="34.0" layoutY="163.0" prefHeight="45.0" prefWidth="336.0" />
+      <Text layoutX="34.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost *" />
+      <TextField fx:id="textTotalCost" layoutX="34.0" layoutY="236.0" prefHeight="27.0" prefWidth="336.0" />
+      <Button fx:id="createBtn" layoutX="202.0" layoutY="410.0" mnemonicParsing="false" onAction="#createBtn" prefHeight="27.0" prefWidth="62.0" text="Create" />
+      <Button fx:id="backBtn" layoutX="129.0" layoutY="410.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="27.0" prefWidth="62.0" text="Back" />
+      <Text layoutX="34.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date *" wrappingWidth="77.7428588867188" />
+      <TextField fx:id="textStartDate" layoutX="34.0" layoutY="293.0" minHeight="5.0" prefHeight="27.0" prefWidth="336.0" />
+      <Text layoutX="34.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date *" wrappingWidth="77.7428588867188" />
+      <TextField fx:id="textEndDate" layoutX="34.0" layoutY="356.0" minHeight="5.0" prefHeight="27.0" prefWidth="336.0" />
    </children>
 </AnchorPane>

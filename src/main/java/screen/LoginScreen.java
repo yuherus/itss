@@ -47,6 +47,7 @@ public class LoginScreen {
         try {
             User user = UserController.login(username, password);
             if (user != null) {
+                System.setProperty("userId", String.valueOf(user.getUserId()));
                 if (user.getUserType() == User.UserType.ADMIN) {
                      setScene("/views/admin/admin.fxml");
                 } else if (user.getUserType() == User.UserType.TOUR_GUIDE) {
@@ -85,13 +86,23 @@ public class LoginScreen {
     @FXML
     private void initialize() {
         forgotPasswordLink.setOnAction(event -> {
-            // Handle forgot password logic
-            System.out.println("Forgot Password clicked");
+
         });
 
         signUpLink.setOnAction(event -> {
-            // Handle sign up logic
-            System.out.println("Sign Up clicked");
+            Parent signupParent = null;
+            try {
+                signupParent = FXMLLoader.load(getClass().getResource("/views/signup.fxml"));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            Scene signupScene = new Scene(signupParent);
+
+            // Get stage thông qua event source (nút "Login")
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setTitle("Signup");
+            window.setScene(signupScene);
+            window.show();
         });
     }
 }

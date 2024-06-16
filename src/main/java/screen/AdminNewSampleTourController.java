@@ -10,6 +10,11 @@ import javafx.event.ActionEvent;
 import model.SampleTour;
 import views.admin.SampleTourCreatedListener;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.sql.Date;
+
 public class AdminNewSampleTourController {
     private SampleTourCreatedListener listener;
     public void setSampleTourCreatedListener(SampleTourCreatedListener listener) {
@@ -21,6 +26,10 @@ public class AdminNewSampleTourController {
     private TextField textTourName;
     @FXML
     private TextField textDescription;
+    @FXML
+    private TextField textStartDate;
+    @FXML
+    private TextField textEndDate;
     @FXML
     private TextField textTotalCost;
     public Button getBackBtn() {
@@ -47,7 +56,7 @@ public class AdminNewSampleTourController {
         }
     }
     // Xử lý sự kiện khi người dùng nhấn vào nút Create
-    public void createBtn(ActionEvent event) {
+    public void createBtn(ActionEvent event) throws ParseException {
         SampleTour newSampleTour = new SampleTour();
 
         newSampleTour.setTourName(textTourName.getText());
@@ -67,6 +76,18 @@ public class AdminNewSampleTourController {
             System.out.println("Invalid input for total cost: " + totalCostText);
             return;
         }
+
+        String startDateText = textStartDate.getText();
+        String endDateText = textEndDate.getText();
+        // Parse startDateText and endDateText to Date objects
+        // Set the startDate and endDate of newSampleTour
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        java.util.Date utilStartDate = sdf.parse(startDateText);
+        java.util.Date utilEndDate = sdf.parse(endDateText);
+        Date startDate = new Date(utilStartDate.getTime());
+        Date endDate = new Date(utilEndDate.getTime());
+        newSampleTour.setStartDate(startDate);
+        newSampleTour.setEndDate(endDate);
 
 //        tableview.getItems().add(newSampleTour);
         if (listener != null) {

@@ -22,11 +22,10 @@
                 <columns>
                     <TableColumn id="t1" fx:id="t1" prefWidth="120.57" text="PAYMENT_ID" />
                     <TableColumn fx:id="t2" minWidth="2.666656494140625" prefWidth="120.57" text="TOUR_ID" />
-                    <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="120.57" text="CUSTOMER_ID" />
+                    <TableColumn fx:id="t3" minWidth="2.666656494140625" prefWidth="120.57" text="USER_ID" />
                     <TableColumn fx:id="t4" minWidth="2.666656494140625" prefWidth="120.57" text="AMOUNT" />
-                    <TableColumn fx:id="t5" minWidth="2.666656494140625" prefWidth="112.0" text="PAYMENT_DATE" />
-                    <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="104.0" text="END DATE" />
-               <TableColumn fx:id="t51" minWidth="2.666656494140625" prefWidth="146.6666259765625" text="MENTHOD" />
+                    <TableColumn fx:id="t5" minWidth="2.666656494140625" prefWidth="204.0" text="PAYMENT_DATE" />
+               <TableColumn fx:id="t6" minWidth="2.666656494140625" prefWidth="124.0" text="MENTHOD" />
                 </columns>
             </TableView>
             <TitledPane animated="false" layoutX="243.0" layoutY="-67.0" text="untitled" />
