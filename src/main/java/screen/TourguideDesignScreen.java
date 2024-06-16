@@ -15,6 +15,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.util.Pair;
 import model.Location;
+import model.Notification;
 import model.Request;
 import model.Tour;
 
@@ -82,6 +83,7 @@ public class TourguideDesignScreen implements Initializable {
             requestLocation.getChildren().add(createRequestLocation(location));
         }
         List<Location> styleLocations = new LocationController().getByStyle(request.getStyleId());
+        styleLocations.addAll(locations);
         locationInput.getItems().addAll(styleLocations);
     }
 
@@ -93,7 +95,7 @@ public class TourguideDesignScreen implements Initializable {
             tour.setTourName(nameInput.getText());
             tour.setTotalCost(Double.parseDouble(costInput.getText()));
             tour.setTouristId(request.getTouristId());
-            tour.setStatus(Tour.Status.PENDING);
+            tour.setStatus(Tour.Status.CREATED);
             tour.setDescription(descriptionInput.getText());
             tour.setLocations(designLocations);
             tour.setTourGuideId(Integer.parseInt(System.getProperty("userId")));
@@ -106,7 +108,21 @@ public class TourguideDesignScreen implements Initializable {
                 e.printStackTrace();
             }
 
-//            show alert success and back to home screen
+            Notification notification = new Notification();
+            notification.setMessage("Here is the tour you requested.");
+            notification.setTourType(Notification.TourType.OPTIONALBOOK);
+            try {
+                notification.setUser(new UserController().getById(request.getTouristId()));
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            notification.setTour(tour);
+            try {
+                new controller.NotificationController().add(notification);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Success");
             alert.setHeaderText("Tour Created");

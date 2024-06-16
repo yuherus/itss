@@ -2,8 +2,17 @@ package model;
 
 public class Notification {
 
+        public enum TourType {
+            QUICKBOOK,
+            OPTIONALBOOK,
+        }
+
         private int notificationId;
+
+        private Tour tour;
         private String message;
+
+        private TourType tourType;
         private boolean status;
         private User user;
 
@@ -47,4 +56,22 @@ public class Notification {
         public void setUser(User user) {
             this.user = user;
         }
+
+        public Tour getTour() {
+            return tour;
+        }
+
+        public void setTour(Tour tour) {
+            this.tour = tour;
+        }
+
+        public TourType getTourType() {
+            return tourType;
+        }
+
+        public void setTourType(TourType tourType) {
+            this.tourType = tourType;
+        }
+
+
 }

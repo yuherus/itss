@@ -40,6 +40,8 @@ public class TourScreen implements Initializable {
     @FXML
     private Button more2;
 
+    @FXML
+    private Button customBook;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -79,6 +81,18 @@ public class TourScreen implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
+        customBook.setOnAction(event -> {
+            BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/optional-book.fxml"));
+                view = loader.load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            userView.setCenter(view);
+        });
     }
 
     private VBox createDestinationBox(SampleTour tour) {
@@ -115,8 +129,7 @@ public class TourScreen implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
                 view = loader.load();
                 SampleTourDetailScreen sampleTourDetaiScreen = loader.getController();
-                sampleTourDetaiScreen.setTourId(tour.getSampleTourId());
-                sampleTourDetaiScreen.setTour();
+                sampleTourDetaiScreen.setTour(tour);
             } catch (Exception e) {
                 e.printStackTrace();
             }
