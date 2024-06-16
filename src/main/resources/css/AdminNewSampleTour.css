@@ -1,0 +1,14 @@
+#crSample{
+                -fx-font-family: "Popins";
+                -fx-font-size: 20px; /* Specify the font size */
+                -fx-font-weight: bold; /* Make the text bold */
+}
+#backBtn{
+-fx-background-color: #000000;
+-fx-text-fill: white; /* Text color */
+
+}
+#createBtn{
+-fx-background-color: #000000;
+-fx-text-fill: white; /* Text color */
+}

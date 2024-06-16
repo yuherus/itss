@@ -11,7 +11,8 @@ public class SampleTour {
     private double totalCost;
     private List<Pair<Location,Integer>> locations;
 
-    public SampleTour(String tourName, String description, double totalCost, List<Pair<Location,Integer>> locations) {
+    public SampleTour(int id, String tourName, String description, double totalCost, List<Pair<Location,Integer>> locations) {
+        this.sampleTourId = id;
         this.tourName = tourName;
         this.description = description;
         this.totalCost = totalCost;

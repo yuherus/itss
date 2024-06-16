@@ -31,8 +31,8 @@ public class AdminScreen implements Initializable {
     @FXML
     private Button logout;
 
-    @FXML
-    private Button request;
+//    @FXML
+//    private Button request;
 
     @FXML
     private MenuItem sampletour;
@@ -60,9 +60,9 @@ public class AdminScreen implements Initializable {
         changeScene("/views/admin/sampletour.fxml");
         tour.setOnAction(event -> changeScene("/views/admin/tourlist.fxml"));
         sampletour.setOnAction(event -> changeScene("/views/admin/sampletour.fxml"));
-        style.setOnAction(event -> changeScene("/views/admin/style.fxml"));
+        style.setOnAction(event -> changeScene("/views/admin/travel-style.fxml"));
         transaction.setOnAction(event -> changeScene("/views/admin/transaction.fxml"));
-        request.setOnAction(event -> changeScene("/views/admin/request.fxml"));
+//        request.setOnAction(event -> changeScene("/views/admin/request.fxml"));
         place.setOnAction(event -> changeScene("/views/admin/location.fxml"));
         customer.setOnAction(event -> changeScene("/views/admin/customer-information.fxml"));
         tourguide.setOnAction(event -> changeScene("/views/admin/tourguide-information.fxml"));
