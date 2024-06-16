@@ -103,6 +103,9 @@ public class TourScreen implements Initializable {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
                 view = loader.load();
+                SampleTourDetailScreen sampleTourDetaiScreen = loader.getController();
+                sampleTourDetaiScreen.setTourId(tour.getSampleTourId());
+                sampleTourDetaiScreen.setTour();
             } catch (Exception e) {
                 e.printStackTrace();
             }
