@@ -116,3 +116,7 @@
          -fx-background-radius: 20;
          -fx-background-color: #000000; /* Light gray background color */
      }
+    #searchpane{
+             -fx-background-radius: 20;
+
+    }

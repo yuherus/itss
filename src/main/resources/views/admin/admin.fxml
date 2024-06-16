@@ -59,24 +59,16 @@
                        <Insets bottom="20.0" />
                    </VBox.margin>
                </MenuButton>
-               <MenuButton fx:id="infomenu" alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="165.0" text="INFORMATION">
-                   <items>
-                       <MenuItem fx:id="customer" mnemonicParsing="false" text="CUSTOMER INFORMATION" />
-                       <MenuItem fx:id="tourguide" mnemonicParsing="false" text="TOURGUIDE INFORMATION" />
-                   </items>
-                   <VBox.margin>
-                       <Insets bottom="20.0" />
-                   </VBox.margin>
-               </MenuButton>
+            <Button fx:id="customer" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="INFORMATION">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
                <Button fx:id="transaction" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="TRANSACTION">
                    <VBox.margin>
                        <Insets bottom="20.0" />
                    </VBox.margin>
                </Button>
-               <Button fx:id="request" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="REQUEST">
-               <VBox.margin>
-                  <Insets bottom="20.0" />
-               </VBox.margin></Button>
             <Button fx:id="logout" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" text="LOG OUT">
                <VBox.margin>
                   <Insets bottom="20.0" />

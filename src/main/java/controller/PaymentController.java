@@ -35,7 +35,7 @@ public class PaymentController implements CRUDController<Payment>{
                         break;
                 }
                 payment.setTour(new TourController().getById(rs.getInt("tour_id")));
-                payment.setTourist(new UserController().getById(rs.getInt("tourist_id")));
+                payment.setTourist(new UserController().getById(rs.getInt("user_id")));
                 payments.add(payment);
             }
         }
@@ -66,7 +66,7 @@ public class PaymentController implements CRUDController<Payment>{
                         break;
                 }
                 payment.setTour(new TourController().getById(rs.getInt("tour_id")));
-                payment.setTourist(new UserController().getById(rs.getInt("tourist_id")));
+                payment.setTourist(new UserController().getById(rs.getInt("user_id")));
             }
         }
         return payment;
@@ -74,7 +74,7 @@ public class PaymentController implements CRUDController<Payment>{
 
     @Override
     public void add(Payment payment) throws SQLException {
-        String query = "INSERT INTO Payments (tour_id, tourist_id, amount, payment_date, payment_method) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO Payments (tour_id, user_id, amount, payment_date, payment_method) VALUES (?, ?, ?, ?, ?)";
         try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
             pstmt.setInt(1, payment.getTour().getTourId());
@@ -98,7 +98,7 @@ public class PaymentController implements CRUDController<Payment>{
 
     @Override
     public void update(Payment payment) throws SQLException {
-        String query = "UPDATE Payments SET tour_id = ?, tourist_id = ?, amount = ?, payment_date = ?, payment_method = ? WHERE payment_id = ?";
+        String query = "UPDATE Payments SET tour_id = ?, user_id = ?, amount = ?, payment_date = ?, payment_method = ? WHERE payment_id = ?";
         try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
             pstmt.setInt(1, payment.getTour().getTourId());

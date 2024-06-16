@@ -7,6 +7,7 @@ module itss.itss {
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires mysql.connector.j;
+    requires java.desktop;
     opens model to javafx.base;
     opens touristech to javafx.fxml;
     exports touristech;

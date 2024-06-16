@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="442.0" prefWidth="415.0" stylesheets="@../../css/UpdateSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminUpdateSampleTour">
+    <children>
+        <Text fx:id="updateSample" layoutX="88.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE SAMPLE TOUR" wrappingWidth="268.1021728515625" />
+        <Text layoutX="34.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour Name *" wrappingWidth="77.74285888671875" />
+        <TextField fx:id="textTourName" layoutX="34.0" layoutY="92.0" prefHeight="27.0" prefWidth="336.0" />
+        <Text layoutX="30.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description *" />
+        <TextField fx:id="textDescription" layoutX="34.0" layoutY="156.0" prefHeight="53.0" prefWidth="336.0" />
+        <Text layoutX="34.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost *" />
+        <TextField fx:id="textTotalCost" layoutX="34.0" layoutY="234.0" prefHeight="27.0" prefWidth="336.0" />
+        <Button fx:id="updateBtn" layoutX="202.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleUpdateBtnPressed" prefHeight="27.0" prefWidth="62.0" text="Update" />
+        <Button fx:id="backBtn" layoutX="124.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleBackBtnPressed" prefHeight="27.0" prefWidth="62.0" text="Back" />
+      <Text layoutX="34.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date *" wrappingWidth="77.7428588867188" />
+      <TextField fx:id="textStartDate" layoutX="34.0" layoutY="291.0" minHeight="5.0" prefHeight="27.0" prefWidth="336.0" />
+      <Text layoutX="34.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date *" wrappingWidth="77.7428588867188" />
+      <TextField fx:id="textEndDate" layoutX="34.0" layoutY="354.0" minHeight="5.0" prefHeight="27.0" prefWidth="336.0" />
+    </children>
+</AnchorPane>
