@@ -18,7 +18,7 @@
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
-            <ImageView fitHeight="520.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="hearderImg" fitHeight="520.0" fitWidth="1024.0" pickOnBounds="true">
                <image>
                   <Image url="@../../images/Home1.png" />
                </image>

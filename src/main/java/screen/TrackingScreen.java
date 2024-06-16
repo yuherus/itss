@@ -1,28 +1,30 @@
 package screen;
 
-import controller.HistoryController;
-import controller.TrackingController;
+import controller.TourController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.util.Pair;
+import model.Location;
 import model.Tour;
-import model.Tracking;
 import org.kordamp.ikonli.javafx.FontIcon;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class TrackingScreen implements Initializable {
     @FXML
@@ -31,55 +33,61 @@ public class TrackingScreen implements Initializable {
     @FXML
     private VBox trackList;
 
+    @FXML
+    private ImageView hearderImg;
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        TrackingController trackingController = new TrackingController();
+        TourController tourController = new TourController();
         try {
-            List<Tracking> trackings = trackingController.getAll();
-            Collections.sort(trackings, new Comparator<Tracking>() {
-                @Override
-                public int compare(Tracking o1, Tracking o2) {
-                    return o1.getVisitTime().compareTo(o2.getVisitTime());
-                }
-            });
+            List<Tour> tours = tourController.getByUserId();
+            Tour currentTour = tours.stream()
+                    .filter(tour -> tour.getStatus().toString().toLowerCase().equals("confirmed"))
+                    .findFirst()
+                    .orElse(new Tour());
 
-            tourName.setText(trackingController.getTourName());
+            List<Pair<Location, Timestamp>> locations = currentTour.getLocations();
+            Collections.sort(locations, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+
+            hearderImg.setImage(new Image(currentTour.getLocations().getFirst().getKey().getImageUrl()));
+            tourName.setText(currentTour.getTourName());
 
             LocalDateTime now = LocalDateTime.now();
-            for (Tracking tracking : trackings) {
-//                if (now.isAfter(tracking.getStartTime())) {
-//                    HBox hBox = createHbox(tracking);
-//                    trackList.getChildren().add(hBox);
-//                }
-                HBox hBox = createHbox(tracking);
-                trackList.getChildren().add(hBox);
+
+            boolean isLast = true;
+            for (Pair<Location, Timestamp> pair : locations) {
+                if (pair.getValue().toLocalDateTime().isBefore(now)) {
+                    HBox hBox = createHbox(pair, true);
+                    trackList.getChildren().add(hBox);
+                    isLast = false;
+                } else {
+                    HBox hBox = createHbox(pair, false);
+                    trackList.getChildren().add(hBox);
+                }
             }
-            HBox hBoxBegin = createHboxBeggin();
+
+            HBox hBoxBegin = createHboxBegin();
             trackList.getChildren().add(hBoxBegin);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-    private HBox createHboxBeggin() {
+    private HBox createHboxBegin() {
         HBox hBox = new HBox();
         hBox.setAlignment(Pos.BASELINE_CENTER);
         hBox.setSpacing(20.0);
-        hBox.setStyle("-fx-opacity: 0.3;");
-
-        // Text 1
-        Text dateText = new Text("20/5/2024\n5:33 PM");
-        dateText.setWrappingWidth(72.0);
-        dateText.setFont(new Font(14.0));
+        hBox.setPadding(new Insets(0, 0, 0, 90.0));
+        hBox.isDisable();
 
         // VBox with Button
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.TOP_CENTER);
         Button button = new Button();
         button.setPrefSize(36.0, 36.0);
-        button.setStyle("-fx-background-radius: 50%; -fx-background-color: transparent; "
+        button.setStyle("-fx-background-radius: 50%; -fx-background-color: #2E7FDD; "
                 + "-fx-border-width: 1px; -fx-border-radius: 50%; -fx-border-color: black; -fx-opacity: 1;");
-
         FontIcon icon = new FontIcon("fas-clipboard-list");
         icon.setIconSize(18);
         button.setGraphic(icon);
@@ -90,29 +98,41 @@ public class TrackingScreen implements Initializable {
         Text statusText = new Text("Booked success");
         statusText.setWrappingWidth(150.0);
         statusText.setFont(new Font(14.0));
+        statusText.setStyle("-fx-font-weight: bold;");
 
-        hBox.getChildren().addAll(dateText, vBox, statusText);
+        hBox.getChildren().addAll(vBox, statusText);
 
         return hBox;
     }
 
-    private HBox createHbox(Tracking tracking) {
+    private HBox createHbox(Pair<Location, Timestamp> pair, boolean isPast) {
         HBox hBox = new HBox(20);  // Spacing of 20.0
         hBox.setPrefSize(Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE);
         hBox.setAlignment(Pos.BASELINE_CENTER);
+        if (!isPast) {
+            hBox.setStyle("-fx-opacity: 0.3;");
+        }
 
-        Text dateTimeText = new Text(tracking.getVisitTime().toString());
-        dateTimeText.setStyle("-fx-font-weight: bold;");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm");
+        Text dateTimeText = new Text(dateFormat.format(pair.getValue()).toString());
         dateTimeText.setWrappingWidth(72.0);
+        dateTimeText.setFont(new Font(14.0));
 
         VBox vBox = new VBox();
-        vBox.setAlignment(javafx.geometry.Pos.TOP_CENTER);
+        vBox.setAlignment(Pos.TOP_CENTER);
 
         Button button = new Button();
         button.setPrefSize(36, 36);
-        button.setStyle("-fx-background-radius: 50%; -fx-background-color: #2E7FDD; -fx-border-width: 1px; -fx-border-radius: 50%; -fx-border-color: black; -fx-opacity: 1;");
+        if (isPast) {
+            button.setStyle("-fx-background-radius: 50%; -fx-background-color: #2E7FDD; "
+                    + "-fx-border-width: 1px; -fx-border-radius: 50%; -fx-border-color: black; -fx-opacity: 1;");
+        } else {
+            button.setStyle("-fx-background-radius: 50%; -fx-background-color: transparent; "
+                    + "-fx-border-width: 1px; -fx-border-radius: 50%; -fx-border-color: black; -fx-opacity: 1;");
+        }
+
         FontIcon icon = new FontIcon();
-        icon.setIconLiteral("far-check-circle");
+        icon.setIconLiteral("fas-car-alt");
         icon.setIconSize(18);
         button.setGraphic(icon);
 
@@ -124,9 +144,12 @@ public class TrackingScreen implements Initializable {
 
         vBox.getChildren().addAll(button, line);
 
-        Text locationText = new Text("You have arrived in " + tracking.getLocation().getName());
-        locationText.setStyle("-fx-font-weight: bold;");
+        Text locationText = new Text("You have arrived in " + pair.getKey().getName());
         locationText.setWrappingWidth(150.0);
+        if (isPast) {
+            locationText.setFont(Font.font("System", 14));
+            locationText.setStyle("-fx-font-weight: bold;");
+        }
 
         hBox.getChildren().addAll(dateTimeText, vBox, locationText);
 
