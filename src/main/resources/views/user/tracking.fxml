@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<ScrollPane prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.TrackingScreen">
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
@@ -31,7 +31,7 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
+                  <Text fx:id="tourName" strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -39,7 +39,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Text>
-                  <VBox alignment="TOP_CENTER">
+                  <VBox fx:id="trackList" alignment="TOP_CENTER">
                      <children>
                         <HBox alignment="BASELINE_CENTER" spacing="20.0">
                            <children>

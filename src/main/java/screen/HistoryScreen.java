@@ -1,21 +1,29 @@
 package screen;
 
 import controller.HistoryController;
+import controller.TourController;
+import controller.TrackingController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.util.Pair;
 import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -27,9 +35,11 @@ import java.util.ResourceBundle;
 import static javafx.scene.paint.Color.web;
 
 public class HistoryScreen implements Initializable {
+    @FXML
+    private VBox listHistory;
 
     @FXML
-    private VBox listHistory;;
+    private VBox historyBook;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -63,19 +73,27 @@ public class HistoryScreen implements Initializable {
         imageView.setFitHeight(80.0);
         imageView.setFitWidth(80.0);
         imageView.setPreserveRatio(true);
-        Image image = new Image(getClass().getResourceAsStream("/images/SajekValley.png")); // Update with actual image path
+        Image image = new Image(getClass().getResourceAsStream("/images/SajekValley.png")); // Cập nhật đường dẫn ảnh thực tế
         imageView.setImage(image);
+        imageView.setOnMouseClicked(event -> {
+            System.out.println("ImageView clicked!");
+            changeTracking(tour.getTourId());
+        });
 
-        // VBox for text
+        // VBox cho văn bản
         VBox vBoxText = new VBox();
         vBoxText.setAlignment(Pos.CENTER_LEFT);
         vBoxText.setSpacing(2.0);
 
-        // Tour name
+        // Tên tour
         Text tourName = new Text(tour.getTourName());
         tourName.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
+        tourName.setOnMouseClicked(event -> {
+            System.out.println("Tour name clicked!");
+            changeTracking(tour.getTourId());
+        });
 
-        // Location
+        // Địa điểm
         HBox hBoxLocation = new HBox();
         hBoxLocation.setAlignment(Pos.CENTER_LEFT);
         hBoxLocation.setSpacing(5.0);
@@ -89,44 +107,49 @@ public class HistoryScreen implements Initializable {
 
         hBoxLocation.getChildren().addAll(locationIcon, locationText);
 
-        // Rating
-        HBox hBoxRating = new HBox();
-        hBoxRating.setAlignment(Pos.CENTER_LEFT);
-        hBoxRating.setSpacing(5.0);
+        // Thêm tất cả các thành phần văn bản vào vBoxText
+        vBoxText.getChildren().addAll(tourName, hBoxLocation);
 
-        FontIcon starIcon = new FontIcon("fas-star");
-        starIcon.setIconSize(14);
-        starIcon.setIconColor(web("#f75d37"));
+        Region region = new Region();
+        HBox.setHgrow(region, Priority.ALWAYS);
 
-        Text ratingText = new Text("4.5"); // Replace with actual rating if needed
-        ratingText.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
-
-        Text reviewsText = new Text("(150 Reviews)"); // Replace with actual reviews if needed
-        reviewsText.setStyle("-fx-fill: #818181; -fx-font-size: 14px;");
-
-        hBoxRating.getChildren().addAll(starIcon, ratingText, reviewsText);
-
-        // Add all text components to vBoxText
-        vBoxText.getChildren().addAll(tourName, hBoxLocation, hBoxRating);
-
-        // Spacer Pane
-        Pane spacer = new Pane();
-        spacer.setPrefSize(340.0, 100.0);
-
-        // Date and time
+        // Ngày và giờ
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
         Text dateTimeText = new Text(dateFormat.format(tour.getStartDate()) + "\n" + timeFormat.format(tour.getStartDate()));
         dateTimeText.setStyle("-fx-font-size: 14px; -fx-font-weight: bold; -fx-fill: #484848;");
 
-        // Trash icon
+        // Biểu tượng thùng rác
         FontIcon trashIcon = new FontIcon("fas-trash-alt");
         trashIcon.setIconSize(24);
         trashIcon.setIconColor(Color.GREY);
 
-        // Add all components to hBox
-        hBox.getChildren().addAll(imageView, vBoxText, spacer, dateTimeText, trashIcon);
+
+        // Thêm tất cả các thành phần vào hBox
+        hBox.getChildren().addAll(imageView, vBoxText, region, dateTimeText, trashIcon);
+
+        // Thiết lập bộ xử lý sự kiện cho hBox
+        hBox.setOnMouseClicked(event -> changeTracking(tour.getTourId()));
 
         return hBox;
+    }
+
+
+    private void changeTracking(int tourId) {
+        ScrollPane view = null;
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/tourdetail.fxml"));
+            view = loader.load();
+            TourDetailScreen tourDetailScreen = loader.getController();
+            tourDetailScreen.setTourId(tourId);
+            tourDetailScreen.setTour();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        BorderPane userView = (BorderPane) listHistory.getScene().lookup("#userView");
+        userView.setCenter(view);
     }
 }

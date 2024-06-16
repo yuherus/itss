@@ -22,7 +22,7 @@ public class HistoryController implements CRUDController<Tour> {
     public List<Tour> getAll() throws SQLException {
         List<Tour> tours = new ArrayList<>();
         int userId = getCurrentUserId();
-        String query = "SELECT * FROM Tour_Tourists WHERE tourist_id = ?";
+        String query = "SELECT * FROM Tours WHERE tourist_id = ?";
 
         try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {

@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.SampleTourDetailScreen">
+<ScrollPane fitToWidth="true" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.TourDetailScreen">
    <content>
       <VBox style="-fx-background-color: white;">
          <children>
