@@ -14,6 +14,10 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import model.SampleTour;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.*;
@@ -68,7 +72,7 @@ public class TourScreen implements Initializable {
                 sale2.getChildren().add(createDestinationBox(cheapestTour.get(i)));
             }
 
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             throw new RuntimeException(e);
         }
 
@@ -85,13 +89,16 @@ public class TourScreen implements Initializable {
         });
     }
 
-    private VBox createDestinationBox(SampleTour tour) {
+    private VBox createDestinationBox(SampleTour tour) throws FileNotFoundException {
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(10);
         vBox.getStyleClass().add("destination-box");
 
-        ImageView imageView = new ImageView(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
+//        kiểm tra có là đường dẫn file
+        InputStream inputStream = new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl());
+        Image image = new Image(inputStream);
+        ImageView imageView = new ImageView(image);
         imageView.setFitHeight(150);
         imageView.setFitWidth(200);
         imageView.setPreserveRatio(false);
