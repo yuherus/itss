@@ -1,6 +1,7 @@
 package screen;
 
 import controller.SampleTourController;
+import controller.TourController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
@@ -14,6 +15,7 @@ import javafx.scene.text.Text;
 import javafx.util.Pair;
 import model.Location;
 import model.SampleTour;
+import model.Tour;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -21,7 +23,6 @@ import java.sql.Timestamp;
 import java.util.*;
 
 public class SampleTourDetailScreen implements Initializable {
-    private int tourId;
 
     @FXML
     private ImageView hearderImg;
@@ -43,14 +44,6 @@ public class SampleTourDetailScreen implements Initializable {
 
     @FXML
     private Text titleTxtDetail;
-
-    public int getTourId() {
-        return tourId;
-    }
-
-    public void setTourId(int tourId) {
-        this.tourId = tourId;
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -76,10 +69,7 @@ public class SampleTourDetailScreen implements Initializable {
         return hBox;
     }
 
-    public void setTour(){
-        SampleTourController sampleTourController = new SampleTourController();
-        try {
-            SampleTour tour = sampleTourController.getById(tourId);
+    public void setTour(SampleTour tour){
             hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
             titleTxtDetail.setText(tour.getTourName());
             locationTxtDetail.setText(tour.getLocations().getFirst().getKey().getName());
@@ -90,8 +80,24 @@ public class SampleTourDetailScreen implements Initializable {
                 HBox hBox = createHBox(pair);
                 locationList.getChildren().add(hBox);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+
+            btnBook.setOnAction(event -> {
+                Tour bookedTour = new Tour();
+                bookedTour.setTourName(tour.getTourName());
+                bookedTour.setTotalCost(tour.getTotalCost());
+                bookedTour.setLocations(tour.getLocations());
+                bookedTour.setDescription(tour.getDescription());
+                bookedTour.setTouristId(Integer.parseInt(System.getProperty("userId")));
+                bookedTour.setStartDate(tour.getStartDate());
+                bookedTour.setEndDate(tour.getEndDate());
+                bookedTour.setStatus(Tour.Status.PENDING);
+                bookedTour.setTourGuideId(4); //default tour guide id
+                TourController tourController = new TourController();
+                try {
+                    tourController.add(bookedTour);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            });
     }
 }

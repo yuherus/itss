@@ -38,6 +38,8 @@ public class TourController implements CRUDController<Tour> {
                         break;
                     case "cancelled":
                         tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
                         break;
                 }
                 tour.setStartDate(rs.getDate("start_date"));
@@ -86,6 +88,8 @@ public class TourController implements CRUDController<Tour> {
                         break;
                     case "cancelled":
                         tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
                         break;
                 }
                 tour.setStartDate(rs.getDate("start_date"));
@@ -211,6 +215,8 @@ public class TourController implements CRUDController<Tour> {
                         break;
                     case "cancelled":
                         tour.setStatus(Tour.Status.CANCELLED);
+                    case "created":
+                        tour.setStatus(Tour.Status.CREATED);
                         break;
                 }
                 tour.setStartDate(rs.getDate("start_date"));

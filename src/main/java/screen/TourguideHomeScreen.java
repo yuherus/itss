@@ -171,6 +171,7 @@ public class TourguideHomeScreen implements Initializable {
             acceptButton.setOnAction(event -> {
                 try {
                     tour.setStatus(Tour.Status.CONFIRMED);
+                    tour.setTourGuideId(Integer.parseInt(System.getProperty("userId")));
                     TourController tourController = new TourController();
                     tourController.update(tour);
                     updateTour();
