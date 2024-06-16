@@ -30,6 +30,9 @@ public class HeaderScreen implements Initializable{
     @FXML
     private Button trackingBtn;
 
+    @FXML
+    private Button btnNot;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         homeBtn.setOnAction(event -> changeScene("/views/user/home.fxml"));
@@ -45,6 +48,20 @@ public class HeaderScreen implements Initializable{
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        });
+
+        btnNot.setOnAction(event -> {
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/notification.fxml"));
+                view = loader.load();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+            userView.setCenter(view);
         });
     }
 

@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <BorderPane fx:id="userView" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../../css/user.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.HeaderScreen">
    <top>
@@ -25,6 +26,11 @@
             <font>
                <Font name="System Bold" size="12.0" />
             </font></Button>
+         <Button fx:id="btnNot" mnemonicParsing="false" style="-fx-background-color: transparent;">
+            <graphic>
+               <FontIcon iconColor="WHITE" iconLiteral="fas-bell" iconSize="25" />
+            </graphic>
+         </Button>
       </HBox>
    </top>
    <center>

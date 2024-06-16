@@ -72,14 +72,17 @@ public class SampleTourDetailScreen implements Initializable {
     public void setTour(SampleTour tour){
             hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
             titleTxtDetail.setText(tour.getTourName());
-            locationTxtDetail.setText(tour.getLocations().getFirst().getKey().getName());
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));
             description.setText(tour.getDescription());
 
+            StringJoiner locationJoiner = new StringJoiner(", ");
             for (Pair<Location, Timestamp> pair : tour.getLocations()){
                 HBox hBox = createHBox(pair);
                 locationList.getChildren().add(hBox);
+                locationJoiner.add(pair.getKey().getName());
             }
+            String locationStr = locationJoiner.toString();
+            locationTxtDetail.setText(locationStr);
 
             btnBook.setOnAction(event -> {
                 Tour bookedTour = new Tour();

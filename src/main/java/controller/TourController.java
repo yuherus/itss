@@ -26,6 +26,7 @@ public class TourController implements CRUDController<Tour> {
                 tour.setTouristId(rs.getInt("tourist_id"));
                 tour.setTourGuideId(rs.getInt("tour_guide_id"));
                 tour.setTourName(rs.getString("tour_name"));
+                tour.setDescription(rs.getString("description"));
                 switch (rs.getString("status")) {
                     case "pending":
                         tour.setStatus(Tour.Status.PENDING);
@@ -76,6 +77,7 @@ public class TourController implements CRUDController<Tour> {
                 tour.setTouristId(rs.getInt("tourist_id"));
                 tour.setTourGuideId(rs.getInt("tour_guide_id"));
                 tour.setTourName(rs.getString("tour_name"));
+                tour.setDescription(rs.getString("description"));
                 switch (rs.getString("status")) {
                     case "pending":
                         tour.setStatus(Tour.Status.PENDING);
@@ -203,6 +205,7 @@ public class TourController implements CRUDController<Tour> {
                 tour.setTouristId(rs.getInt("tourist_id"));
                 tour.setTourGuideId(rs.getInt("tour_guide_id"));
                 tour.setTourName(rs.getString("tour_name"));
+                tour.setDescription(rs.getString("description"));
                 switch (rs.getString("status")) {
                     case "pending":
                         tour.setStatus(Tour.Status.PENDING);

@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -25,7 +24,7 @@
                         <Font name="System Bold" size="24.0" />
                      </font></Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #fd6951; -fx-background-radius: 20px;" text="Discover more" textFill="WHITE">
+                  <Button fx:id="more1" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #fd6951; -fx-background-radius: 20px;" text="Discover more" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -42,16 +41,16 @@
                <font>
                   <Font size="14.0" />
                </font></Label>
-        <HBox fx:id="popular1" alignment="CENTER" spacing="40.0">
+        <HBox fx:id="popular1" alignment="CENTER_LEFT" spacing="40.0">
 
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
         </HBox>
-            <HBox fx:id="popular2" alignment="CENTER" layoutX="10.0" layoutY="168.0" spacing="40.0">
+            <HBox fx:id="popular2" alignment="CENTER_LEFT" layoutX="10.0" layoutY="168.0" spacing="40.0">
 
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </HBox>
       </VBox>
@@ -62,7 +61,7 @@
                <children>
                   <Label styleClass="section-title" text="On Sale" />
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #fd6951; -fx-background-radius: 20px;" text="Discover more" textFill="WHITE">
+                  <Button fx:id="more2" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #fd6951; -fx-background-radius: 20px;" text="Discover more" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -79,18 +78,18 @@
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <HBox fx:id="sale1" alignment="CENTER" spacing="40.0">
+            <HBox fx:id="sale1" alignment="CENTER_LEFT" spacing="40.0">
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </HBox>
-            <HBox fx:id="sale2" alignment="CENTER" layoutX="10.0" layoutY="124.0" spacing="40.0">
+            <HBox fx:id="sale2" alignment="CENTER_LEFT" layoutX="10.0" layoutY="124.0" spacing="40.0">
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" left="50.0" />
                </VBox.margin>
             </HBox>
       </VBox>
-         <Button fx:id="customBook"  alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: #fd6951; -fx-background-radius: 16;" text="Book a Custom Tour" textFill="WHITE">
+         <Button fx:id="customBook" alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: #fd6951; -fx-background-radius: 16;" text="Book a Custom Tour" textFill="WHITE">
             <font>
                <Font name="System Bold" size="18.0" />
             </font>

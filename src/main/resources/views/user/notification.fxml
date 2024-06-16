@@ -11,28 +11,21 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1024.0" styleClass="..\..\css\tour.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="screen.TourListScreen">
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="screen.NotificationScreen">
    <content>
-      <VBox>
+      <VBox spacing="30.0">
          <padding>
             <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
          </padding>
          <children>
-            <VBox>
-               <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tour">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </Text>
-                  <VBox fx:id="tourList" alignment="CENTER" spacing="20.0">
-                     <VBox.margin>
-                        <Insets bottom="30.0" left="30.0" right="10.0" top="30.0" />
-                     </VBox.margin>
-                  </VBox>
-               </children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notification">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <VBox fx:id="notList" spacing="10.0">
                <VBox.margin>
-                  <Insets />
+                  <Insets left="20.0" right="100.0" />
                </VBox.margin>
             </VBox>
             <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">

@@ -84,6 +84,41 @@
                         <Insets left="20.0" top="40.0" />
                      </padding>
                   </VBox>
+                  <Pane prefWidth="150.0" />
+                  <VBox alignment="CENTER_LEFT">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tour guide">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <Text fx:id="guideNameTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="nameTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="emailTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="40.0" top="40.0" />
+                     </padding>
+                  </VBox>
                </children>
                <VBox.margin>
                   <Insets right="20.0" />

@@ -1,5 +1,6 @@
 package screen;
 import controller.SampleTourController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -13,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import model.SampleTour;
+import org.w3c.dom.events.Event;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,6 +37,12 @@ public class TourScreen implements Initializable {
 
     @FXML
     private HBox sale2;
+
+    @FXML
+    private Button more1;
+
+    @FXML
+    private Button more2;
 
     @FXML
     private Button customBook;
@@ -72,7 +80,10 @@ public class TourScreen implements Initializable {
                 sale2.getChildren().add(createDestinationBox(cheapestTour.get(i)));
             }
 
+            more1.setOnAction(event -> changeTourList(event));
+            more2.setOnAction(event -> changeTourList(event));
         } catch (SQLException | FileNotFoundException e) {
+
             throw new RuntimeException(e);
         }
 
@@ -91,6 +102,7 @@ public class TourScreen implements Initializable {
 
     private VBox createDestinationBox(SampleTour tour) throws FileNotFoundException {
         VBox vBox = new VBox();
+        vBox.setPrefWidth(270);
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(10);
         vBox.getStyleClass().add("destination-box");
@@ -137,5 +149,17 @@ public class TourScreen implements Initializable {
         vBox.getChildren().addAll(imageView, hBox, descriptionText, bookButton);
 
         return vBox;
+    }
+
+    public void changeTourList(ActionEvent event){
+        ScrollPane view = null;
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/tourlist.fxml"));
+            view = loader.load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+        userView.setCenter(view);
     }
 }
