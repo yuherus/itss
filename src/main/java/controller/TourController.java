@@ -155,6 +155,22 @@ public class TourController implements CRUDController<Tour> {
             pstmt.setDouble(6, tour.getTotalCost());
             pstmt.setInt(7, tour.getTourId());
             pstmt.executeUpdate();
+
+            String deleteLocationsQuery = "DELETE FROM Tour_Points WHERE tour_id = ?";
+            try (PreparedStatement pstmt2 = conn.prepareStatement(deleteLocationsQuery)) {
+                pstmt2.setInt(1, tour.getTourId());
+                pstmt2.executeUpdate();
+            }
+
+            for (Pair<Location, Timestamp> location : tour.getLocations()) {
+                String addLocationQuery = "INSERT INTO Tour_Points (tour_id, location_id, visit_time) VALUES (?, ?, ?)";
+                try (PreparedStatement pstmt3 = conn.prepareStatement(addLocationQuery)) {
+                    pstmt3.setInt(1, tour.getTourId());
+                    pstmt3.setInt(2, location.getKey().getLocationId());
+                    pstmt3.setTimestamp(3, location.getValue());
+                    pstmt3.executeUpdate();
+                }
+            }
         }
     }
 

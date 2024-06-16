@@ -82,6 +82,7 @@ public class TourguideDesignScreen implements Initializable {
             requestLocation.getChildren().add(createRequestLocation(location));
         }
         List<Location> styleLocations = new LocationController().getByStyle(request.getStyleId());
+        styleLocations.addAll(locations);
         locationInput.getItems().addAll(styleLocations);
     }
 
@@ -106,7 +107,6 @@ public class TourguideDesignScreen implements Initializable {
                 e.printStackTrace();
             }
 
-//            show alert success and back to home screen
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Success");
             alert.setHeaderText("Tour Created");
