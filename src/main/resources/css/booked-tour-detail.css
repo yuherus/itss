@@ -1,0 +1,17 @@
+.departure-label{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill:#DF6951;
+}
+.booked-info{
+    -fx-font-size: 14px;
+}
+.note-for-design{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.tourguide-info{
+    -fx-background-color: #ededed;
+    -fx-font-size: 14px;
+}

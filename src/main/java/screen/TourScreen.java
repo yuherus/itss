@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -31,6 +32,8 @@ public class TourScreen implements Initializable {
     @FXML
     private HBox sale2;
 
+    @FXML
+    private Button customBook;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -68,6 +71,18 @@ public class TourScreen implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
+        customBook.setOnAction(event -> {
+            BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/optional-book.fxml"));
+                view = loader.load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            userView.setCenter(view);
+        });
     }
 
     private VBox createDestinationBox(SampleTour tour) {

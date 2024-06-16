@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuItem?>
+<ScrollPane prefHeight="1007.0" prefWidth="1024.0" style="-fx-background-color: #eff0ef;" stylesheets="@../../css/user/booking-now.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane>
+         <children>
+            <VBox layoutX="30.0" layoutY="50.0" spacing="10">
+               <children>
+      <Text styleClass="booking-title" text="Booking Now" wrappingWidth="298.03675842285156" />
+      <Text styleClass="plan-subTitle" text="Determine time" wrappingWidth="267.1828155517578" />
+      <HBox spacing="10">
+         <VBox spacing="5">
+            <Label styleClass="time-label" text="Start Date" />
+            <DatePicker fx:id="startdate" prefHeight="26.0" prefWidth="120.0" />
+         </VBox>
+         <VBox spacing="5">
+            <Label styleClass="time-label" text="End Date" />
+            <DatePicker prefHeight="26.0" prefWidth="117.0" />
+         </VBox>
+         <VBox spacing="5">
+            <Label styleClass="time-label" text="Guests" />
+            <TextField prefHeight="26.0" prefWidth="45.0" />
+         </VBox>
+      </HBox>
+      <Pane prefHeight="562.0" prefWidth="674.0" styleClass="info-wrap">
+         <children>
+            <Text layoutX="36.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info-title" text="Billing Details " wrappingWidth="169.33670043945312" />
+            <Pane layoutX="36.0" layoutY="59.0" prefHeight="326.0" prefWidth="597.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="First name" />
+                  <Text layoutX="307.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Last name" />
+                  <Text layoutX="32.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Email Address" />
+                  <Text layoutX="32.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Phone Number" />
+                  <Text layoutX="32.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Passport Number (Optional)" />
+                  <Text layoutX="32.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Address" />
+                  <TextField layoutX="32.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your First Name in Here" />
+                  <TextField layoutX="310.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your Last Name in Here" />
+                  <TextField layoutX="32.0" layoutY="104.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Email Address in Here" />
+                  <TextField layoutX="31.0" layoutY="162.0" prefHeight="25.0" prefWidth="536.0" styleClass="input-info" text="Input your Phone Number in Here" />
+                  <TextField layoutX="31.0" layoutY="218.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Passport Number in Here" />
+                  <TextField layoutX="31.0" layoutY="273.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Address in Here" />
+               </children>
+            </Pane>
+
+            <Button layoutX="263.0" layoutY="504.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-payment" text="Continue to Payment" />
+                        <MenuButton layoutX="36.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="192.0" styleClass="menu-payment" text="Payment methods">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Momo" />
+                            <MenuItem mnemonicParsing="false" text="Paypal" />
+                          </items>
+                        </MenuButton>
+                        <CheckBox layoutX="36.0" layoutY="405.0" mnemonicParsing="false" styleClass="checkbox" text="I have agree to the rules, Terms and Conditions." />
+         </children>
+      </Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="book-tour" layoutX="725.0" layoutY="185.0">
+               <children>
+                  <Text  text="Chỗ này để thông tin tour" wrappingWidth="281.23683166503906" />
+               </children>
+
+            </VBox>
+         <HBox alignment="CENTER" layoutY="757.0" prefHeight="200.0" prefWidth="1024.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
+            <children>
+               <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                  <children>
+                     <Text style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-fill: #df6951;" text="Touristech" wrappingWidth="142.4765738248825">
+                        <font>
+                           <Font name="System Bold" size="32.0" />
+                        </font>
+                     </Text>
+                     <Text fill="#6e6e6e" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel helps companies manage payments easily." wrappingWidth="149.08403778076172">
+                        <font>
+                           <Font name="System Bold Italic" size="12.0" />
+                        </font>
+                     </Text>
+                     <HBox prefHeight="34.0" prefWidth="155.0" spacing="12.0" />
+                  </children>
+                  <padding>
+                     <Insets left="30.0" top="40.0" />
+                  </padding>
+               </VBox>
+               <VBox prefHeight="200.0" prefWidth="185.0" spacing="8.0">
+                  <children>
+                     <Label text="Company">
+                        <font>
+                           <Font name="System Bold" size="16.0" />
+                        </font>
+                     </Label>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About us" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blog" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pricing" />
+                  </children>
+                  <padding>
+                     <Insets left="30.0" top="50.0" />
+                  </padding>
+               </VBox>
+               <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                  <children>
+                     <Label text="Destination">
+                        <font>
+                           <Font name="System Bold" size="16.0" />
+                        </font>
+                     </Label>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vienam" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hanoi" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ho Chi Minh" />
+                  </children>
+                  <padding>
+                     <Insets left="30.0" top="50.0" />
+                  </padding>
+               </VBox>
+            </children>
+         </HBox>
+         <Pane layoutX="202.0" layoutY="956.0" prefHeight="60.0" prefWidth="640.0" style="-fx-border-style: solid none none none; -fx-border-color: #aaa;">
+            <children>
+               <Text layoutX="215.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright  @ Group24. All Right Served" />
+            </children>
+         </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
