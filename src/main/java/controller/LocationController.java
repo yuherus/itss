@@ -101,4 +101,29 @@ public class LocationController implements CRUDController<Location>{
             pstmt.executeUpdate();
         }
     }
+
+    public List<Location> getByStyle(int styleId) throws SQLException {
+        List<Location> locations = new ArrayList<>();
+        String query = "SELECT * FROM Locations WHERE style_id = ?";
+
+        try (Connection conn = JDBCUtil.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(query)) {
+            pstmt.setInt(1, styleId);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    Location location = new Location();
+                    location.setLocationId(rs.getInt("location_id"));
+                    location.setName(rs.getString("name"));
+                    location.setDescription(rs.getString("description"));
+                    location.setAddress(rs.getString("address"));
+                    StyleController styleController = new StyleController();
+                    location.setStyle(styleController.getById(rs.getInt("style_id")));
+                    location.setImageUrl(rs.getString("imgUrl"));
+                    locations.add(location);
+                }
+            }
+        }
+
+        return locations;
+    }
 }

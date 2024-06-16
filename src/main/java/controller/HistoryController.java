@@ -61,11 +61,11 @@ public class HistoryController implements CRUDController<Tour> {
                             String getLocationsQuery = "SELECT * FROM Tour_Points WHERE tour_id = " + rs.getInt("tour_id");
                             try (Statement stmt2 = conn.createStatement();
                                  ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                                List<Location> locations = new ArrayList<>();
+                                List<Pair<Location, Timestamp>> locations = new ArrayList<>();
                                 while (rs2.next()) {
                                     LocationController locationController = new LocationController();
                                     Location location = locationController.getById(rs2.getInt("location_id"));
-                                    locations.add(location);
+                                    locations.add(new Pair<>(location, rs2.getTimestamp("visit_time")));
                                 }
                                 tour.setLocations(locations);
                             }
@@ -125,11 +125,11 @@ public class HistoryController implements CRUDController<Tour> {
                             String getLocationsQuery = "SELECT * FROM Tour_Points WHERE tour_id = " + rs.getInt("tour_id");
                             try (Statement stmt2 = conn.createStatement();
                                  ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                                List<Location> locations = new ArrayList<>();
+                                List<Pair<Location, Timestamp>> locations = new ArrayList<>();
                                 while (rs2.next()) {
                                     LocationController locationController = new LocationController();
                                     Location location = locationController.getById(rs2.getInt("location_id"));
-                                    locations.add(location);
+                                    locations.add(new Pair<>(location, rs2.getTimestamp("visit_order")));
                                 }
                                 tour.setLocations(locations);
                             }

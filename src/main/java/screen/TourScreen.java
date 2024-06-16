@@ -68,8 +68,6 @@ public class TourScreen implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 
     private VBox createDestinationBox(SampleTour tour) {

@@ -1,7 +1,10 @@
 package test;
 
 import controller.SampleTourController;
+import controller.StyleController;
+import controller.TourController;
 import model.SampleTour;
+import model.Style;
 import util.JDBCUtil;
 
 import java.sql.Connection;
@@ -15,11 +18,9 @@ public class Test {
     public static void main(String[] args) {
 //        test jdbc
         try {
-            SampleTourController sampleTourController = new SampleTourController();
-            List<SampleTour> tour = sampleTourController.getAll();
-            for (SampleTour sampleTour : tour) {
-                System.out.println(sampleTour.getLocations().getFirst().getKey().getImageUrl());
-            }
+            StyleController styleController = new StyleController();
+            Style styles = styleController.getById(2);
+            System.out.println(styles.getName());
         } catch (SQLException e) {
             e.printStackTrace();
         }

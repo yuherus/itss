@@ -47,6 +47,7 @@ public class LoginScreen {
         try {
             User user = UserController.login(username, password);
             if (user != null) {
+                System.setProperty("userId", String.valueOf(user.getUserId()));
                 if (user.getUserType() == User.UserType.ADMIN) {
                      setScene("/views/admin/admin.fxml");
                 } else if (user.getUserType() == User.UserType.TOUR_GUIDE) {
