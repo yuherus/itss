@@ -18,9 +18,11 @@ public class Test {
     public static void main(String[] args) {
 //        test jdbc
         try {
-            StyleController styleController = new StyleController();
-            Style styles = styleController.getById(2);
-            System.out.println(styles.getName());
+            SampleTourController sampleTourController = new SampleTourController();
+            List<SampleTour> sampleTours = sampleTourController.getAll();
+            for (SampleTour sampleTour : sampleTours) {
+                System.out.println(sampleTour.getLocations().getFirst().getKey().getImageUrl());
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
