@@ -1,29 +1,21 @@
 package screen;
 
-import controller.HistoryController;
 import controller.TourController;
-import controller.TrackingController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
-import javafx.util.Pair;
-import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
-import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -43,15 +35,16 @@ public class HistoryScreen implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        HistoryController historyController = new HistoryController();
+        TourController tourController = new TourController();
         try {
-            List<Tour> tours = historyController.getAll();
+            List<Tour> tours = tourController.getByUserId();
             Collections.sort(tours, new Comparator<Tour>() {
                 @Override
                 public int compare(Tour o1, Tour o2) {
                     return o1.getStartDate().compareTo(o2.getStartDate());
                 }
             });
+            tours.reversed();
 
             for (Tour tour : tours) {
                 HBox hBox = createTourHBox(tour);
@@ -75,10 +68,6 @@ public class HistoryScreen implements Initializable {
         imageView.setPreserveRatio(true);
         Image image = new Image(getClass().getResourceAsStream("/images/SajekValley.png")); // Cập nhật đường dẫn ảnh thực tế
         imageView.setImage(image);
-        imageView.setOnMouseClicked(event -> {
-            System.out.println("ImageView clicked!");
-            changeTracking(tour.getTourId());
-        });
 
         // VBox cho văn bản
         VBox vBoxText = new VBox();
@@ -88,10 +77,6 @@ public class HistoryScreen implements Initializable {
         // Tên tour
         Text tourName = new Text(tour.getTourName());
         tourName.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
-        tourName.setOnMouseClicked(event -> {
-            System.out.println("Tour name clicked!");
-            changeTracking(tour.getTourId());
-        });
 
         // Địa điểm
         HBox hBoxLocation = new HBox();
@@ -115,8 +100,7 @@ public class HistoryScreen implements Initializable {
 
         // Ngày và giờ
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
-        Text dateTimeText = new Text(dateFormat.format(tour.getStartDate()) + "\n" + timeFormat.format(tour.getStartDate()));
+        Text dateTimeText = new Text(dateFormat.format(tour.getStartDate()));
         dateTimeText.setStyle("-fx-font-size: 14px; -fx-font-weight: bold; -fx-fill: #484848;");
 
         // Biểu tượng thùng rác
@@ -129,13 +113,13 @@ public class HistoryScreen implements Initializable {
         hBox.getChildren().addAll(imageView, vBoxText, region, dateTimeText, trashIcon);
 
         // Thiết lập bộ xử lý sự kiện cho hBox
-        hBox.setOnMouseClicked(event -> changeTracking(tour.getTourId()));
+        hBox.setOnMouseClicked(event -> changeTracking(tour.getTourId(), event));
 
         return hBox;
     }
 
 
-    private void changeTracking(int tourId) {
+    private void changeTracking(int tourId, MouseEvent event) {
         ScrollPane view = null;
 
         try {
@@ -149,7 +133,7 @@ public class HistoryScreen implements Initializable {
             e.printStackTrace();
         }
 
-        BorderPane userView = (BorderPane) listHistory.getScene().lookup("#userView");
+        BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
         userView.setCenter(view);
     }
 }

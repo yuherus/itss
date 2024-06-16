@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -20,6 +22,9 @@ import java.util.*;
 
 public class SampleTourDetailScreen implements Initializable {
     private int tourId;
+
+    @FXML
+    private ImageView hearderImg;
 
     @FXML
     private VBox locationList;
@@ -75,6 +80,7 @@ public class SampleTourDetailScreen implements Initializable {
         SampleTourController sampleTourController = new SampleTourController();
         try {
             SampleTour tour = sampleTourController.getById(tourId);
+            hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
             titleTxtDetail.setText(tour.getTourName());
             locationTxtDetail.setText(tour.getLocations().getFirst().getKey().getName());
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));

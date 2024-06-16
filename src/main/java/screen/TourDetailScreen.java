@@ -6,7 +6,11 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -21,6 +25,9 @@ import java.util.ResourceBundle;
 
 public class TourDetailScreen implements Initializable {
     private int tourId;
+
+    @FXML
+    private ImageView hearderImg;
 
     @FXML
     private VBox locationList;
@@ -39,6 +46,12 @@ public class TourDetailScreen implements Initializable {
 
     @FXML
     private Text titleTxtDetail;
+
+    @FXML
+    private Text statusTxt;
+
+    @FXML
+    private HBox titleHbox;
 
     public int getTourId() {
         return tourId;
@@ -77,8 +90,11 @@ public class TourDetailScreen implements Initializable {
         TourController tourController = new TourController();
         try {
             Tour tour = tourController.getById(tourId);
-            System.out.println(tour.getDescription());
+            hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
             titleTxtDetail.setText(tour.getTourName());
+
+            String statusStr = tour.getStatus().toString();
+            statusTxt.setText(Character.toUpperCase(statusStr.charAt(0)) + statusStr.substring(1).toLowerCase());
             locationTxtDetail.setText(tour.getLocations().getFirst().getKey().getName());
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));
             description.setText(tour.getDescription());
