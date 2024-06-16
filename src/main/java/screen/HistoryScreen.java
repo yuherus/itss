@@ -13,16 +13,16 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.util.Pair;
+import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import static javafx.scene.paint.Color.web;
 
@@ -66,7 +66,7 @@ public class HistoryScreen implements Initializable {
         imageView.setFitHeight(80.0);
         imageView.setFitWidth(80.0);
         imageView.setPreserveRatio(true);
-        Image image = new Image(getClass().getResourceAsStream("/images/SajekValley.png")); // Cập nhật đường dẫn ảnh thực tế
+        Image image = new Image(tour.getLocations().getFirst().getKey().getImageUrl()); // Cập nhật đường dẫn ảnh thực tế
         imageView.setImage(image);
 
         // VBox cho văn bản
@@ -87,7 +87,12 @@ public class HistoryScreen implements Initializable {
         locationIcon.setIconSize(14);
         locationIcon.setIconColor(web("#818181"));
 
-        Text locationText = new Text(tour.getLocations().getFirst().getKey().getName());
+        StringJoiner locationJoiner = new StringJoiner(", ");
+        for (Pair<Location, Timestamp> pair : tour.getLocations()) {
+            locationJoiner.add(pair.getKey().getName());
+        }
+        String locationStr = locationJoiner.toString();
+        Text locationText = new Text(locationStr);
         locationText.setStyle("-fx-fill: #818181; -fx-font-size: 14px;");
 
         hBoxLocation.getChildren().addAll(locationIcon, locationText);
@@ -107,7 +112,14 @@ public class HistoryScreen implements Initializable {
         FontIcon trashIcon = new FontIcon("fas-trash-alt");
         trashIcon.setIconSize(24);
         trashIcon.setIconColor(Color.GREY);
-
+        trashIcon.setOnMouseClicked(event -> {
+            TourController tourController = new TourController();
+            try {
+                tourController.delete(tour.getTourId());
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        });
 
         // Thêm tất cả các thành phần vào hBox
         hBox.getChildren().addAll(imageView, vBoxText, region, dateTimeText, trashIcon);

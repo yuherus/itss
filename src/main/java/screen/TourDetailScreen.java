@@ -1,6 +1,7 @@
 package screen;
 
 import controller.TourController;
+import controller.UserController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
@@ -17,11 +18,13 @@ import javafx.scene.text.Text;
 import javafx.util.Pair;
 import model.Location;
 import model.Tour;
+import model.User;
 
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ResourceBundle;
+import java.util.StringJoiner;
 
 public class TourDetailScreen implements Initializable {
     private int tourId;
@@ -52,6 +55,15 @@ public class TourDetailScreen implements Initializable {
 
     @FXML
     private HBox titleHbox;
+
+    @FXML
+    private Text emailTxt;
+
+    @FXML
+    private Text guideNameTxt;
+
+    @FXML
+    private Text nameTxt;
 
     public int getTourId() {
         return tourId;
@@ -88,21 +100,32 @@ public class TourDetailScreen implements Initializable {
 
     public void setTour(){
         TourController tourController = new TourController();
+        UserController userController = new UserController();
         try {
             Tour tour = tourController.getById(tourId);
+            User guide = userController.getById(tour.getTourGuideId());
+
             hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
             titleTxtDetail.setText(tour.getTourName());
 
             String statusStr = tour.getStatus().toString();
             statusTxt.setText(Character.toUpperCase(statusStr.charAt(0)) + statusStr.substring(1).toLowerCase());
-            locationTxtDetail.setText(tour.getLocations().getFirst().getKey().getName());
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));
             description.setText(tour.getDescription());
 
+            guideNameTxt.setText(guide.getUsername());
+            nameTxt.setText(guide.getName());
+            emailTxt.setText(guide.getEmail());
+
+            StringJoiner locationJoiner = new StringJoiner(", ");
             for (Pair<Location, Timestamp> pair : tour.getLocations()){
                 HBox hBox = createHBox(pair);
                 locationList.getChildren().add(hBox);
+                locationJoiner.add(pair.getKey().getName());
             }
+            String locationStr = locationJoiner.toString();
+            locationTxtDetail.setText(locationStr);
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

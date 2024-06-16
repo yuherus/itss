@@ -97,6 +97,7 @@ public class TourScreen implements Initializable {
 
     private VBox createDestinationBox(SampleTour tour) {
         VBox vBox = new VBox();
+        vBox.setPrefWidth(270);
         vBox.setAlignment(Pos.CENTER);
         vBox.setSpacing(10);
         vBox.getStyleClass().add("destination-box");

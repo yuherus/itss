@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="views.user.Notification"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="screen.NotificationScreen">
+   <content>
+      <VBox spacing="30.0">
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
+         </padding>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notification">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <VBox fx:id="notList" spacing="10.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="100.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                     <children>
+                        <Text style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-fill: #df6951;" text="Touristech" wrappingWidth="142.4765738248825">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#6e6e6e" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel helps companies manage payments easily." wrappingWidth="149.08403778076172">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="34.0" prefWidth="155.0" spacing="12.0">
+                           <children>
+                              <FontIcon fill="#df6951" iconLiteral="fab-facebook" iconSize="20" text="" />
+                              <FontIcon fill="#df6951" iconLiteral="fab-instagram-square" iconSize="20" />
+                              <FontIcon fill="#df6951" iconLiteral="fab-tiktok" iconSize="20" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" top="40.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="185.0" spacing="8.0">
+                     <children>
+                        <Label text="Company">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About us" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blog" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pricing" />
+                     </children>
+                     <padding>
+                        <Insets left="30.0" top="50.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="185.0" spacing="10.0">
+                     <children>
+                        <Label text="Destination">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vienam" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hanoi" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ho Chi Minh" />
+                     </children>
+                     <padding>
+                        <Insets left="30.0" top="50.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="60.0">
+               <children>
+                  <Pane layoutX="192.0" prefHeight="60.0" prefWidth="640.0" style="-fx-border-style: solid none none none; -fx-border-color: #aaa;">
+                     <children>
+                        <Text layoutX="215.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright  @ Group24. All Right Served" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

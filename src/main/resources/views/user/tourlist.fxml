@@ -27,10 +27,13 @@
                   </Text>
                   <VBox fx:id="tourList" alignment="CENTER" spacing="20.0">
                      <VBox.margin>
-                        <Insets bottom="30.0" left="30.0" top="30.0" />
+                        <Insets bottom="30.0" left="30.0" right="10.0" top="30.0" />
                      </VBox.margin>
                   </VBox>
                </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
             </VBox>
             <HBox alignment="CENTER" prefHeight="200.0" spacing="20.0" style="-fx-border-color: #e4e4e4; -fx-border-style: solid none none none;">
                <children>
