@@ -22,7 +22,7 @@ public class HistoryController implements CRUDController<Tour> {
     public List<Tour> getAll() throws SQLException {
         List<Tour> tours = new ArrayList<>();
         int userId = getCurrentUserId();
-        String query = "SELECT * FROM Tour_Tourists WHERE tourist_id = ?";
+        String query = "SELECT * FROM Tours WHERE tourist_id = ?";
 
         try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(query)) {
@@ -61,11 +61,11 @@ public class HistoryController implements CRUDController<Tour> {
                             String getLocationsQuery = "SELECT * FROM Tour_Points WHERE tour_id = " + rs.getInt("tour_id");
                             try (Statement stmt2 = conn.createStatement();
                                  ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                                List<Pair<Location, Integer>> locations = new ArrayList<>();
+                                List<Location> locations = new ArrayList<>();
                                 while (rs2.next()) {
                                     LocationController locationController = new LocationController();
                                     Location location = locationController.getById(rs2.getInt("location_id"));
-                                    locations.add(new Pair<>(location, rs2.getInt("visit_order")));
+                                    locations.add(location);
                                 }
                                 tour.setLocations(locations);
                             }
@@ -125,11 +125,11 @@ public class HistoryController implements CRUDController<Tour> {
                             String getLocationsQuery = "SELECT * FROM Tour_Points WHERE tour_id = " + rs.getInt("tour_id");
                             try (Statement stmt2 = conn.createStatement();
                                  ResultSet rs2 = stmt2.executeQuery(getLocationsQuery)) {
-                                List<Pair<Location, Integer>> locations = new ArrayList<>();
+                                List<Location> locations = new ArrayList<>();
                                 while (rs2.next()) {
                                     LocationController locationController = new LocationController();
                                     Location location = locationController.getById(rs2.getInt("location_id"));
-                                    locations.add(new Pair<>(location, rs2.getInt("visit_order")));
+                                    locations.add(location);
                                 }
                                 tour.setLocations(locations);
                             }

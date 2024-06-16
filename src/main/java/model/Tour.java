@@ -20,12 +20,12 @@ public class Tour {
     private Date startDate;
     private Date endDate;
     private double totalCost;
-    private List<Pair<Location,Integer>> locations;
+    private List<Location> locations;
 
     public Tour() {
     }
 
-    public Tour(int tourGuideId, String tourName, Status status, Date startDate, Date endDate, double totalCost, List<Pair<Location,Integer>> locations) {
+    public Tour(int tourGuideId, String tourName, Status status, Date startDate, Date endDate, double totalCost, List<Location> locations) {
         this.tourGuideId = tourGuideId;
         this.tourName = tourName;
         this.status = status;
@@ -91,11 +91,11 @@ public class Tour {
         this.totalCost = totalCost;
     }
 
-    public List<Pair<Location, Integer>> getLocations() {
+    public List<Location> getLocations() {
         return locations;
     }
 
-    public void setLocations(List<Pair<Location, Integer>> locations) {
+    public void setLocations(List<Location> locations) {
         this.locations = locations;
     }
 }

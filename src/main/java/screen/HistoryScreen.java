@@ -1,21 +1,27 @@
 package screen;
 
 import controller.HistoryController;
+import controller.TrackingController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.util.Pair;
 import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -27,6 +33,9 @@ import java.util.ResourceBundle;
 import static javafx.scene.paint.Color.web;
 
 public class HistoryScreen implements Initializable {
+
+    @FXML
+    private Button btn2;
 
     @FXML
     private VBox listHistory;;
@@ -65,6 +74,7 @@ public class HistoryScreen implements Initializable {
         imageView.setPreserveRatio(true);
         Image image = new Image(getClass().getResourceAsStream("/images/SajekValley.png")); // Update with actual image path
         imageView.setImage(image);
+        imageView.setOnMouseClicked(event -> changeTracking(tour.getTourId()));
 
         // VBox for text
         VBox vBoxText = new VBox();
@@ -74,6 +84,7 @@ public class HistoryScreen implements Initializable {
         // Tour name
         Text tourName = new Text(tour.getTourName());
         tourName.setStyle("-fx-font-size: 18px; -fx-font-weight: bold;");
+        tourName.setOnMouseClicked(event -> changeTracking(tour.getTourId()));
 
         // Location
         HBox hBoxLocation = new HBox();
@@ -84,7 +95,7 @@ public class HistoryScreen implements Initializable {
         locationIcon.setIconSize(14);
         locationIcon.setIconColor(web("#818181"));
 
-        Text locationText = new Text(tour.getLocations().getFirst().getKey().getName());
+        Text locationText = new Text(tour.getLocations().getFirst().getName());
         locationText.setStyle("-fx-fill: #818181; -fx-font-size: 14px;");
 
         hBoxLocation.getChildren().addAll(locationIcon, locationText);
@@ -109,9 +120,8 @@ public class HistoryScreen implements Initializable {
         // Add all text components to vBoxText
         vBoxText.getChildren().addAll(tourName, hBoxLocation, hBoxRating);
 
-        // Spacer Pane
-        Pane spacer = new Pane();
-        spacer.setPrefSize(340.0, 100.0);
+        Region region = new Region();
+        HBox.setHgrow(region, Priority.ALWAYS);
 
         // Date and time
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -124,9 +134,40 @@ public class HistoryScreen implements Initializable {
         trashIcon.setIconSize(24);
         trashIcon.setIconColor(Color.GREY);
 
-        // Add all components to hBox
-        hBox.getChildren().addAll(imageView, vBoxText, spacer, dateTimeText, trashIcon);
+        // Event handlers for navigation
 
+        // Add all components to hBox
+        Button btn = new Button("1");
+        btn.setOnAction(event -> changeTracking(tour.getTourId()));
+        btn2.setOnAction(event -> changeTracking(tour.getTourId()));
+        hBox.getChildren().addAll(imageView, vBoxText,region, dateTimeText, trashIcon, btn);
+        hBox.setOnMouseClicked(event -> {
+            ScrollPane view = null;
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
+                view = loader.load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            BorderPane userView = (BorderPane) listHistory.getScene().lookup("#userView");
+            userView.setCenter(view);
+        });
         return hBox;
+    }
+
+    private void changeTracking(int tourId) {
+        ScrollPane view = null;
+
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/tracking.fxml"));
+            view = loader.load();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        BorderPane userView = (BorderPane) listHistory.getScene().lookup("#userView");
+        userView.setCenter(view);
     }
 }
