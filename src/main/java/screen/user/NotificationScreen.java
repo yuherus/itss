@@ -108,7 +108,7 @@ public class NotificationScreen implements Initializable {
         hBox.setOnMouseClicked(event -> {
             ScrollPane view = null;
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/sampletourdetail.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/tourdetail.fxml"));
                 view = loader.load();
                 TourDetailScreen tourDetaiScreen = loader.getController();
                 tourDetaiScreen.setTour(notification.getTour());
