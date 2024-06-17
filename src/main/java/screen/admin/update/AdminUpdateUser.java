@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.update;
 
 import controller.UserController;
 import javafx.event.ActionEvent;
@@ -12,7 +12,7 @@ import model.User;
 
 import java.sql.SQLException;
 
-public class AdminUpdateUser {
+public class AdminUpdateUser implements AdminUpdateScreen{
     @FXML
     private TextField textUserName;
 
@@ -50,6 +50,7 @@ public class AdminUpdateUser {
 
     }
 
+    @Override
     @FXML
     public void handleUpdateBtnPressed(ActionEvent event) throws SQLException {
         // Update the sample tour with the new values from the text fields
@@ -74,6 +75,7 @@ public class AdminUpdateUser {
         Stage stage = (Stage) textName.getScene().getWindow();
         stage.close();
     }
+    @Override
     public void handleBackBtnPressed(ActionEvent event) {
         // Get the current stage
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

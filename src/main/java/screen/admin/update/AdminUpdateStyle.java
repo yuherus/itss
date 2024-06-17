@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.update;
 
 import controller.StyleController;
 import javafx.event.ActionEvent;
@@ -11,7 +11,7 @@ import model.Style;
 
 import java.sql.SQLException;
 
-public class AdminUpdateStyle {
+public class AdminUpdateStyle implements AdminUpdateScreen{
     @FXML
     private TextField textName;
     @FXML
@@ -28,6 +28,7 @@ public class AdminUpdateStyle {
         textDescription.setText(style.getDescription());
     }
 
+    @Override
     @FXML
     public void handleUpdateBtnPressed(ActionEvent event) throws SQLException {
         // Update the sample tour with the new values from the text fields
@@ -40,6 +41,7 @@ public class AdminUpdateStyle {
         Stage stage = (Stage) textName.getScene().getWindow();
         stage.close();
     }
+    @Override
     public void handleBackBtnPressed(ActionEvent event) {
         // Get the current stage
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

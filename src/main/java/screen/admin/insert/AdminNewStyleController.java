@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.insert;
 
 import controller.StyleController;
 import javafx.fxml.FXML;
@@ -9,10 +9,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.Style;
+import screen.admin.StyleCreatedListener;
 
 import java.sql.SQLException;
 
-public class AdminNewStyleController {
+public class AdminNewStyleController implements AdminInsertScreen<Style> {
     private StyleCreatedListener listener;
 
     public void setStyleCreatedListener(StyleCreatedListener listener) {
@@ -41,7 +42,7 @@ public class AdminNewStyleController {
     public AdminNewStyleController() {
         tableview = new TableView<>();
     }
-
+    @Override
     public void setTableview(TableView<Style> tableview) {
         this.tableview = tableview;
     }
@@ -55,7 +56,7 @@ public class AdminNewStyleController {
             });
         }
     }
-
+    @Override
     @FXML
     public void createBtn(ActionEvent event) throws SQLException {
         Style newStyle = new Style();

@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.update;
 
 import controller.LocationController;
 import controller.StyleController;
@@ -13,7 +13,7 @@ import model.Style;
 
 import java.sql.SQLException;
 
-public class AdminUpdateLocation {
+public class AdminUpdateLocation implements AdminUpdateScreen{
     @FXML
     private TextField textName;
     @FXML
@@ -42,7 +42,7 @@ public class AdminUpdateLocation {
         Style style = styleController.getById(Integer.parseInt(styleId));
         location.setStyle(style); // Set the style of the location
         textURL.setText(location.getImageUrl());    }
-
+    @Override
     @FXML
     public void handleUpdateBtnPressed(ActionEvent event) throws SQLException {
         // Update the sample tour with the new values from the text fields
@@ -64,6 +64,7 @@ public class AdminUpdateLocation {
         Stage stage = (Stage) textName.getScene().getWindow();
         stage.close();
     }
+    @Override
     public void handleBackBtnPressed(ActionEvent event) {
         // Get the current stage
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

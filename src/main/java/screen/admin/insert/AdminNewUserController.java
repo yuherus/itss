@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.insert;
 
 import controller.UserController;
 import javafx.fxml.FXML;
@@ -7,10 +7,11 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.User;
 import model.User.UserType;
+import screen.admin.UserCreatedListener;
 
 import java.sql.SQLException;
 
-public class AdminNewUserController {
+public class AdminNewUserController implements AdminInsertScreen<User> {
     private UserCreatedListener listener;
 
     public void setUserCreatedListener(UserCreatedListener listener) {
@@ -50,6 +51,7 @@ public class AdminNewUserController {
         tableview = new TableView<>();
     }
 
+    @Override
     public void setTableview(TableView<User> tableview) {
         this.tableview = tableview;
     }
@@ -63,7 +65,7 @@ public class AdminNewUserController {
             });
         }
     }
-
+    @Override
     @FXML
     public void createBtn(ActionEvent event) throws SQLException {
         User newUser = new User();
@@ -80,8 +82,9 @@ public class AdminNewUserController {
             newUser.setUserType(UserType.TOURIST);
         }
 
-        new UserController().add(newUser);
-        int userID = tableview.getItems().size() + 1;
+        UserController userController = new UserController();
+        userController.add(newUser);
+        int userID = userController.getAll().size();
         System.out.println("userId: " + userID);
         newUser.setUserId(userID);
 

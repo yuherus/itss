@@ -8,10 +8,11 @@ module itss.itss {
     requires java.sql;
     requires mysql.connector.j;
     requires java.desktop;
-    requires org.junit.jupiter;
     opens model to javafx.base;
     opens touristech to javafx.fxml;
     exports touristech;
+    exports controller;
+    exports model;
     exports screen;
     opens screen to javafx.fxml;
     exports screen.admin;
@@ -20,4 +21,8 @@ module itss.itss {
     opens screen.tourguide to javafx.fxml;
     exports screen.user;
     opens screen.user to javafx.fxml;
+    exports screen.admin.insert;
+    opens screen.admin.insert to javafx.fxml;
+    exports screen.admin.update;
+    opens screen.admin.update to javafx.fxml;
 }

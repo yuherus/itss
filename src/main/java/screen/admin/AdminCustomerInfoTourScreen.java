@@ -15,6 +15,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.User;
+import screen.admin.insert.AdminNewUserController;
+import screen.admin.update.AdminUpdateUser;
 
 import java.io.IOException;
 import java.sql.SQLException;
