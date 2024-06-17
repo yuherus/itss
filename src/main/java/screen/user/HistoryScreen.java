@@ -123,9 +123,12 @@ public class HistoryScreen implements Initializable {
             TourController tourController = new TourController();
             try {
                 tourController.delete(tour.getTourId());
+                HBox hBoxParent = (HBox) trashIcon.getParent();
+                listHistory.getChildren().remove(hBoxParent);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
+            event.consume();
         });
 
         // Thêm tất cả các thành phần vào hBox

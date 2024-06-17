@@ -20,6 +20,8 @@ import model.*;
 import screen.tourguide.TourguideDesignScreen;
 import screen.tourguide.TourguideDetailScreen;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
@@ -53,7 +55,12 @@ public class TourguideHomeScreen implements Initializable {
             ImageView imageView = new ImageView();
             imageView.setFitHeight(150);
             imageView.setFitWidth(200);
-            Image image = new Image(tour.getLocations().getFirst().getKey().getImageUrl());
+            Image image = null;
+            try {
+                image = new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl()));
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             imageView.setImage(image);
 
             Label nameLabel = new Label(tour.getTourName());
@@ -97,7 +104,12 @@ public class TourguideHomeScreen implements Initializable {
             imageView.setFitHeight(150);
             imageView.setFitWidth(200);
             imageView.setPreserveRatio(true);
-            Image image = new Image(tour.getLocations().getFirst().getKey().getImageUrl());
+            Image image = null;
+            try {
+                image = new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl()));
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             imageView.setImage(image);
 
             Label nameLabel = new Label(tour.getTourName());

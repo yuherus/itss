@@ -1,17 +1,13 @@
-package screen.user;
+package screen.tourguide;
 
 import controller.TourController;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
@@ -29,11 +25,12 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class TrackingScreen implements Initializable {
+public class TrackingGuideScreen implements Initializable {
     @FXML
     private Text tourName;
 
@@ -46,62 +43,6 @@ public class TrackingScreen implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        TourController tourController = new TourController();
-        try {
-            List<Tour> tours = tourController.getByUserId();
-            Tour currentTour = null;
-            LocalDate nowDate = LocalDate.now();
-
-            if (tours != null) {
-                for (Tour tour : tours) {
-                    if ("confirmed".equals(tour.getStatus().toString().toLowerCase()) &&
-                            (nowDate.isEqual(tour.getStartDate().toLocalDate()) ||
-                                    nowDate.isAfter(tour.getStartDate().toLocalDate())) &&
-                            (nowDate.isEqual(tour.getEndDate().toLocalDate()) ||
-                                    nowDate.isBefore(tour.getEndDate().toLocalDate()))) {
-                        currentTour = tour;
-                        break;
-                    }
-                }
-            }
-
-            if (currentTour == null) {
-                ScrollPane view = null;
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/tracknotontour.fxml"));
-                    view = loader.load();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                BorderPane userView = (BorderPane) trackList.getScene().lookup("#userView");
-                userView.setCenter(view);
-            }
-
-            List<Pair<Location, Timestamp>> locations = currentTour.getLocations();
-            Collections.sort(locations, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
-
-            hearderImg.setImage(new Image(new FileInputStream(currentTour.getLocations().getFirst().getKey().getImageUrl())));
-            tourName.setText(currentTour.getTourName());
-
-            LocalDateTime now = LocalDateTime.now();
-
-            boolean isLast = true;
-            for (Pair<Location, Timestamp> pair : locations) {
-                if (pair.getValue().toLocalDateTime().isBefore(now)) {
-                    HBox hBox = createHbox(pair, true);
-                    trackList.getChildren().add(hBox);
-                    isLast = false;
-                } else {
-                    HBox hBox = createHbox(pair, false);
-                    trackList.getChildren().add(hBox);
-                }
-            }
-
-            HBox hBoxBegin = createHboxBegin();
-            trackList.getChildren().add(hBoxBegin);
-        } catch (SQLException | FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     public void setTour(Tour currentTour){

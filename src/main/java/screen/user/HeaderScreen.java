@@ -55,17 +55,27 @@ public class HeaderScreen implements Initializable{
             throw new RuntimeException(e);
         }
 
-        Tour currentTour = tours.stream()
-                .filter(tour -> tour.getStatus().toString().toLowerCase().equals("confirmed"))
-                .findFirst().orElse(null);
-
+        Tour currentTour = null;
         LocalDate nowDate = LocalDate.now();
 
-//        if (currentTour == null || nowDate.isBefore(currentTour.getStartDate().toLocalDate()) || nowDate.isAfter(currentTour.getEndDate().toLocalDate())) {
-//            trackingBtn.setOnAction(event -> changeScene("/views/user/tracknotontour.fxml"));
-//        } else {
-//            trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
-//        }
+        if (tours != null) {
+            for (Tour tour : tours) {
+                if ("confirmed".equals(tour.getStatus().toString().toLowerCase()) &&
+                        (nowDate.isEqual(tour.getStartDate().toLocalDate()) ||
+                                nowDate.isAfter(tour.getStartDate().toLocalDate())) &&
+                        (nowDate.isEqual(tour.getEndDate().toLocalDate()) ||
+                                nowDate.isBefore(tour.getEndDate().toLocalDate()))) {
+                    currentTour = tour;
+                    break;
+                }
+            }
+        }
+
+        if (currentTour == null) {
+            trackingBtn.setOnAction(event -> changeScene("/views/user/tracknotontour.fxml"));
+        } else {
+            trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
+        }
 
         logoutBtn.setOnAction(event -> {
             try {

@@ -91,10 +91,10 @@ public class BookingNowScreen implements Initializable {
                     payment.setPaymentMethod(Payment.PaymentMethod.CASH);
                     break;
                 case "Credit Card" :
-                    payment.setPaymentMethod(Payment.PaymentMethod.CASH);
+                    payment.setPaymentMethod(Payment.PaymentMethod.CREDIT_CARD);
                     break;
                 case "E Wallet" :
-                    payment.setPaymentMethod(Payment.PaymentMethod.CASH);
+                    payment.setPaymentMethod(Payment.PaymentMethod.E_WALLET);
                     break;
             }
             payment.setTour(tour);
