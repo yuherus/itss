@@ -3,16 +3,16 @@ package screen.user;
 import controller.TourController;
 import controller.UserController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.util.Pair;
@@ -20,6 +20,8 @@ import model.Location;
 import model.Tour;
 import model.User;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -96,7 +98,7 @@ public class TourDetailScreen implements Initializable {
         try {
             User guide = userController.getById(tour.getTourGuideId());
 
-            hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
+            hearderImg.setImage(new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl())));
             titleTxtDetail.setText(tour.getTourName());
 
             String statusStr = tour.getStatus().toString();
@@ -117,7 +119,7 @@ public class TourDetailScreen implements Initializable {
             String locationStr = locationJoiner.toString();
             locationTxtDetail.setText(locationStr);
 
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }

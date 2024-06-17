@@ -15,6 +15,8 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import model.SampleTour;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.*;
@@ -63,7 +65,12 @@ public class TourListScreen implements Initializable {
                 "    -fx-background-color: #fff;\n" +
                 "    -fx-background-radius: 10px;");
 
-        ImageView imageView = new ImageView(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
+        ImageView imageView = null;
+        try {
+            imageView = new ImageView(new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl())));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         imageView.setFitHeight(150);
         imageView.setFitWidth(200);
         imageView.setPreserveRatio(false);

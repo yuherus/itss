@@ -19,6 +19,8 @@ import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -50,7 +52,7 @@ public class TrackingScreen implements Initializable {
             List<Pair<Location, Timestamp>> locations = currentTour.getLocations();
             Collections.sort(locations, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
 
-            hearderImg.setImage(new Image(currentTour.getLocations().getFirst().getKey().getImageUrl()));
+            hearderImg.setImage(new Image(new FileInputStream(currentTour.getLocations().getFirst().getKey().getImageUrl())));
             tourName.setText(currentTour.getTourName());
 
             LocalDateTime now = LocalDateTime.now();
@@ -69,7 +71,7 @@ public class TrackingScreen implements Initializable {
 
             HBox hBoxBegin = createHboxBegin();
             trackList.getChildren().add(hBoxBegin);
-        } catch (SQLException e) {
+        } catch (SQLException | FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
