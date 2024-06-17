@@ -18,6 +18,8 @@ import model.Location;
 import model.Tour;
 import org.kordamp.ikonli.javafx.FontIcon;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -66,7 +68,12 @@ public class HistoryScreen implements Initializable {
         imageView.setFitHeight(80.0);
         imageView.setFitWidth(80.0);
         imageView.setPreserveRatio(true);
-        Image image = new Image(tour.getLocations().getFirst().getKey().getImageUrl()); // Cập nhật đường dẫn ảnh thực tế
+        Image image = null; // Cập nhật đường dẫn ảnh thực tế
+        try {
+            image = new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl()));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         imageView.setImage(image);
 
         // VBox cho văn bản
@@ -116,9 +123,12 @@ public class HistoryScreen implements Initializable {
             TourController tourController = new TourController();
             try {
                 tourController.delete(tour.getTourId());
+                HBox hBoxParent = (HBox) trashIcon.getParent();
+                listHistory.getChildren().remove(hBoxParent);
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
+            event.consume();
         });
 
         // Thêm tất cả các thành phần vào hBox

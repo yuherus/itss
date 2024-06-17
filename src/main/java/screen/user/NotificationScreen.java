@@ -21,6 +21,7 @@ import model.Location;
 import model.Notification;
 import model.Tour;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -73,16 +74,22 @@ public class NotificationScreen implements Initializable {
             confirmButton.setStyle("-fx-background-color: green; -fx-text-fill: white; -fx-font-size: 16px;");
             confirmButton.setOnAction(event -> {
                 TourController tourController = new TourController();
+                ScrollPane view = null;
                 try {
                     Tour tour = notification.getTour();
                     tour.setStatus(Tour.Status.CONFIRMED);
                     tourController.update(tour);
                     notification.setStatus(true);
                     new NotificationController().update(notification);
-                    changeScene("/views/user/booking-now.fxml", event);
-                } catch (SQLException e) {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/booking-now.fxml"));
+                    view = loader.load();
+                    BookingNowScreen bookingNowScreen = loader.getController();
+                    bookingNowScreen.infoTour(tour);
+                } catch (SQLException | IOException e) {
                     e.printStackTrace();
                 }
+                BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+                userView.setCenter(view);
             });
 
             Button cancelButton = new Button("Cancel");

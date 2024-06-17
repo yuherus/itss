@@ -2,8 +2,11 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -15,12 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.MenuItem?>
-
-<ScrollPane prefHeight="1007.0" prefWidth="1024.0" style="-fx-background-color: #eff0ef;" stylesheets="@../../css/booking-now.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane prefHeight="1007.0" prefWidth="1024.0" style="-fx-background-color: #eff0ef;" stylesheets="@../../css/booking-now.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.user.BookingNowScreen">
    <content>
       <AnchorPane>
          <children>
@@ -35,11 +33,7 @@
          </VBox>
          <VBox spacing="5">
             <Label styleClass="time-label" text="End Date" />
-            <DatePicker prefHeight="26.0" prefWidth="117.0" />
-         </VBox>
-         <VBox spacing="5">
-            <Label styleClass="time-label" text="Guests" />
-            <TextField prefHeight="26.0" prefWidth="45.0" />
+            <DatePicker fx:id="endDate" prefHeight="26.0" prefWidth="117.0" />
          </VBox>
       </HBox>
       <Pane prefHeight="562.0" prefWidth="674.0" styleClass="info-wrap">
@@ -53,20 +47,21 @@
                   <Text layoutX="32.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Phone Number" />
                   <Text layoutX="32.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Passport Number (Optional)" />
                   <Text layoutX="32.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="plan-subTitle" text="Address" />
-                  <TextField layoutX="32.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your First Name in Here" />
-                  <TextField layoutX="310.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" styleClass="input-info" text="Input your Last Name in Here" />
-                  <TextField layoutX="32.0" layoutY="104.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Email Address in Here" />
-                  <TextField layoutX="31.0" layoutY="162.0" prefHeight="25.0" prefWidth="536.0" styleClass="input-info" text="Input your Phone Number in Here" />
-                  <TextField layoutX="31.0" layoutY="218.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Passport Number in Here" />
-                  <TextField layoutX="31.0" layoutY="273.0" prefHeight="25.0" prefWidth="535.0" styleClass="input-info" text="Input your Address in Here" />
+                  <TextField layoutX="32.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" promptText="Input your First Name in Here" styleClass="input-info" />
+                  <TextField layoutX="310.0" layoutY="48.0" prefHeight="25.0" prefWidth="255.0" promptText="Input your Last Name in Here" styleClass="input-info" />
+                  <TextField layoutX="32.0" layoutY="104.0" prefHeight="25.0" prefWidth="535.0" promptText="Input your Email Address in Here" styleClass="input-info" />
+                  <TextField layoutX="31.0" layoutY="162.0" prefHeight="25.0" prefWidth="536.0" promptText="Input your Phone Number in Here" styleClass="input-info" />
+                  <TextField layoutX="31.0" layoutY="218.0" prefHeight="25.0" prefWidth="535.0" promptText="Input your Passport Number in Here" styleClass="input-info" />
+                  <TextField layoutX="31.0" layoutY="273.0" prefHeight="25.0" prefWidth="535.0" promptText="Input your Address in Here" styleClass="input-info" />
                </children>
             </Pane>
 
-            <Button layoutX="263.0" layoutY="504.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-payment" text="Continue to Payment" />
-                        <MenuButton layoutX="36.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="192.0" styleClass="menu-payment" text="Payment methods">
+            <Button fx:id="paymentBtn" layoutX="263.0" layoutY="504.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-payment" text="Payment" />
+                        <MenuButton fx:id="menuBtn" layoutX="36.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="192.0" styleClass="menu-payment" text="Payment methods">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Momo" />
-                            <MenuItem mnemonicParsing="false" text="Paypal" />
+                            <MenuItem fx:id="item1" mnemonicParsing="false" text="Cash" />
+                            <MenuItem fx:id="item2" mnemonicParsing="false" text="Credit Card" />
+                              <MenuItem fx:id="item3" mnemonicParsing="false" text="E Wallet" />
                           </items>
                         </MenuButton>
                         <CheckBox layoutX="36.0" layoutY="405.0" mnemonicParsing="false" styleClass="checkbox" text="I have agree to the rules, Terms and Conditions." />
@@ -74,9 +69,46 @@
       </Pane>
                </children>
             </VBox>
-            <VBox fx:id="book_tour" layoutX="725.0" layoutY="185.0">
+            <VBox fx:id="book_tour" layoutX="725.0" layoutY="185.0" prefHeight="300.0" prefWidth="250.0" style="-fx-background-color: white;">
                <children>
-                  <Text  text="Chỗ này để thông tin tour" wrappingWidth="281.23683166503906" />
+                  <ImageView fx:id="tourImage" fitHeight="160.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/location/1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tourName" strokeType="OUTSIDE" strokeWidth="0.0" text="Saint Martin’s Island">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="tourCost" fill="#df6951" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000 $ / Person">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalCost" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </VBox>
                </children>
 
             </VBox>

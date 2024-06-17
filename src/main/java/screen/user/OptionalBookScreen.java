@@ -20,6 +20,8 @@ import javafx.stage.Stage;
 import model.Location;
 import model.Style;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.*;
@@ -106,7 +108,12 @@ public class OptionalBookScreen implements Initializable {
         vBox.setSpacing(10);
         vBox.getStyleClass().add("destination-box");
 
-        ImageView imageView = new ImageView(new Image(place.getImageUrl()));
+        ImageView imageView = null;
+        try {
+            imageView = new ImageView(new Image(new FileInputStream(place.getImageUrl())));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         imageView.setFitHeight(150);
         imageView.setFitWidth(200);
         imageView.setPreserveRatio(false);

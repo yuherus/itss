@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -77,6 +78,14 @@
                                         <Insets top="8.0" />
                                     </VBox.margin>
                                 </HBox>
+                     <Button fx:id="btnTrack" mnemonicParsing="false" style="-fx-background-color: #536ed9;" text="Tracking" textFill="WHITE" visible="false">
+                        <font>
+                           <Font name="System Bold" size="14.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets top="20.0" />
+                        </VBox.margin>
+                     </Button>
                             </children>
                             <padding>
                                 <Insets left="20.0" top="40.0" />

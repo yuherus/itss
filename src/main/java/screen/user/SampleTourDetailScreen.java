@@ -3,11 +3,15 @@ package screen.user;
 import controller.SampleTourController;
 import controller.TourController;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -17,6 +21,8 @@ import model.Location;
 import model.SampleTour;
 import model.Tour;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -70,8 +76,12 @@ public class SampleTourDetailScreen implements Initializable {
     }
 
     public void setTour(SampleTour tour){
-            hearderImg.setImage(new Image(tour.getLocations().getFirst().getKey().getImageUrl()));
-            titleTxtDetail.setText(tour.getTourName());
+        try {
+            hearderImg.setImage(new Image(new FileInputStream(tour.getLocations().getFirst().getKey().getImageUrl())));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        titleTxtDetail.setText(tour.getTourName());
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));
             description.setText(tour.getDescription());
 
@@ -95,12 +105,18 @@ public class SampleTourDetailScreen implements Initializable {
                 bookedTour.setEndDate(tour.getEndDate());
                 bookedTour.setStatus(Tour.Status.PENDING);
                 bookedTour.setTourGuideId(4); //default tour guide id
-                TourController tourController = new TourController();
+
+                ScrollPane view = null;
                 try {
-                    tourController.add(bookedTour);
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/booking-now.fxml"));
+                    view = loader.load();
+                    BookingNowScreen bookingNowScreen = loader.getController();
+                    bookingNowScreen.infoTour(bookedTour);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
+                BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
+                userView.setCenter(view);
             });
     }
 }
