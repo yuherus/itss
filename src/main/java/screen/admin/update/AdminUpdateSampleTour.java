@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.update;
 
 import controller.SampleTourController;
 import javafx.event.ActionEvent;
@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class AdminUpdateSampleTour {
+public class AdminUpdateSampleTour implements AdminUpdateScreen{
     @FXML
     private TextField textTourName;
     @FXML
@@ -41,8 +41,9 @@ public class AdminUpdateSampleTour {
         textEndDate.setText(sampleTour.getEndDate().toString());
     }
 
+    @Override
     @FXML
-    public void handleUpdateBtnPressed(ActionEvent event) throws ParseException, SQLException {
+    public void handleUpdateBtnPressed(ActionEvent event) throws SQLException {
         // Update the sample tour with the new values from the text fields
         sampleTour.setTourName(textTourName.getText());
         sampleTour.setDescription(textDescription.getText());
@@ -52,8 +53,14 @@ public class AdminUpdateSampleTour {
         // Parse startDateText and endDateText to Date objects
         // Set the startDate and endDate of newSampleTour
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        java.util.Date utilStartDate = sdf.parse(startDateText);
-        java.util.Date utilEndDate = sdf.parse(endDateText);
+        java.util.Date utilStartDate = null;
+        java.util.Date utilEndDate = null;
+        try {
+            utilStartDate = sdf.parse(startDateText);
+            utilEndDate = sdf.parse(endDateText);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
         Date startDate = new Date(utilStartDate.getTime());
         Date endDate = new Date(utilEndDate.getTime());
         sampleTour.setStartDate(startDate);
@@ -71,6 +78,7 @@ public class AdminUpdateSampleTour {
         Stage stage = (Stage) textTourName.getScene().getWindow();
         stage.close();
     }
+    @Override
     public void handleBackBtnPressed(ActionEvent event) {
         // Get the current stage
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

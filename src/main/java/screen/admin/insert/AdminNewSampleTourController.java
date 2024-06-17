@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.insert;
 
 import controller.SampleTourController;
 import javafx.fxml.FXML;
@@ -9,13 +9,14 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.SampleTour;
+import screen.admin.SampleTourCreatedListener;
 
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.sql.Date;
 
-public class AdminNewSampleTourController {
+public class AdminNewSampleTourController implements AdminInsertScreen<SampleTour>{
     private SampleTourCreatedListener listener;
     public void setSampleTourCreatedListener(SampleTourCreatedListener listener) {
         this.listener = listener;
@@ -41,7 +42,7 @@ public class AdminNewSampleTourController {
         tableview = new TableView<>();
         // Initialize other properties of tableview here
     }
-
+    @Override
     public void setTableview(TableView<SampleTour> tableview) {
         this.tableview = tableview;
     }
@@ -56,7 +57,8 @@ public class AdminNewSampleTourController {
         }
     }
     // Xử lý sự kiện khi người dùng nhấn vào nút Create
-    public void createBtn(ActionEvent event) throws ParseException, SQLException {
+    @Override
+    public void createBtn(ActionEvent event) throws SQLException {
         SampleTour newSampleTour = new SampleTour();
 
         newSampleTour.setTourName(textTourName.getText());
@@ -78,8 +80,14 @@ public class AdminNewSampleTourController {
         // Parse startDateText and endDateText to Date objects
         // Set the startDate and endDate of newSampleTour
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        java.util.Date utilStartDate = sdf.parse(startDateText);
-        java.util.Date utilEndDate = sdf.parse(endDateText);
+        java.util.Date utilStartDate = null;
+        java.util.Date utilEndDate = null;
+        try {
+            utilStartDate = sdf.parse(startDateText);
+            utilEndDate = sdf.parse(endDateText);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
         Date startDate = new Date(utilStartDate.getTime());
         Date endDate = new Date(utilEndDate.getTime());
         newSampleTour.setStartDate(startDate);

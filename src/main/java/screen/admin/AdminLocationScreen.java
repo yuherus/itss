@@ -15,6 +15,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Location;
+import screen.admin.insert.AdminNewLocationScreen;
+import screen.admin.update.AdminUpdateLocation;
 
 import java.io.IOException;
 import java.sql.SQLException;

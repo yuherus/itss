@@ -21,6 +21,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import screen.admin.insert.AdminNewSampleTourController;
+import screen.admin.update.AdminUpdateSampleTour;
 
 public class AdminSampleTourScreen {
     private List<SampleTour> sampleTourData = new ArrayList<>();

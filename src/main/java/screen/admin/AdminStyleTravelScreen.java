@@ -15,6 +15,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Style;
+import screen.admin.insert.AdminNewStyleController;
+import screen.admin.update.AdminUpdateStyle;
 
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package screen.admin;
+package screen.admin.insert;
 
 import controller.LocationController;
 import controller.StyleController;
@@ -11,10 +11,11 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import model.Location;
 import model.Style;
+import screen.admin.LocationCreatedListenerJava;
 
 import java.sql.SQLException;
 
-public class AdminNewLocationScreen {
+public class AdminNewLocationScreen implements AdminInsertScreen<Location>{
     private LocationCreatedListenerJava listener;
     public void setLocationCreatedListener(LocationCreatedListenerJava listener) {
         this.listener = listener;
@@ -45,6 +46,7 @@ public class AdminNewLocationScreen {
         // Initialize other properties of tableview here
     }
 
+    @Override
     public void setTableview(TableView<Location> tableview) {
         this.tableview = tableview;
     }
@@ -55,6 +57,7 @@ public class AdminNewLocationScreen {
         stage.close();
     }
     // Xử lý sự kiện khi người dùng nhấn vào nút Create
+    @Override
     @FXML
     public void createBtn(ActionEvent event) throws SQLException {
         Location newLocation = new Location();

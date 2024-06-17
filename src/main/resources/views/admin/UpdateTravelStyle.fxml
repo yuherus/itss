@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="415.0" stylesheets="@../../css/UpdateSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admin.AdminUpdateStyle">
+<AnchorPane prefHeight="400.0" prefWidth="415.0" stylesheets="@../../css/UpdateSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admin.update.AdminUpdateStyle">
     <children>
         <Text fx:id="updateSample" layoutX="92.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE TRAVEL STYLE" wrappingWidth="268.1021728515625" />
         <Text layoutX="33.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name *" wrappingWidth="77.74285888671875" />
