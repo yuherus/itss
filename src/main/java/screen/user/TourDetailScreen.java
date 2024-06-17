@@ -35,6 +35,9 @@ public class TourDetailScreen implements Initializable {
     private VBox locationList;
 
     @FXML
+    private VBox tourguideInfo;
+
+    @FXML
     private Button btnBook;
 
     @FXML
@@ -104,7 +107,18 @@ public class TourDetailScreen implements Initializable {
             priceTxtDetail.setText(String.valueOf(tour.getTotalCost()));
             description.setText(tour.getDescription());
 
-            guideNameTxt.setText(guide.getUsername());
+            if (tour.getStatus().equals(Tour.Status.CONFIRMED)) {
+                statusTxt.setStyle("-fx-text-fill: green");
+            } else if (tour.getStatus().equals(Tour.Status.PENDING)) {
+                statusTxt.setStyle("-fx-text-fill: blue");
+                tourguideInfo.setVisible(false);
+            }  else if (tour.getStatus().equals(Tour.Status.CANCELLED)) {
+                statusTxt.setStyle("-fx-text-fill: red");
+            } else if (tour.getStatus().equals(Tour.Status.COMPLETED)) {
+                statusTxt.setStyle("-fx-text-fill: gray");
+            } else {
+                statusTxt.setStyle("-fx-text-fill: orange");
+            }
             nameTxt.setText(guide.getName());
             emailTxt.setText(guide.getEmail());
 

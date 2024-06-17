@@ -30,7 +30,7 @@ public class UserControllerBlackBoxTest {
     public void testAddUser() throws SQLException {
         User user = new User("new_user", "password", "New User", "new_user@example.com", User.UserType.TOURIST);
         userController.add(user);
-        user.setUserId(userController.getAll().size() + 1);
+        user.setUserId(userController.getAll().size());
         User retrievedUser = userController.getById(user.getUserId());
         assertNotNull(retrievedUser);
         assertEquals("new_user", retrievedUser.getUsername());

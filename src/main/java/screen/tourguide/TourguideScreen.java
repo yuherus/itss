@@ -19,11 +19,6 @@ public class TourguideScreen implements Initializable {
     @FXML
     private Button logoutBtn;
 
-    @FXML
-    private Button notiBtn;
-
-    @FXML
-    private Button tourBtn;
 
     @FXML
     private BorderPane tourguideView;
@@ -31,8 +26,6 @@ public class TourguideScreen implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         homeBtn.setOnAction(event -> changeScene("/views/tourguide/home.fxml"));
-        tourBtn.setOnAction(event -> changeScene("/views/tourguide/tourlist.fxml"));
-        notiBtn.setOnAction(event -> changeScene("/views/tourguide/notification.fxml"));
         logoutBtn.setOnAction(event -> {
             try {
                 AnchorPane root = FXMLLoader.load(getClass().getResource("/views/login.fxml"));
