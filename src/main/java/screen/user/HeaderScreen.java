@@ -1,5 +1,6 @@
 package screen.user;
 
+import controller.TourController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -11,9 +12,16 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.Tour;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class HeaderScreen implements Initializable{
@@ -38,7 +46,27 @@ public class HeaderScreen implements Initializable{
         homeBtn.setOnAction(event -> changeScene("/views/user/home.fxml"));
         historyBtn.setOnAction(event -> changeScene("/views/user/history.fxml"));
         tourBtn.setOnAction(event -> changeScene("/views/user/tour.fxml"));
-        trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
+
+        TourController tourController = new TourController();
+        List<Tour> tours = null;
+        try {
+            tours = tourController.getByUserId();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        Tour currentTour = tours.stream()
+                .filter(tour -> tour.getStatus().toString().toLowerCase().equals("confirmed"))
+                .findFirst().orElse(null);
+
+        LocalDate nowDate = LocalDate.now();
+
+//        if (currentTour == null || nowDate.isBefore(currentTour.getStartDate().toLocalDate()) || nowDate.isAfter(currentTour.getEndDate().toLocalDate())) {
+//            trackingBtn.setOnAction(event -> changeScene("/views/user/tracknotontour.fxml"));
+//        } else {
+//            trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
+//        }
+
         logoutBtn.setOnAction(event -> {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/views/login.fxml"));
@@ -75,7 +103,6 @@ public class HeaderScreen implements Initializable{
         }
         userView.setCenter(view);
     }
-
 
 }
 
