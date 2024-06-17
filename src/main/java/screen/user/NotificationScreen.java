@@ -85,20 +85,6 @@ public class NotificationScreen implements Initializable {
                 }
             });
 
-            confirmButton.setOnAction(event -> {
-                ScrollPane view = null;
-                try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/user/booking-now.fxml"));
-                    view = loader.load();
-                    BookingNowScreen bookingNowScreen = loader.getController();
-                    bookingNowScreen.infoTour(notification.getTour());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                BorderPane userView = (BorderPane) ((Node) event.getSource()).getScene().lookup("#userView");
-                userView.setCenter(view);
-            });
-
             Button cancelButton = new Button("Cancel");
             cancelButton.setStyle("-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 16px;");
             cancelButton.setOnAction(event -> {

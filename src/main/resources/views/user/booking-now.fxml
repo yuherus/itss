@@ -56,11 +56,12 @@
                </children>
             </Pane>
 
-            <Button layoutX="263.0" layoutY="504.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-payment" text="Payment" />
+            <Button fx:id="paymentBtn" layoutX="263.0" layoutY="504.0" prefHeight="30.0" prefWidth="181.0" styleClass="button-payment" text="Payment" />
                         <MenuButton fx:id="menuBtn" layoutX="36.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="192.0" styleClass="menu-payment" text="Payment methods">
                           <items>
-                            <MenuItem fx:id="item1" mnemonicParsing="false" text="Momo" />
-                            <MenuItem fx:id="item2" mnemonicParsing="false" text="Paypal" />
+                            <MenuItem fx:id="item1" mnemonicParsing="false" text="Cash" />
+                            <MenuItem fx:id="item2" mnemonicParsing="false" text="Credit Card" />
+                              <MenuItem fx:id="item3" mnemonicParsing="false" text="E Wallet" />
                           </items>
                         </MenuButton>
                         <CheckBox layoutX="36.0" layoutY="405.0" mnemonicParsing="false" styleClass="checkbox" text="I have agree to the rules, Terms and Conditions." />

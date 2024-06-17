@@ -105,12 +105,6 @@ public class SampleTourDetailScreen implements Initializable {
                 bookedTour.setEndDate(tour.getEndDate());
                 bookedTour.setStatus(Tour.Status.PENDING);
                 bookedTour.setTourGuideId(4); //default tour guide id
-                TourController tourController = new TourController();
-                try {
-                    tourController.add(bookedTour);
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
 
                 ScrollPane view = null;
                 try {

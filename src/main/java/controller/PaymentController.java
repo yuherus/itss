@@ -22,7 +22,7 @@ public class PaymentController implements CRUDController<Payment>{
                 Payment payment = new Payment();
                 payment.setPaymentId(rs.getInt("payment_id"));
                 payment.setAmount(rs.getDouble("amount"));
-                payment.setPaymentDate(rs.getDate("payment_date"));
+                payment.setPaymentDate(rs.getTimestamp("payment_date"));
                 switch (rs.getString("payment_method")) {
                     case "cash":
                         payment.setPaymentMethod(Payment.PaymentMethod.CASH);
@@ -53,7 +53,7 @@ public class PaymentController implements CRUDController<Payment>{
             if (rs.next()) {
                 payment.setPaymentId(rs.getInt("payment_id"));
                 payment.setAmount(rs.getDouble("amount"));
-                payment.setPaymentDate(rs.getDate("payment_date"));
+                payment.setPaymentDate(rs.getTimestamp("payment_date"));
                 switch (rs.getString("payment_method")) {
                     case "cash":
                         payment.setPaymentMethod(Payment.PaymentMethod.CASH);
@@ -80,7 +80,7 @@ public class PaymentController implements CRUDController<Payment>{
             pstmt.setInt(1, payment.getTour().getTourId());
             pstmt.setInt(2, payment.getTourist().getUserId());
             pstmt.setDouble(3, payment.getAmount());
-            pstmt.setDate(4, new Date(payment.getPaymentDate().getTime()));
+            pstmt.setTimestamp(4, payment.getPaymentDate());
             switch (payment.getPaymentMethod()) {
                 case CASH:
                     pstmt.setString(5, "cash");
@@ -104,7 +104,7 @@ public class PaymentController implements CRUDController<Payment>{
             pstmt.setInt(1, payment.getTour().getTourId());
             pstmt.setInt(2, payment.getTourist().getUserId());
             pstmt.setDouble(3, payment.getAmount());
-            pstmt.setDate(4, new Date(payment.getPaymentDate().getTime()));
+            pstmt.setTimestamp(4, payment.getPaymentDate());
             switch (payment.getPaymentMethod()) {
                 case CASH:
                     pstmt.setString(5, "cash");

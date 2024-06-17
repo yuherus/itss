@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Payment {
     public enum PaymentMethod {
@@ -13,14 +14,14 @@ public class Payment {
 
     private double amount;
 
-    private Date paymentDate;
+    private Timestamp paymentDate;
 
     private PaymentMethod paymentMethod;
 
     public Payment() {
     }
 
-    public Payment(Tour tour, User tourist, double amount, Date paymentDate, PaymentMethod paymentMethod) {
+    public Payment(Tour tour, User tourist, double amount, Timestamp paymentDate, PaymentMethod paymentMethod) {
         this.tour = tour;
         this.tourist = tourist;
         this.amount = amount;
@@ -60,11 +61,11 @@ public class Payment {
         this.amount = amount;
     }
 
-    public Date getPaymentDate() {
+    public Timestamp getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Date paymentDate) {
+    public void setPaymentDate(Timestamp paymentDate) {
         this.paymentDate = paymentDate;
     }
 
