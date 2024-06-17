@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<BorderPane fx:id="userView" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../../css/user.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.HeaderScreen">
+<BorderPane fx:id="userView" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../../css/user.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.user.HeaderScreen">
    <top>
       <HBox id="history-btn" alignment="CENTER" prefHeight="56.0" prefWidth="833.0" spacing="20" style="-fx-background-color: #de6951; -fx-padding: 10;">
          <Button fx:id="homeBtn" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-font-size: 16px; -fx-font-weight: bold;" styleClass="header-btn" text="Home">

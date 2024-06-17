@@ -19,7 +19,8 @@
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.MenuItem?>
-<ScrollPane prefHeight="1007.0" prefWidth="1024.0" style="-fx-background-color: #eff0ef;" stylesheets="@../../css/user/booking-now.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+
+<ScrollPane prefHeight="1007.0" prefWidth="1024.0" style="-fx-background-color: #eff0ef;" stylesheets="@../../css/booking-now.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <AnchorPane>
          <children>
@@ -73,7 +74,7 @@
       </Pane>
                </children>
             </VBox>
-            <VBox fx:id="book-tour" layoutX="725.0" layoutY="185.0">
+            <VBox fx:id="book_tour" layoutX="725.0" layoutY="185.0">
                <children>
                   <Text  text="Chỗ này để thông tin tour" wrappingWidth="281.23683166503906" />
                </children>

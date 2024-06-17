@@ -15,7 +15,7 @@
 
 <!--        fx:controller="views.user.OptionalBookInfo"-->
 
-<ScrollPane prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" stylesheets="@../../css/optional-book-info.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.OptionalBookInfoScreen">
+<ScrollPane prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" stylesheets="@../../css/optional-book-info.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.user.OptionalBookInfoScreen">
     <content>
         <AnchorPane prefHeight="915.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" stylesheets="@../../css/optional-book.css">
         <children>

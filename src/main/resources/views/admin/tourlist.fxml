@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="576.0" prefWidth="841.0" stylesheets="@../../css/admin-tour-list.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminTourListScreen">
+<AnchorPane prefHeight="576.0" prefWidth="841.0" stylesheets="@../../css/admin-tour-list.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admin.AdminTourListScreen">
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text fx:id="title" layoutX="330.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOUR LIST">

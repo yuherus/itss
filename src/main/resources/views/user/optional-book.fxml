@@ -23,7 +23,7 @@
 
 <!--        fx:controller="views.user.OptionalBook"-->
 
-<ScrollPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.OptionalBookScreen">
+<ScrollPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.user.OptionalBookScreen">
     <content>
 <AnchorPane prefHeight="1541.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" stylesheets="@../../css/optional-book.css">
    <children>

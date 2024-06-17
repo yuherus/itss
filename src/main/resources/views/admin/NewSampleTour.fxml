@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="468.0" prefWidth="415.0" stylesheets="@../../css/AdminNewSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.AdminNewSampleTourController">
+<AnchorPane prefHeight="468.0" prefWidth="415.0" stylesheets="@../../css/AdminNewSampleTour.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.admin.AdminNewSampleTourController">
    <children>
       <Text fx:id="crSample" layoutX="109.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW SAMPLE TOUR" wrappingWidth="268.1021728515625" />
       <Text layoutX="34.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tour Name *" wrappingWidth="77.74285888671875" />
