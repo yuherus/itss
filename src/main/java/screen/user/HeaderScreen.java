@@ -46,36 +46,36 @@ public class HeaderScreen implements Initializable{
         homeBtn.setOnAction(event -> changeScene("/views/user/home.fxml"));
         historyBtn.setOnAction(event -> changeScene("/views/user/history.fxml"));
         tourBtn.setOnAction(event -> changeScene("/views/user/tour.fxml"));
+        trackingBtn.setOnAction(event -> {
+            Tour currentTour = null;
+            LocalDate nowDate = LocalDate.now();
+            List<Tour> tours = null;
+            try {
+                tours = new TourController().getByUserId();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
 
-        TourController tourController = new TourController();
-        List<Tour> tours = null;
-        try {
-            tours = tourController.getByUserId();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        Tour currentTour = null;
-        LocalDate nowDate = LocalDate.now();
-
-        if (tours != null) {
-            for (Tour tour : tours) {
-                if ("confirmed".equals(tour.getStatus().toString().toLowerCase()) &&
-                        (nowDate.isEqual(tour.getStartDate().toLocalDate()) ||
-                                nowDate.isAfter(tour.getStartDate().toLocalDate())) &&
-                        (nowDate.isEqual(tour.getEndDate().toLocalDate()) ||
-                                nowDate.isBefore(tour.getEndDate().toLocalDate()))) {
-                    currentTour = tour;
-                    break;
+            if (tours != null) {
+                for (Tour tour : tours) {
+                    if ("confirmed".equals(tour.getStatus().toString().toLowerCase()) &&
+                            (nowDate.isEqual(tour.getStartDate().toLocalDate()) ||
+                                    nowDate.isAfter(tour.getStartDate().toLocalDate())) &&
+                            (nowDate.isEqual(tour.getEndDate().toLocalDate()) ||
+                                    nowDate.isBefore(tour.getEndDate().toLocalDate()))) {
+                        currentTour = tour;
+                        break;
+                    }
                 }
             }
-        }
 
-        if (currentTour == null) {
-            trackingBtn.setOnAction(event -> changeScene("/views/user/tracknotontour.fxml"));
-        } else {
-            trackingBtn.setOnAction(event -> changeScene("/views/user/tracking.fxml"));
-        }
+            if (currentTour == null) {
+                changeScene("/views/user/tracknotontour.fxml");
+            } else {
+                changeScene("/views/user/tracking.fxml");
+            }
+
+        });
 
         logoutBtn.setOnAction(event -> {
             try {

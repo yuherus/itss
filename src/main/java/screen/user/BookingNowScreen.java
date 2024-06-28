@@ -114,7 +114,11 @@ public class BookingNowScreen implements Initializable {
             PaymentController paymentController = new PaymentController();
             TourController tourController = new TourController();
             try {
-                tourController.add(tour);
+                if (tour.getTourId() == 0) {
+                    tourController.add(tour);
+                } else {
+                    tourController.update(tour);
+                }
                 paymentController.add(payment);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Payment Successful");
